@@ -49,10 +49,7 @@ class _Base:
         return [Competition(**item) for item in await self._get_json(params)]
 
     async def _find_contests(
-        self,
-        id_competition: str = "",
-        id_weight: str = "",
-        id_person: str = ""
+        self, id_competition: str = "", id_weight: str = "", id_person: str = ""
     ) -> list[Contest]:
         """Returns contest list by specified filters."""
 
