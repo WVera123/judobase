@@ -6,8 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "judobase"
 version = "0.1.0"
 description = "Python Judobase API async client"
-readme = "README.md"
-long_description_content_type = "text/markdown"
+readme = {file = "README.md", content-type = "text/markdown"}
 authors = [
     {name = "ddzgoev", email = "ddzgoev@gmail.com"}
 ]
