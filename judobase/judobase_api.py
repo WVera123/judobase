@@ -6,6 +6,7 @@ from .schemas import Competition, Contest
 
 
 class JudoBase(_Base):
+    """Class for interacting with the JudoBase API."""
 
     async def get_all_comps(self) -> list[Competition]:
         """Returns data for all competitions."""
@@ -16,7 +17,7 @@ class JudoBase(_Base):
         """Returns data for all contests using concurrent calls to _find_contests."""
 
         comps = await self.get_all_comps()
-        tasks = [self._find_contests(c.id_competition) for c in comps]
+        tasks = [self._find_contests(comp.id_competition) for comp in comps]
 
         results = await asyncio.gather(*tasks)
 
@@ -24,11 +25,9 @@ class JudoBase(_Base):
         return contests
 
     async def get_comps_in_range(
-        self,
-        start_date: datetime,
-        end_date: datetime
+        self, start_date: datetime, end_date: datetime
     ) -> list[Competition]:
         """Returns data for competitions in specified date range."""
 
         all_comps = await self.get_all_comps()
-        return [c for c in all_comps if start_date <= c.date_from <= end_date]
+        return [comp for comp in all_comps if start_date <= comp.date_from <= end_date]

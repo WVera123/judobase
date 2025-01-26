@@ -1,3 +1,5 @@
+# flake8: noqa: WPS110, WPS114
+
 from datetime import datetime, timezone
 from typing import Optional, List
 
@@ -35,21 +37,21 @@ class Competition(BaseModel):
     ages: List[str]
     rank_name: Optional[str]
 
-    @field_validator('updated_at', mode='after')
+    @field_validator("updated_at", mode="after")
     @classmethod
     def parse_updated_at(cls, value):
         return value.replace(tzinfo=timezone.utc)
 
-    @field_validator('date_from', mode='after')
+    @field_validator("date_from", mode="after")
     @classmethod
     def parse_date_from(cls, value):
-        return datetime.strptime(value, '%Y/%m/%d')
+        return datetime.strptime(value, "%Y/%m/%d")
 
-    @field_validator('date_to', mode='after')
+    @field_validator("date_to", mode="after")
     @classmethod
     def parse_date_to(cls, value):
         if isinstance(value, str):
-            return datetime.strptime(value, '%Y/%m/%d')
+            return datetime.strptime(value, "%Y/%m/%d")
 
 
 class Contest(BaseModel):
@@ -134,18 +136,17 @@ class Contest(BaseModel):
     id_competition_teams: Optional[str]
     id_fight_team: Optional[str]
 
-
-    @field_validator('updated_at', mode='after')
+    @field_validator("updated_at", mode="after")
     @classmethod
     def parse_updated_at(cls, value):
         return value.replace(tzinfo=timezone.utc)
 
-    @field_validator('date_start_ts', mode='after')
+    @field_validator("date_start_ts", mode="after")
     @classmethod
     def parse_date_start_ts(cls, value):
         return value.replace(tzinfo=timezone.utc)
 
-    @field_validator('first_hajime_at_ts', mode='after')
+    @field_validator("first_hajime_at_ts", mode="after")
     @classmethod
     def parse_first_hajime_at_ts(cls, value):
         return value.replace(tzinfo=timezone.utc)
