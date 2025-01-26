@@ -33,7 +33,7 @@ requires-python = ">=3.8"
 Homepage = "https://github.com/DavidDzgoev/judobase"
 
 [tool.setuptools.packages.find]
-where = ["judobase"]
+where = ["."]
 
 [tool.setuptools.dynamic]
 version = {attr = "judobase.version.__version__"}
