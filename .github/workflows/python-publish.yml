@@ -23,7 +23,7 @@ jobs:
         run: |
           VERSION=${{ github.event.release.name }}
           echo "Extracted version: $VERSION"
-          echo "__version__ = \"$VERSION\"" > judobase/version.py
+          echo "__version__ = \"$VERSION\"" > ./judobase/version.py
 
       - name: Build release distributions
         run: |
