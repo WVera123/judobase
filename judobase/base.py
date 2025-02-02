@@ -1,23 +1,36 @@
 from aiohttp import ClientSession
 
-from judobase.schemas import Competition, Contest, Competitor
+from judobase.schemas import Competition, Contest, Judoka, Country
 
 
 class _Base:
-    """Represents basic judobase API functionality."""
+    """
+    This class provides core functionality for interacting with the Judobase API.
+
+    All methods are asynchronous and must be called within an async context.
+    For ease of use and consistency, the method names mirror those found in the JudobaseAPI.
+    """
 
     def __init__(self):
         self.base_url = "https://data.ijf.org/api/"
-        self._session = None
+        self._session = ClientSession()
 
     async def __aenter__(self) -> "_Base":
         """Enter the async context and create a session."""
 
-        self._session = ClientSession()
+        if self._session.closed:
+            self._session = ClientSession()
+
         return self
 
     async def __aexit__(self, exc_type, exc_val, exc_tb) -> None:
         """Exit the async context and close the session."""
+
+        if self._session and not self._session.closed:
+            await self._session.close()
+
+    async def close_session(self) -> None:
+        """Close the session."""
 
         if self._session and not self._session.closed:
             await self._session.close()
@@ -36,7 +49,7 @@ class _Base:
 
         return await response.json()
 
-    async def _get_competition_list(self, years: str = "", months: str = "") -> list[Competition]:
+    async def _competition_list(self, years: str = "", months: str = "") -> list[Competition]:
         """Returns competition list by specified filters."""
 
         params = {
@@ -47,6 +60,15 @@ class _Base:
             "params[limit]": 5000,
         }
         return [Competition(**item) for item in await self._get_json(params)]
+
+    async def _competition_info(self, id_competition: str = "") -> Competition:
+        """Returns competition list by specified filters."""
+
+        params = {
+            "params[action]": "competition.info",
+            "params[id_competition]": id_competition
+        }
+        return Competition(**await self._get_json(params))
 
     async def _find_contests(
         self, id_competition: str = "", id_weight: str = "", id_person: str = ""
@@ -64,11 +86,20 @@ class _Base:
         result = await self._get_json(params)
         return [Contest(**item) for item in result["contests"]]
 
-    async def competitor_info(self, id_competitor: str = ""):
-        """Returns info about competitor by specified filters."""
+    async def _competitor_info(self, id_competitor: str = "") -> Judoka:
+        """Returns info about competitor by id."""
 
         params = {
             "params[action]": "competitor.info",
             "params[id_person]": id_competitor,
         }
-        return [Competitor(**item) for item in await self._get_json(params)]
+        return Judoka(**await self._get_json(params))
+
+    async def _country_info(self, id_country: str = "") -> Country:
+        """Returns info about country by id."""
+
+        params = {
+            "params[action]": "country.info",
+            "params[id_country]": id_country,
+        }
+        return Country(**await self._get_json(params))

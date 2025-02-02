@@ -1,13 +1,15 @@
 # flake8: noqa: WPS110, WPS114
 
 from datetime import datetime, timezone
-from typing import Optional, List
+from typing import Optional, List, Any
 
 from pydantic import BaseModel, field_validator
 
 
 class Competition(BaseModel):
-    """Represents the data about competition which provide the judobase api"""
+    """
+    Represents the data about competition which provide the judobase api
+    """
 
     id_competition: str
     date_from: str
@@ -55,7 +57,9 @@ class Competition(BaseModel):
 
 
 class Contest(BaseModel):
-    """Represents the data about contest which provide the judobase api"""
+    """
+    Represents the data about contest which provide the judobase api
+    """
 
     # general contest data
     id_competition: str
@@ -152,8 +156,10 @@ class Contest(BaseModel):
         return value.replace(tzinfo=timezone.utc)
 
 
-class Competitor(BaseModel):
-    """Represents the data about competitor which provide the judobase api"""
+class Judoka(BaseModel):
+    """
+    Represents the data about judoka which provide the judobase api
+    """
 
     family_name: str
     middle_name: Optional[str]
@@ -185,3 +191,34 @@ class Competitor(BaseModel):
     age: Optional[str]
     death_age: Optional[str]
     personal_picture: str
+
+
+class Country(BaseModel):
+    """
+    Represents the data about country which provide the judobase api
+    """
+
+    name: str
+    id_country: str
+    country_short: str
+    org_name: str
+    org_www: str
+    head_address: str
+    head_city: str
+    contact_phone: str
+    contact_email: str
+    exclude_from_medals: str
+    president_name: str
+    male_competitiors: str
+    female_competitiors: str
+    total_competitors: int
+    number_of_competitions: str
+    number_of_total_competitions: str
+    number_of_total_wins: int
+    number_of_total_fights: int
+    best_male_competitor: Optional[dict[str, Any]] = None
+    best_female_competitor: Optional[dict[str, Any]] = None
+    total_ranking_points: Optional[str] = None
+    ranking: Optional[dict[str, Any]] = None
+    ranking_male: Optional[dict[str, Any]] = None
+    ranking_female: Optional[dict[str, Any]] = None
