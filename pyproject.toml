@@ -38,9 +38,6 @@ where = ["."]
 [tool.setuptools.dynamic]
 version = {attr = "judobase.version.__version__"}
 
-[tool.setuptools]
-license-files = ["LICENSE"]
-
 [tool.ruff]
 line-length = 100
 
