@@ -1,9 +1,8 @@
 name: Deploy Sphinx Docs to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -19,6 +18,12 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r docs/requirements.txt
+
+      - name: Extract version from release name
+        run: |
+          VERSION=${{ github.event.release.name }}
+          echo "Extracted version: $VERSION"
+          echo "__version__ = \"$VERSION\"" > ./judobase/version.py
 
       - name: Build documentation
         run: |
