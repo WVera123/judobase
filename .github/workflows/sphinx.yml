@@ -29,8 +29,12 @@ jobs:
         run: |
           sphinx-build -b html docs/source docs/build/html
 
+      - name: Disable Jekyll
+        run: touch docs/build/html/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: docs/build/html
+          clean: true

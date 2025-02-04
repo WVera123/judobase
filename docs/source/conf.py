@@ -20,6 +20,7 @@ exclude_patterns = []
 
 language = 'en'
 
+html_baseurl = "https://DavidDzgoev.github.io/judobase/"
 html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
 html_theme_options = {
