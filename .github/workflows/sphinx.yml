@@ -1,0 +1,36 @@
+name: Deploy Sphinx Docs to GitHub Pages
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r docs/requirements.txt
+
+      - name: Extract version from release name
+        run: |
+          VERSION=${{ github.event.release.name }}
+          echo "Extracted version: $VERSION"
+          echo "__version__ = \"$VERSION\"" > ./judobase/version.py
+
+      - name: Build documentation
+        run: |
+          sphinx-build -b html docs/source docs/build/html
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: docs/build/html

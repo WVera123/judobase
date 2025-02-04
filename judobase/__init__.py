@@ -1,4 +1,5 @@
 from .judobase_api import JudoBase
-from . import judobase_api
+from .schemas import Competition, Contest, Judoka, Country
+from .version import __version__
 
-__all__ = ["JudoBase", "judobase_api"]
+__all__ = ["JudoBase", "Competition", "Contest", "Judoka", "Country", "__version__"]
