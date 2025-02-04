@@ -1,11 +1,11 @@
 import asyncio
 from datetime import datetime
 
-from .base import _Base
-from .schemas import Competition, Contest, Judoka, Country
+from judobase.base import CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI
+from judobase.schemas import Competition, Contest, Judoka, Country
 
 
-class JudoBase(_Base):
+class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
     """
     Class for interacting with the JudoBase API.
     Provides methods to retrieve information about competitions, contests, judokas, and countries.
@@ -16,7 +16,7 @@ class JudoBase(_Base):
         Retrieves data for all competitions.
         """
 
-        return await self._competition_list()
+        return await self.get_competition_list()
 
     async def competitions_in_range(
         self, start_date: datetime, end_date: datetime
@@ -33,7 +33,7 @@ class JudoBase(_Base):
         Retrieves data for a specific competition by its ID.
         """
 
-        return await self._competition_info(competition_id)
+        return await self.get_competition_info(competition_id)
 
     async def all_contests(self) -> list[Contest]:
         """
@@ -41,23 +41,21 @@ class JudoBase(_Base):
         """
 
         comps = await self.all_competition()
-        tasks = [self._find_contests(comp.id_competition) for comp in comps]
+        tasks = [self.find_contests(comp.id_competition) for comp in comps]
+        tasks_results = await asyncio.gather(*tasks)
 
-        results = await asyncio.gather(*tasks)
-
-        contests = [contest for sublist in results for contest in sublist]
-        return contests
+        return [contest for sublist in tasks_results for contest in sublist]
 
     async def judoka_by_id(self, judoka_id: int | str) -> Judoka:
         """
         Retrieves data for a specific judoka by their ID.
         """
 
-        return await self._competitor_info(str(judoka_id))
+        return await self.get_judoka_info(str(judoka_id))
 
     async def country_by_id(self, country_id: int | str) -> Country:
         """
         Retrieves data for a specific country by its ID.
         """
 
-        return await self._country_info(country_id)
+        return await self.get_country_info(country_id)

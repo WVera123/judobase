@@ -3,7 +3,7 @@
 from datetime import datetime, timezone
 from typing import Optional, List, Any
 
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel, field_validator, Field
 
 
 class Competition(BaseModel):
@@ -11,47 +11,100 @@ class Competition(BaseModel):
     Represents the data about competition which provide the judobase api
     """
 
-    id_competition: str
-    date_from: str
-    date_to: str
-    name: str
-    has_results: int
-    city: str
-    street: str
-    street_no: str
-    comp_year: int
-    prime_event: bool
-    continent_short: str
-    has_logo: bool
-    competition_code: Optional[str]
-    updated_at_ts: datetime
-    updated_at: datetime
-    timezone: Optional[str]
-    id_live_theme: int
-    code_live_theme: str
-    country_short: str
-    country: str
-    id_country: int
-    is_teams: int
-    status: Optional[str]
-    external_id: Optional[str]
-    id_draw_type: int
-    ages: List[str]
-    rank_name: Optional[str]
+    id_competition: str = Field(
+        ..., title="Competition ID", description="The unique identifier for the competition."
+    )
+    date_from: str = Field(
+        ...,
+        title="Start Date",
+        description="The start date of the competition in YYYY/MM/DD format.",
+    )
+    date_to: str = Field(
+        ..., title="End Date", description="The end date of the competition in YYYY/MM/DD format."
+    )
+    name: str = Field(..., title="Competition Name", description="The name of the competition.")
+    has_results: int = Field(
+        ..., title="Results Available", description="Indicates if results are available."
+    )
+    city: str = Field(..., title="City", description="The city where the competition is held.")
+    street: str = Field(
+        ..., title="Street", description="The street where the competition venue is located."
+    )
+    street_no: str = Field(
+        ..., title="Street Number", description="The street number of the competition venue."
+    )
+    comp_year: int = Field(
+        ..., title="Competition Year", description="The year in which the competition takes place."
+    )
+    prime_event: bool = Field(
+        ..., title="Prime Event", description="Indicates if this is a prime event."
+    )
+    continent_short: str = Field(
+        ..., title="Continent Code", description="The short code for the continent."
+    )
+    has_logo: bool = Field(
+        ..., title="Has Logo", description="Indicates if the competition has a logo."
+    )
+    competition_code: Optional[str] = Field(
+        None, title="Competition Code", description="The unique code for the competition."
+    )
+    updated_at_ts: datetime = Field(
+        ..., title="Last Updated Timestamp", description="The timestamp of the last update."
+    )
+    updated_at: datetime = Field(
+        ..., title="Last Updated", description="The last update date and time."
+    )
+    timezone: Optional[str] = Field(
+        None, title="Timezone", description="The timezone of the competition."
+    )
+    id_live_theme: int = Field(
+        ..., title="Live Theme ID", description="The ID of the live theme used for the competition."
+    )
+    code_live_theme: str = Field(
+        ..., title="Live Theme Code", description="The code of the live theme used."
+    )
+    country_short: str = Field(
+        ..., title="Country Short Code", description="The short code for the country."
+    )
+    country: str = Field(
+        ..., title="Country", description="The country where the competition is held."
+    )
+    id_country: int = Field(
+        ..., title="Country ID", description="The unique identifier for the country."
+    )
+    is_teams: int = Field(
+        ..., title="Team Competition", description="Indicates if the competition is a team event."
+    )
+    status: Optional[str] = Field(
+        None, title="Status", description="The status of the competition."
+    )
+    external_id: Optional[str] = Field(
+        None, title="External ID", description="The external identifier for the competition."
+    )
+    id_draw_type: int = Field(..., title="Draw Type ID", description="The ID of the draw type.")
+    ages: List[str] = Field(
+        ..., title="Age Categories", description="List of age categories for the competition."
+    )
+    rank_name: Optional[str] = Field(
+        None, title="Ranking Name", description="The ranking name associated with the competition."
+    )
 
     @field_validator("updated_at", mode="after")
     @classmethod
     def parse_updated_at(cls, value):
+        """Converts the `updated_at` field to a datetime object with UTC timezone."""
         return value.replace(tzinfo=timezone.utc)
 
     @field_validator("date_from", mode="after")
     @classmethod
     def parse_date_from(cls, value):
+        """Converts the `date_from` field to a datetime object with UTC timezone."""
         return datetime.strptime(value, "%Y/%m/%d")
 
     @field_validator("date_to", mode="after")
     @classmethod
     def parse_date_to(cls, value):
+        """Converts the `date_to` field to a datetime object with UTC timezone."""
         if isinstance(value, str):
             return datetime.strptime(value, "%Y/%m/%d")
 

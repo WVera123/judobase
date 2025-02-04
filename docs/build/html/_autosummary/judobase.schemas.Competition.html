@@ -1,0 +1,616 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>judobase.schemas.Competition &mdash; judobase 0.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/autodoc_pydantic.css" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=7026087e"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="judobase.schemas.Contest" href="judobase.schemas.Contest.html" />
+    <link rel="prev" title="judobase.schemas.Judoka" href="judobase.schemas.Judoka.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            judobase
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../schemas.html">Schemas</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="judobase.schemas.Judoka.html">judobase.schemas.Judoka</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">judobase.schemas.Competition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#judobase.schemas.Competition"><code class="docutils literal notranslate"><span class="pre">Competition</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.ages"><code class="docutils literal notranslate"><span class="pre">Competition.ages</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.city"><code class="docutils literal notranslate"><span class="pre">Competition.city</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.code_live_theme"><code class="docutils literal notranslate"><span class="pre">Competition.code_live_theme</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.comp_year"><code class="docutils literal notranslate"><span class="pre">Competition.comp_year</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.competition_code"><code class="docutils literal notranslate"><span class="pre">Competition.competition_code</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.continent_short"><code class="docutils literal notranslate"><span class="pre">Competition.continent_short</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.country"><code class="docutils literal notranslate"><span class="pre">Competition.country</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.country_short"><code class="docutils literal notranslate"><span class="pre">Competition.country_short</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.date_from"><code class="docutils literal notranslate"><span class="pre">Competition.date_from</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.date_to"><code class="docutils literal notranslate"><span class="pre">Competition.date_to</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.external_id"><code class="docutils literal notranslate"><span class="pre">Competition.external_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.has_logo"><code class="docutils literal notranslate"><span class="pre">Competition.has_logo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.has_results"><code class="docutils literal notranslate"><span class="pre">Competition.has_results</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.id_competition"><code class="docutils literal notranslate"><span class="pre">Competition.id_competition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.id_country"><code class="docutils literal notranslate"><span class="pre">Competition.id_country</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.id_draw_type"><code class="docutils literal notranslate"><span class="pre">Competition.id_draw_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.id_live_theme"><code class="docutils literal notranslate"><span class="pre">Competition.id_live_theme</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.is_teams"><code class="docutils literal notranslate"><span class="pre">Competition.is_teams</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.name"><code class="docutils literal notranslate"><span class="pre">Competition.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.prime_event"><code class="docutils literal notranslate"><span class="pre">Competition.prime_event</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.rank_name"><code class="docutils literal notranslate"><span class="pre">Competition.rank_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.status"><code class="docutils literal notranslate"><span class="pre">Competition.status</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.street"><code class="docutils literal notranslate"><span class="pre">Competition.street</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.street_no"><code class="docutils literal notranslate"><span class="pre">Competition.street_no</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.timezone"><code class="docutils literal notranslate"><span class="pre">Competition.timezone</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.updated_at"><code class="docutils literal notranslate"><span class="pre">Competition.updated_at</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.updated_at_ts"><code class="docutils literal notranslate"><span class="pre">Competition.updated_at_ts</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.parse_date_from"><code class="docutils literal notranslate"><span class="pre">Competition.parse_date_from</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.parse_date_to"><code class="docutils literal notranslate"><span class="pre">Competition.parse_date_to</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Competition.parse_updated_at"><code class="docutils literal notranslate"><span class="pre">Competition.parse_updated_at</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="judobase.schemas.Contest.html">judobase.schemas.Contest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="judobase.schemas.Country.html">judobase.schemas.Country</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">judobase</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">judobase</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../schemas.html">Schemas</a></li>
+      <li class="breadcrumb-item active">judobase.schemas.Competition</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/_autosummary/judobase.schemas.Competition.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="judobase-schemas-competition">
+<h1>judobase.schemas.Competition<a class="headerlink" href="#judobase-schemas-competition" title="Link to this heading"></a></h1>
+<dl class="py class pydantic_model">
+<dt class="sig sig-object py" id="judobase.schemas.Competition">
+<em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">judobase.schemas.</span></span><span class="sig-name descname"><span class="pre">Competition</span></span><a class="headerlink" href="#judobase.schemas.Competition" title="Link to this definition"></a></dt>
+<dd><p>Represents the data about competition which provide the judobase api</p>
+<p><details  class="autodoc_pydantic_collapsable_json">
+<summary>Show JSON schema</summary><div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Competition&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Represents the data about competition which provide the judobase api&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id_competition&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The unique identifier for the competition.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Competition ID&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;date_from&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The start date of the competition in YYYY/MM/DD format.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Start Date&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;date_to&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The end date of the competition in YYYY/MM/DD format.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;End Date&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The name of the competition.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Competition Name&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;has_results&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Indicates if results are available.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Results Available&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;integer&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The city where the competition is held.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;City&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;street&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The street where the competition venue is located.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Street&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;street_no&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The street number of the competition venue.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Street Number&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;comp_year&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The year in which the competition takes place.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Competition Year&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;integer&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;prime_event&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Indicates if this is a prime event.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Prime Event&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;boolean&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;continent_short&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The short code for the continent.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Continent Code&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;has_logo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Indicates if the competition has a logo.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Has Logo&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;boolean&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;competition_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;anyOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">         </span><span class="p">],</span>
+<span class="w">         </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The unique code for the competition.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Competition Code&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;updated_at_ts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The timestamp of the last update.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;date-time&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Last Updated Timestamp&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The last update date and time.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;date-time&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Last Updated&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;timezone&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;anyOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">         </span><span class="p">],</span>
+<span class="w">         </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The timezone of the competition.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Timezone&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;id_live_theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The ID of the live theme used for the competition.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Live Theme ID&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;integer&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;code_live_theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The code of the live theme used.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Live Theme Code&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;country_short&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The short code for the country.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Country Short Code&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;country&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The country where the competition is held.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;id_country&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The unique identifier for the country.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Country ID&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;integer&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;is_teams&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Indicates if the competition is a team event.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Team Competition&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;integer&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;anyOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">         </span><span class="p">],</span>
+<span class="w">         </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The status of the competition.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Status&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;external_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;anyOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">         </span><span class="p">],</span>
+<span class="w">         </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The external identifier for the competition.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;External ID&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;id_draw_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The ID of the draw type.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Draw Type ID&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;integer&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;ages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;List of age categories for the competition.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">         </span><span class="p">},</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Age Categories&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;array&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;rank_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;anyOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">         </span><span class="p">],</span>
+<span class="w">         </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The ranking name associated with the competition.&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ranking Name&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;id_competition&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;date_from&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;date_to&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;has_results&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;city&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;street&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;street_no&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;comp_year&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;prime_event&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;continent_short&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;has_logo&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;updated_at_ts&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;updated_at&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;id_live_theme&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;code_live_theme&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;country_short&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;country&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;id_country&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;is_teams&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;id_draw_type&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;ages&quot;</span>
+<span class="w">   </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</details></p><dl class="field-list simple">
+<dt class="field-odd">Fields<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.ages" title="judobase.schemas.Competition.ages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ages</span> <span class="pre">(List[str])</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.city" title="judobase.schemas.Competition.city"><code class="xref py py-obj docutils literal notranslate"><span class="pre">city</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.code_live_theme" title="judobase.schemas.Competition.code_live_theme"><code class="xref py py-obj docutils literal notranslate"><span class="pre">code_live_theme</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.comp_year" title="judobase.schemas.Competition.comp_year"><code class="xref py py-obj docutils literal notranslate"><span class="pre">comp_year</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.competition_code" title="judobase.schemas.Competition.competition_code"><code class="xref py py-obj docutils literal notranslate"><span class="pre">competition_code</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.continent_short" title="judobase.schemas.Competition.continent_short"><code class="xref py py-obj docutils literal notranslate"><span class="pre">continent_short</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.country" title="judobase.schemas.Competition.country"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.country_short" title="judobase.schemas.Competition.country_short"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country_short</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.date_from" title="judobase.schemas.Competition.date_from"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_from</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.date_to" title="judobase.schemas.Competition.date_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_to</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.external_id" title="judobase.schemas.Competition.external_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">external_id</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.has_logo" title="judobase.schemas.Competition.has_logo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">has_logo</span> <span class="pre">(bool)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.has_results" title="judobase.schemas.Competition.has_results"><code class="xref py py-obj docutils literal notranslate"><span class="pre">has_results</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.id_competition" title="judobase.schemas.Competition.id_competition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_competition</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.id_country" title="judobase.schemas.Competition.id_country"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_country</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.id_draw_type" title="judobase.schemas.Competition.id_draw_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_draw_type</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.id_live_theme" title="judobase.schemas.Competition.id_live_theme"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_live_theme</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.is_teams" title="judobase.schemas.Competition.is_teams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_teams</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.name" title="judobase.schemas.Competition.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.prime_event" title="judobase.schemas.Competition.prime_event"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prime_event</span> <span class="pre">(bool)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.rank_name" title="judobase.schemas.Competition.rank_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rank_name</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.status" title="judobase.schemas.Competition.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.street" title="judobase.schemas.Competition.street"><code class="xref py py-obj docutils literal notranslate"><span class="pre">street</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.street_no" title="judobase.schemas.Competition.street_no"><code class="xref py py-obj docutils literal notranslate"><span class="pre">street_no</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.timezone" title="judobase.schemas.Competition.timezone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timezone</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.updated_at" title="judobase.schemas.Competition.updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updated_at</span> <span class="pre">(datetime.datetime)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.updated_at_ts" title="judobase.schemas.Competition.updated_at_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updated_at_ts</span> <span class="pre">(datetime.datetime)</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Validators<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.parse_date_from" title="judobase.schemas.Competition.parse_date_from"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_date_from</span></code></a> » <a class="reference internal" href="#judobase.schemas.Competition.date_from" title="judobase.schemas.Competition.date_from"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_from</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.parse_date_to" title="judobase.schemas.Competition.parse_date_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_date_to</span></code></a> » <a class="reference internal" href="#judobase.schemas.Competition.date_to" title="judobase.schemas.Competition.date_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_to</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.parse_updated_at" title="judobase.schemas.Competition.parse_updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_updated_at</span></code></a> » <a class="reference internal" href="#judobase.schemas.Competition.updated_at" title="judobase.schemas.Competition.updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updated_at</span></code></a></p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.ages">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.ages" title="Link to this definition"></a></dt>
+<dd><p>List of age categories for the competition.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.city">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">city</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.city" title="Link to this definition"></a></dt>
+<dd><p>The city where the competition is held.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.code_live_theme">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">code_live_theme</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.code_live_theme" title="Link to this definition"></a></dt>
+<dd><p>The code of the live theme used.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.comp_year">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">comp_year</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.comp_year" title="Link to this definition"></a></dt>
+<dd><p>The year in which the competition takes place.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.competition_code">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">competition_code</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#judobase.schemas.Competition.competition_code" title="Link to this definition"></a></dt>
+<dd><p>The unique code for the competition.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.continent_short">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">continent_short</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.continent_short" title="Link to this definition"></a></dt>
+<dd><p>The short code for the continent.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.country">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">country</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.country" title="Link to this definition"></a></dt>
+<dd><p>The country where the competition is held.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.country_short">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">country_short</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.country_short" title="Link to this definition"></a></dt>
+<dd><p>The short code for the country.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.date_from">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">date_from</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.date_from" title="Link to this definition"></a></dt>
+<dd><p>The start date of the competition in YYYY/MM/DD format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Validated by<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.parse_date_from" title="judobase.schemas.Competition.parse_date_from"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_date_from</span></code></a></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.date_to">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">date_to</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.date_to" title="Link to this definition"></a></dt>
+<dd><p>The end date of the competition in YYYY/MM/DD format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Validated by<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.parse_date_to" title="judobase.schemas.Competition.parse_date_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_date_to</span></code></a></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.external_id">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">external_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#judobase.schemas.Competition.external_id" title="Link to this definition"></a></dt>
+<dd><p>The external identifier for the competition.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.has_logo">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_logo</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.has_logo" title="Link to this definition"></a></dt>
+<dd><p>Indicates if the competition has a logo.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.has_results">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_results</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.has_results" title="Link to this definition"></a></dt>
+<dd><p>Indicates if results are available.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.id_competition">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id_competition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.id_competition" title="Link to this definition"></a></dt>
+<dd><p>The unique identifier for the competition.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.id_country">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id_country</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.id_country" title="Link to this definition"></a></dt>
+<dd><p>The unique identifier for the country.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.id_draw_type">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id_draw_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.id_draw_type" title="Link to this definition"></a></dt>
+<dd><p>The ID of the draw type.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.id_live_theme">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id_live_theme</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.id_live_theme" title="Link to this definition"></a></dt>
+<dd><p>The ID of the live theme used for the competition.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.is_teams">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_teams</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.is_teams" title="Link to this definition"></a></dt>
+<dd><p>Indicates if the competition is a team event.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.name">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.name" title="Link to this definition"></a></dt>
+<dd><p>The name of the competition.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.prime_event">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prime_event</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.prime_event" title="Link to this definition"></a></dt>
+<dd><p>Indicates if this is a prime event.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.rank_name">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rank_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#judobase.schemas.Competition.rank_name" title="Link to this definition"></a></dt>
+<dd><p>The ranking name associated with the competition.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.status">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#judobase.schemas.Competition.status" title="Link to this definition"></a></dt>
+<dd><p>The status of the competition.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.street">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">street</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.street" title="Link to this definition"></a></dt>
+<dd><p>The street where the competition venue is located.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.street_no">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">street_no</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.street_no" title="Link to this definition"></a></dt>
+<dd><p>The street number of the competition venue.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.timezone">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timezone</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#judobase.schemas.Competition.timezone" title="Link to this definition"></a></dt>
+<dd><p>The timezone of the competition.</p>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.updated_at">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">updated_at</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">datetime</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.updated_at" title="Link to this definition"></a></dt>
+<dd><p>The last update date and time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Validated by<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference internal" href="#judobase.schemas.Competition.parse_updated_at" title="judobase.schemas.Competition.parse_updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_updated_at</span></code></a></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.updated_at_ts">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">updated_at_ts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">datetime</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#judobase.schemas.Competition.updated_at_ts" title="Link to this definition"></a></dt>
+<dd><p>The timestamp of the last update.</p>
+</dd></dl>
+
+<dl class="py method pydantic_validator">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.parse_date_from">
+<em class="property"><span class="pre">validator</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_date_from</span></span><em class="autodoc_pydantic_validator_arrow property">&#160; <span class="pre">»</span>&#160; </em><a class="reference internal" href="#judobase.schemas.Competition.date_from" title="judobase.schemas.Competition.date_from"><em class="xref py py-obj"><span class="pre">date_from</span></em></a><a class="headerlink" href="#judobase.schemas.Competition.parse_date_from" title="Link to this definition"></a></dt>
+<dd><p>Converts the <cite>date_from</cite> field to a datetime object with UTC timezone.</p>
+</dd></dl>
+
+<dl class="py method pydantic_validator">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.parse_date_to">
+<em class="property"><span class="pre">validator</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_date_to</span></span><em class="autodoc_pydantic_validator_arrow property">&#160; <span class="pre">»</span>&#160; </em><a class="reference internal" href="#judobase.schemas.Competition.date_to" title="judobase.schemas.Competition.date_to"><em class="xref py py-obj"><span class="pre">date_to</span></em></a><a class="headerlink" href="#judobase.schemas.Competition.parse_date_to" title="Link to this definition"></a></dt>
+<dd><p>Converts the <cite>date_to</cite> field to a datetime object with UTC timezone.</p>
+</dd></dl>
+
+<dl class="py method pydantic_validator">
+<dt class="sig sig-object py" id="judobase.schemas.Competition.parse_updated_at">
+<em class="property"><span class="pre">validator</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_updated_at</span></span><em class="autodoc_pydantic_validator_arrow property">&#160; <span class="pre">»</span>&#160; </em><a class="reference internal" href="#judobase.schemas.Competition.updated_at" title="judobase.schemas.Competition.updated_at"><em class="xref py py-obj"><span class="pre">updated_at</span></em></a><a class="headerlink" href="#judobase.schemas.Competition.parse_updated_at" title="Link to this definition"></a></dt>
+<dd><p>Converts the <cite>updated_at</cite> field to a datetime object with UTC timezone.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="judobase.schemas.Judoka.html" class="btn btn-neutral float-left" title="judobase.schemas.Judoka" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="judobase.schemas.Contest.html" class="btn btn-neutral float-right" title="judobase.schemas.Contest" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, ddzgoev.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

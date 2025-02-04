@@ -1,0 +1,9 @@
+Schemas
+============
+.. autosummary::
+   :toctree: _autosummary
+
+   judobase.schemas.Judoka
+   judobase.schemas.Competition
+   judobase.schemas.Contest
+   judobase.schemas.Country
