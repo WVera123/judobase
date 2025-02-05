@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>judobase package &mdash; judobase v0.1.6 documentation</title>
+  <title>judobase package &mdash; judobase v0.1.7 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/autodoc_pydantic.css?v=a0a71c94" />
@@ -15,7 +15,7 @@
     <link rel="canonical" href="https://DavidDzgoev.github.io/judobase/judobase.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=95b6b9dc"></script>
+      <script src="_static/documentation_options.js?v=31ce3dc5"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -96,6 +96,13 @@
 <h1>judobase package<a class="headerlink" href="#judobase-package" title="Link to this heading"></a></h1>
 <section id="module-judobase.base">
 <span id="judobase-base-module"></span><h2>judobase.base module<a class="headerlink" href="#module-judobase.base" title="Link to this heading"></a></h2>
+<p>Base classes for API interaction with session management.</p>
+<p>classes:
+- <cite>_Base</cite>: Base class for API interaction with session management.
+- <cite>JudokaAPI</cite>: Base methods for fetching data about athletes.
+- <cite>CompetitionAPI</cite>: Base methods for fetching data about competitions.
+- <cite>ContestAPI</cite>: Base methods for fetching data about contests.
+- <cite>CountryAPI</cite>: Base methods for fetching data about countries.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="judobase.base.CompetitionAPI">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">judobase.base.</span></span><span class="sig-name descname"><span class="pre">CompetitionAPI</span></span><a class="headerlink" href="#judobase.base.CompetitionAPI" title="Link to this definition"></a></dt>
@@ -161,8 +168,8 @@
 <dt class="sig sig-object py" id="judobase.judobase_api.JudoBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">judobase.judobase_api.</span></span><span class="sig-name descname"><span class="pre">JudoBase</span></span><a class="headerlink" href="#judobase.judobase_api.JudoBase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#judobase.base.CompetitionAPI" title="judobase.base.CompetitionAPI"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompetitionAPI</span></code></a>, <a class="reference internal" href="#judobase.base.ContestAPI" title="judobase.base.ContestAPI"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContestAPI</span></code></a>, <a class="reference internal" href="#judobase.base.JudokaAPI" title="judobase.base.JudokaAPI"><code class="xref py py-class docutils literal notranslate"><span class="pre">JudokaAPI</span></code></a>, <a class="reference internal" href="#judobase.base.CountryAPI" title="judobase.base.CountryAPI"><code class="xref py py-class docutils literal notranslate"><span class="pre">CountryAPI</span></code></a></p>
-<p>Class for interacting with the JudoBase API.
-Provides methods to retrieve information about competitions, contests, judokas, and countries.</p>
+<p>Class for interacting with the JudoBase API.</p>
+<p>Provides methods to retrieve information about competitions, contests, judokas, and countries.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="judobase.judobase_api.JudoBase.all_competition">
 <em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">all_competition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="_autosummary/judobase.schemas.Competition.html#judobase.schemas.Competition" title="judobase.schemas.Competition"><span class="pre">Competition</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#judobase.judobase_api.JudoBase.all_competition" title="Link to this definition"></a></dt>
