@@ -11,6 +11,7 @@ from judobase import __version__
 release = __version__
 
 extensions = [
+    "sphinx.ext.autodoc",
     "sphinxcontrib.autodoc_pydantic",
     "sphinx.ext.autosummary",
 ]
@@ -28,7 +29,7 @@ html_theme_options = {
     "github_user": "DavidDzgoev",
     "github_repo": "judobase",
     "github_version": "master",
-    "conf_py_path": "/docs/",
+    "conf_py_path": "/docs/source/",
 }
 
 autodoc_pydantic_model_show_json = True

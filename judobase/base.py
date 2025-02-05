@@ -1,12 +1,4 @@
-"""Base classes for API interaction with session management.
-
-classes:
-- `_Base`: Base class for API interaction with session management.
-- `JudokaAPI`: Base methods for fetching data about athletes.
-- `CompetitionAPI`: Base methods for fetching data about competitions.
-- `ContestAPI`: Base methods for fetching data about contests.
-- `CountryAPI`: Base methods for fetching data about countries.
-"""
+"""Base classes for API interaction with session management."""
 
 # flake8: noqa: WPS226
 

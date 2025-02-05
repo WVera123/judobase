@@ -1,11 +1,4 @@
-"""Defines Pydantic models for the data provided by the Judobase API.
-
-classes:
-- Judoka: Represents the data about a judoka.
-- Competition: Represents the data about a competition.
-- Contest: Represents the data about a contest.
-- Country: Represents the data about a country.
-"""
+"""Defines Pydantic models for the data provided by the Judobase API."""
 
 # flake8: noqa: WPS110, WPS114
 
