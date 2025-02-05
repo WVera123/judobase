@@ -1,5 +1,14 @@
 # Judobase API Wrapper
 
+[![PyPI](https://img.shields.io/pypi/v/judobase)](https://pypi.org/project/judobase/)
+[![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
+[![Downloads](https://img.shields.io/pypi/dm/judobase)](https://pypistats.org/packages/judobase)
+[![License](https://img.shields.io/pypi/l/judobase)](https://opensource.org/licenses/MIT)
+[![Docs](https://img.shields.io/badge/docs-stable-brightgreen)](https://daviddzgoev.github.io/judobase/)
+[![Contributors](https://img.shields.io/github/contributors/DavidDzgoev/judobase)](https://github.com/DavidDzgoev/judobase/graphs/contributors)
+[![Ruff](https://img.shields.io/badge/linting-ruff-orange)](https://github.com/astral-sh/ruff)
+
+
 Judobase API Wrapper is a Python library that provides a async interface to interact with the Judobase API. Developed entirely through reverse engineering, this wrapper allows developers to access and integrate Judobase data effortlessly into their projects.
 
 ---
