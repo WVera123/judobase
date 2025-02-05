@@ -447,6 +447,20 @@ class Judoka(BaseModel):
         return value.replace(tzinfo=timezone.utc)
 
 
+class CountryShort(BaseModel):
+    """Represents the short data about a country.
+
+    Provided by the ``country.get_list`` method of Judobase API.
+    """
+
+    name: str = Field(..., title="Country Name", description="The full name of the country.")
+    id_country: str = Field(
+        ..., title="Country ID", description="The unique identifier for the country."
+    )
+    ioc: str = Field(
+        ..., title="IOC code", description="International Olympic Committee code."
+    )
+
 class Country(BaseModel):
     """Represents the data about a country provided by the Judobase API."""
 

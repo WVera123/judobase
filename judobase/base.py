@@ -4,7 +4,7 @@
 
 from aiohttp import ClientSession
 
-from judobase.schemas import Competition, Contest, Country, Judoka
+from judobase.schemas import Competition, Contest, Country, CountryShort, Judoka
 
 BASE_URL = "https://data.ijf.org/api/"
 HTTP_STATUS_OK = 200
@@ -31,7 +31,7 @@ class _Base:
         if not self._session.closed:
             await self._session.close()
 
-    async def _get_json(self, request_params) -> dict:
+    async def _get_json(self, request_params) -> dict | list[dict]:
         """Helper method to send a GET request and return JSON."""
         response = await self._session.get(
             f"{BASE_URL}get_json",
@@ -121,3 +121,11 @@ class CountryAPI(_Base):
                 }
             )
         )
+
+    async def get_country_list(self) -> list[CountryShort]:
+        """Fetches all countries short information."""
+        return [
+            CountryShort(**country) for country in await self._get_json(
+                request_params={"params[action]": "country.get_list"}
+            )
+        ]

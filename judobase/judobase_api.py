@@ -3,7 +3,7 @@
 import asyncio
 from datetime import datetime
 
-from judobase.base import CompetitionAPI, ContestAPI, CountryAPI, JudokaAPI
+from judobase.base import CompetitionAPI, ContestAPI, CountryAPI, CountryShort, JudokaAPI
 from judobase.schemas import Competition, Contest, Country, Judoka
 
 
@@ -43,3 +43,7 @@ class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
     async def country_by_id(self, country_id: int | str) -> Country:
         """Retrieves data for a specific country by its ID."""
         return await self.get_country_info(country_id)
+
+    async def all_countries(self) -> list[CountryShort]:
+        """Retrieves short data for all the countries."""
+        return await self.get_country_list()
