@@ -166,7 +166,11 @@ class Contest(BaseModel):
     updated_at: datetime = Field(
         ..., title="Updated At", description="The timestamp when the contest was last updated."
     )
-    first_hajime_at_ts: datetime = Field(..., title="First Hajime Timestamp", description="The timestamp of the first hajime (start signal).",)
+    first_hajime_at_ts: datetime = Field(
+        ...,
+        title="First Hajime Timestamp",
+        description="The timestamp of the first hajime (start signal).",
+    )
 
     # White person details
     ippon_w: int | None = Field(
