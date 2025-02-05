@@ -1,26 +1,28 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>judobase.schemas.Contest &mdash; judobase v0.1.8 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/autodoc_pydantic.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/autodoc_pydantic.css" />
 
   
-    <link rel="canonical" href="https://DavidDzgoev.github.io/judobase/_autosummary/judobase.schemas.Contest.html" />
-      <script src="../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=d9d49e07"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="canonical" href="https://DavidDzgoev.github.io/judobase/user_guide/_autosummary/judobase.schemas.Contest.html" />
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=d9d49e07"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="judobase.schemas.Country" href="judobase.schemas.Country.html" />
+    <link rel="prev" title="judobase.schemas.Competition" href="judobase.schemas.Competition.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -31,11 +33,11 @@
 
           
           
-          <a href="../index.html" class="icon icon-home">
+          <a href="../../index.html" class="icon icon-home">
             judobase
           </a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -43,15 +45,98 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">🙋 User Guide</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../user_guide/introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user_guide/installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user_guide/usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user_guide/schemas.html">Schemas</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../schemas.html">Schemas</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="judobase.schemas.Judoka.html">judobase.schemas.Judoka</a></li>
+<li class="toctree-l2"><a class="reference internal" href="judobase.schemas.Competition.html">judobase.schemas.Competition</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">judobase.schemas.Contest</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#judobase.schemas.Contest"><code class="docutils literal notranslate"><span class="pre">Contest</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.age"><code class="docutils literal notranslate"><span class="pre">Contest.age</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.bye"><code class="docutils literal notranslate"><span class="pre">Contest.bye</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.city"><code class="docutils literal notranslate"><span class="pre">Contest.city</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.comp_year"><code class="docutils literal notranslate"><span class="pre">Contest.comp_year</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.competition_date"><code class="docutils literal notranslate"><span class="pre">Contest.competition_date</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.competition_name"><code class="docutils literal notranslate"><span class="pre">Contest.competition_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.contest_code_long"><code class="docutils literal notranslate"><span class="pre">Contest.contest_code_long</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.country_blue"><code class="docutils literal notranslate"><span class="pre">Contest.country_blue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.country_short_blue"><code class="docutils literal notranslate"><span class="pre">Contest.country_short_blue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.country_short_white"><code class="docutils literal notranslate"><span class="pre">Contest.country_short_white</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.country_white"><code class="docutils literal notranslate"><span class="pre">Contest.country_white</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.date_raw"><code class="docutils literal notranslate"><span class="pre">Contest.date_raw</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.date_start_ts"><code class="docutils literal notranslate"><span class="pre">Contest.date_start_ts</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.duration"><code class="docutils literal notranslate"><span class="pre">Contest.duration</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.external_id"><code class="docutils literal notranslate"><span class="pre">Contest.external_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.family_name_blue"><code class="docutils literal notranslate"><span class="pre">Contest.family_name_blue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.family_name_white"><code class="docutils literal notranslate"><span class="pre">Contest.family_name_white</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.fight_duration"><code class="docutils literal notranslate"><span class="pre">Contest.fight_duration</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.fight_no"><code class="docutils literal notranslate"><span class="pre">Contest.fight_no</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.first_hajime_at_ts"><code class="docutils literal notranslate"><span class="pre">Contest.first_hajime_at_ts</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.given_name_blue"><code class="docutils literal notranslate"><span class="pre">Contest.given_name_blue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.given_name_white"><code class="docutils literal notranslate"><span class="pre">Contest.given_name_white</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.gs"><code class="docutils literal notranslate"><span class="pre">Contest.gs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.hsk_b"><code class="docutils literal notranslate"><span class="pre">Contest.hsk_b</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.hsk_w"><code class="docutils literal notranslate"><span class="pre">Contest.hsk_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_competition"><code class="docutils literal notranslate"><span class="pre">Contest.id_competition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_competition_teams"><code class="docutils literal notranslate"><span class="pre">Contest.id_competition_teams</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_country_blue"><code class="docutils literal notranslate"><span class="pre">Contest.id_country_blue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_country_white"><code class="docutils literal notranslate"><span class="pre">Contest.id_country_white</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_fight"><code class="docutils literal notranslate"><span class="pre">Contest.id_fight</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_fight_team"><code class="docutils literal notranslate"><span class="pre">Contest.id_fight_team</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_ijf_blue"><code class="docutils literal notranslate"><span class="pre">Contest.id_ijf_blue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_ijf_white"><code class="docutils literal notranslate"><span class="pre">Contest.id_ijf_white</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_person_blue"><code class="docutils literal notranslate"><span class="pre">Contest.id_person_blue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_person_white"><code class="docutils literal notranslate"><span class="pre">Contest.id_person_white</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_weight"><code class="docutils literal notranslate"><span class="pre">Contest.id_weight</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.id_winner"><code class="docutils literal notranslate"><span class="pre">Contest.id_winner</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.ippon_b"><code class="docutils literal notranslate"><span class="pre">Contest.ippon_b</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.ippon_w"><code class="docutils literal notranslate"><span class="pre">Contest.ippon_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.is_finished"><code class="docutils literal notranslate"><span class="pre">Contest.is_finished</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.kodokan_tagged"><code class="docutils literal notranslate"><span class="pre">Contest.kodokan_tagged</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.mat"><code class="docutils literal notranslate"><span class="pre">Contest.mat</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.media"><code class="docutils literal notranslate"><span class="pre">Contest.media</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.penalty_b"><code class="docutils literal notranslate"><span class="pre">Contest.penalty_b</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.penalty_w"><code class="docutils literal notranslate"><span class="pre">Contest.penalty_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.person_blue"><code class="docutils literal notranslate"><span class="pre">Contest.person_blue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.person_white"><code class="docutils literal notranslate"><span class="pre">Contest.person_white</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.personal_picture_blue"><code class="docutils literal notranslate"><span class="pre">Contest.personal_picture_blue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.personal_picture_white"><code class="docutils literal notranslate"><span class="pre">Contest.personal_picture_white</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.picture_filename_1"><code class="docutils literal notranslate"><span class="pre">Contest.picture_filename_1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.picture_filename_2"><code class="docutils literal notranslate"><span class="pre">Contest.picture_filename_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.picture_folder_1"><code class="docutils literal notranslate"><span class="pre">Contest.picture_folder_1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.picture_folder_2"><code class="docutils literal notranslate"><span class="pre">Contest.picture_folder_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.published"><code class="docutils literal notranslate"><span class="pre">Contest.published</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.rank_name"><code class="docutils literal notranslate"><span class="pre">Contest.rank_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.round"><code class="docutils literal notranslate"><span class="pre">Contest.round</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.round_code"><code class="docutils literal notranslate"><span class="pre">Contest.round_code</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.round_name"><code class="docutils literal notranslate"><span class="pre">Contest.round_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.sc_countdown_offset"><code class="docutils literal notranslate"><span class="pre">Contest.sc_countdown_offset</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.tagged"><code class="docutils literal notranslate"><span class="pre">Contest.tagged</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.timestamp_version_blue"><code class="docutils literal notranslate"><span class="pre">Contest.timestamp_version_blue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.timestamp_version_white"><code class="docutils literal notranslate"><span class="pre">Contest.timestamp_version_white</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.type"><code class="docutils literal notranslate"><span class="pre">Contest.type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.updated_at"><code class="docutils literal notranslate"><span class="pre">Contest.updated_at</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.waza_b"><code class="docutils literal notranslate"><span class="pre">Contest.waza_b</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.waza_w"><code class="docutils literal notranslate"><span class="pre">Contest.waza_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.weight"><code class="docutils literal notranslate"><span class="pre">Contest.weight</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.yuko_b"><code class="docutils literal notranslate"><span class="pre">Contest.yuko_b</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.yuko_w"><code class="docutils literal notranslate"><span class="pre">Contest.yuko_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.parse_date_start_ts"><code class="docutils literal notranslate"><span class="pre">Contest.parse_date_start_ts</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.parse_first_hajime_at_ts"><code class="docutils literal notranslate"><span class="pre">Contest.parse_first_hajime_at_ts</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#judobase.schemas.Contest.parse_updated_at"><code class="docutils literal notranslate"><span class="pre">Contest.parse_updated_at</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="judobase.schemas.Country.html">judobase.schemas.Country</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">📖 References</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../references/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references/api.html">API</a></li>
 </ul>
 
         </div>
@@ -60,17 +145,18 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">judobase</a>
+          <a href="../../index.html">judobase</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../schemas.html">Schemas</a></li>
       <li class="breadcrumb-item active">judobase.schemas.Contest</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/_autosummary/judobase.schemas.Contest.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/user_guide/_autosummary/judobase.schemas.Contest.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -747,82 +833,82 @@
 </details></p><dl class="field-list simple">
 <dt class="field-odd">Fields<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.age" title="judobase.schemas.Contest.age"><code class="xref py py-obj docutils literal notranslate"><span class="pre">age</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.bye" title="judobase.schemas.Contest.bye"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bye</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.city" title="judobase.schemas.Contest.city"><code class="xref py py-obj docutils literal notranslate"><span class="pre">city</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.comp_year" title="judobase.schemas.Contest.comp_year"><code class="xref py py-obj docutils literal notranslate"><span class="pre">comp_year</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.competition_date" title="judobase.schemas.Contest.competition_date"><code class="xref py py-obj docutils literal notranslate"><span class="pre">competition_date</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.competition_name" title="judobase.schemas.Contest.competition_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">competition_name</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.contest_code_long" title="judobase.schemas.Contest.contest_code_long"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contest_code_long</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.country_blue" title="judobase.schemas.Contest.country_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country_blue</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.country_short_blue" title="judobase.schemas.Contest.country_short_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country_short_blue</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.country_short_white" title="judobase.schemas.Contest.country_short_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country_short_white</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.country_white" title="judobase.schemas.Contest.country_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country_white</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.date_raw" title="judobase.schemas.Contest.date_raw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_raw</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.date_start_ts" title="judobase.schemas.Contest.date_start_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_start_ts</span> <span class="pre">(datetime.datetime)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.duration" title="judobase.schemas.Contest.duration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">duration</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.external_id" title="judobase.schemas.Contest.external_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">external_id</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.family_name_blue" title="judobase.schemas.Contest.family_name_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">family_name_blue</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.family_name_white" title="judobase.schemas.Contest.family_name_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">family_name_white</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.fight_duration" title="judobase.schemas.Contest.fight_duration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fight_duration</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.fight_no" title="judobase.schemas.Contest.fight_no"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fight_no</span> <span class="pre">(int)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.first_hajime_at_ts" title="judobase.schemas.Contest.first_hajime_at_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_hajime_at_ts</span> <span class="pre">(datetime.datetime)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.given_name_blue" title="judobase.schemas.Contest.given_name_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">given_name_blue</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.given_name_white" title="judobase.schemas.Contest.given_name_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">given_name_white</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.gs" title="judobase.schemas.Contest.gs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gs</span> <span class="pre">(bool)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.hsk_b" title="judobase.schemas.Contest.hsk_b"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hsk_b</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.hsk_w" title="judobase.schemas.Contest.hsk_w"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hsk_w</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_competition" title="judobase.schemas.Contest.id_competition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_competition</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_competition_teams" title="judobase.schemas.Contest.id_competition_teams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_competition_teams</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_country_blue" title="judobase.schemas.Contest.id_country_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_country_blue</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_country_white" title="judobase.schemas.Contest.id_country_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_country_white</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_fight" title="judobase.schemas.Contest.id_fight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_fight</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_fight_team" title="judobase.schemas.Contest.id_fight_team"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_fight_team</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_ijf_blue" title="judobase.schemas.Contest.id_ijf_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_ijf_blue</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_ijf_white" title="judobase.schemas.Contest.id_ijf_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_ijf_white</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_person_blue" title="judobase.schemas.Contest.id_person_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_person_blue</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_person_white" title="judobase.schemas.Contest.id_person_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_person_white</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_weight" title="judobase.schemas.Contest.id_weight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_weight</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_winner" title="judobase.schemas.Contest.id_winner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_winner</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.ippon_b" title="judobase.schemas.Contest.ippon_b"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ippon_b</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.ippon_w" title="judobase.schemas.Contest.ippon_w"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ippon_w</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.is_finished" title="judobase.schemas.Contest.is_finished"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_finished</span> <span class="pre">(bool)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.kodokan_tagged" title="judobase.schemas.Contest.kodokan_tagged"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kodokan_tagged</span> <span class="pre">(int)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.mat" title="judobase.schemas.Contest.mat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mat</span> <span class="pre">(int)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.media" title="judobase.schemas.Contest.media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">media</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.penalty_b" title="judobase.schemas.Contest.penalty_b"><code class="xref py py-obj docutils literal notranslate"><span class="pre">penalty_b</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.penalty_w" title="judobase.schemas.Contest.penalty_w"><code class="xref py py-obj docutils literal notranslate"><span class="pre">penalty_w</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.person_blue" title="judobase.schemas.Contest.person_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">person_blue</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.person_white" title="judobase.schemas.Contest.person_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">person_white</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.personal_picture_blue" title="judobase.schemas.Contest.personal_picture_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">personal_picture_blue</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.personal_picture_white" title="judobase.schemas.Contest.personal_picture_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">personal_picture_white</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.picture_filename_1" title="judobase.schemas.Contest.picture_filename_1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">picture_filename_1</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.picture_filename_2" title="judobase.schemas.Contest.picture_filename_2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">picture_filename_2</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.picture_folder_1" title="judobase.schemas.Contest.picture_folder_1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">picture_folder_1</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.picture_folder_2" title="judobase.schemas.Contest.picture_folder_2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">picture_folder_2</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.published" title="judobase.schemas.Contest.published"><code class="xref py py-obj docutils literal notranslate"><span class="pre">published</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.rank_name" title="judobase.schemas.Contest.rank_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rank_name</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.round" title="judobase.schemas.Contest.round"><code class="xref py py-obj docutils literal notranslate"><span class="pre">round</span> <span class="pre">(int)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.round_code" title="judobase.schemas.Contest.round_code"><code class="xref py py-obj docutils literal notranslate"><span class="pre">round_code</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.round_name" title="judobase.schemas.Contest.round_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">round_name</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.sc_countdown_offset" title="judobase.schemas.Contest.sc_countdown_offset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sc_countdown_offset</span> <span class="pre">(int)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.tagged" title="judobase.schemas.Contest.tagged"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tagged</span> <span class="pre">(int)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.timestamp_version_blue" title="judobase.schemas.Contest.timestamp_version_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timestamp_version_blue</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.timestamp_version_white" title="judobase.schemas.Contest.timestamp_version_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timestamp_version_white</span> <span class="pre">(str)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.type" title="judobase.schemas.Contest.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span> <span class="pre">(int)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.updated_at" title="judobase.schemas.Contest.updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updated_at</span> <span class="pre">(datetime.datetime)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.waza_b" title="judobase.schemas.Contest.waza_b"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waza_b</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.waza_w" title="judobase.schemas.Contest.waza_w"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waza_w</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.weight" title="judobase.schemas.Contest.weight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">weight</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.yuko_b" title="judobase.schemas.Contest.yuko_b"><code class="xref py py-obj docutils literal notranslate"><span class="pre">yuko_b</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.yuko_w" title="judobase.schemas.Contest.yuko_w"><code class="xref py py-obj docutils literal notranslate"><span class="pre">yuko_w</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.age" title="judobase.schemas.Contest.age"><code class="xref py py-obj docutils literal notranslate"><span class="pre">age</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.bye" title="judobase.schemas.Contest.bye"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bye</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.city" title="judobase.schemas.Contest.city"><code class="xref py py-obj docutils literal notranslate"><span class="pre">city</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.comp_year" title="judobase.schemas.Contest.comp_year"><code class="xref py py-obj docutils literal notranslate"><span class="pre">comp_year</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.competition_date" title="judobase.schemas.Contest.competition_date"><code class="xref py py-obj docutils literal notranslate"><span class="pre">competition_date</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.competition_name" title="judobase.schemas.Contest.competition_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">competition_name</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.contest_code_long" title="judobase.schemas.Contest.contest_code_long"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contest_code_long</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.country_blue" title="judobase.schemas.Contest.country_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country_blue</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.country_short_blue" title="judobase.schemas.Contest.country_short_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country_short_blue</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.country_short_white" title="judobase.schemas.Contest.country_short_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country_short_white</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.country_white" title="judobase.schemas.Contest.country_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country_white</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.date_raw" title="judobase.schemas.Contest.date_raw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_raw</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.date_start_ts" title="judobase.schemas.Contest.date_start_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_start_ts</span> <span class="pre">(datetime.datetime)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.duration" title="judobase.schemas.Contest.duration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">duration</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.external_id" title="judobase.schemas.Contest.external_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">external_id</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.family_name_blue" title="judobase.schemas.Contest.family_name_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">family_name_blue</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.family_name_white" title="judobase.schemas.Contest.family_name_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">family_name_white</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.fight_duration" title="judobase.schemas.Contest.fight_duration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fight_duration</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.fight_no" title="judobase.schemas.Contest.fight_no"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fight_no</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.first_hajime_at_ts" title="judobase.schemas.Contest.first_hajime_at_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_hajime_at_ts</span> <span class="pre">(datetime.datetime)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.given_name_blue" title="judobase.schemas.Contest.given_name_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">given_name_blue</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.given_name_white" title="judobase.schemas.Contest.given_name_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">given_name_white</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.gs" title="judobase.schemas.Contest.gs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gs</span> <span class="pre">(bool)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.hsk_b" title="judobase.schemas.Contest.hsk_b"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hsk_b</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.hsk_w" title="judobase.schemas.Contest.hsk_w"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hsk_w</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_competition" title="judobase.schemas.Contest.id_competition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_competition</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_competition_teams" title="judobase.schemas.Contest.id_competition_teams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_competition_teams</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_country_blue" title="judobase.schemas.Contest.id_country_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_country_blue</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_country_white" title="judobase.schemas.Contest.id_country_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_country_white</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_fight" title="judobase.schemas.Contest.id_fight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_fight</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_fight_team" title="judobase.schemas.Contest.id_fight_team"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_fight_team</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_ijf_blue" title="judobase.schemas.Contest.id_ijf_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_ijf_blue</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_ijf_white" title="judobase.schemas.Contest.id_ijf_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_ijf_white</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_person_blue" title="judobase.schemas.Contest.id_person_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_person_blue</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_person_white" title="judobase.schemas.Contest.id_person_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_person_white</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_weight" title="judobase.schemas.Contest.id_weight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_weight</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.id_winner" title="judobase.schemas.Contest.id_winner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id_winner</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.ippon_b" title="judobase.schemas.Contest.ippon_b"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ippon_b</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.ippon_w" title="judobase.schemas.Contest.ippon_w"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ippon_w</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.is_finished" title="judobase.schemas.Contest.is_finished"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_finished</span> <span class="pre">(bool)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.kodokan_tagged" title="judobase.schemas.Contest.kodokan_tagged"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kodokan_tagged</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.mat" title="judobase.schemas.Contest.mat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mat</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.media" title="judobase.schemas.Contest.media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">media</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.penalty_b" title="judobase.schemas.Contest.penalty_b"><code class="xref py py-obj docutils literal notranslate"><span class="pre">penalty_b</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.penalty_w" title="judobase.schemas.Contest.penalty_w"><code class="xref py py-obj docutils literal notranslate"><span class="pre">penalty_w</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.person_blue" title="judobase.schemas.Contest.person_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">person_blue</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.person_white" title="judobase.schemas.Contest.person_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">person_white</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.personal_picture_blue" title="judobase.schemas.Contest.personal_picture_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">personal_picture_blue</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.personal_picture_white" title="judobase.schemas.Contest.personal_picture_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">personal_picture_white</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.picture_filename_1" title="judobase.schemas.Contest.picture_filename_1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">picture_filename_1</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.picture_filename_2" title="judobase.schemas.Contest.picture_filename_2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">picture_filename_2</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.picture_folder_1" title="judobase.schemas.Contest.picture_folder_1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">picture_folder_1</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.picture_folder_2" title="judobase.schemas.Contest.picture_folder_2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">picture_folder_2</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.published" title="judobase.schemas.Contest.published"><code class="xref py py-obj docutils literal notranslate"><span class="pre">published</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.rank_name" title="judobase.schemas.Contest.rank_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rank_name</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.round" title="judobase.schemas.Contest.round"><code class="xref py py-obj docutils literal notranslate"><span class="pre">round</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.round_code" title="judobase.schemas.Contest.round_code"><code class="xref py py-obj docutils literal notranslate"><span class="pre">round_code</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.round_name" title="judobase.schemas.Contest.round_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">round_name</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.sc_countdown_offset" title="judobase.schemas.Contest.sc_countdown_offset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sc_countdown_offset</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.tagged" title="judobase.schemas.Contest.tagged"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tagged</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.timestamp_version_blue" title="judobase.schemas.Contest.timestamp_version_blue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timestamp_version_blue</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.timestamp_version_white" title="judobase.schemas.Contest.timestamp_version_white"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timestamp_version_white</span> <span class="pre">(str)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.type" title="judobase.schemas.Contest.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span> <span class="pre">(int)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.updated_at" title="judobase.schemas.Contest.updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updated_at</span> <span class="pre">(datetime.datetime)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.waza_b" title="judobase.schemas.Contest.waza_b"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waza_b</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.waza_w" title="judobase.schemas.Contest.waza_w"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waza_w</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.weight" title="judobase.schemas.Contest.weight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">weight</span> <span class="pre">(str</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.yuko_b" title="judobase.schemas.Contest.yuko_b"><code class="xref py py-obj docutils literal notranslate"><span class="pre">yuko_b</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.yuko_w" title="judobase.schemas.Contest.yuko_w"><code class="xref py py-obj docutils literal notranslate"><span class="pre">yuko_w</span> <span class="pre">(int</span> <span class="pre">|</span> <span class="pre">None)</span></code></a></p></li>
 </ul>
 </dd>
 <dt class="field-even">Validators<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.parse_date_start_ts" title="judobase.schemas.Contest.parse_date_start_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_date_start_ts</span></code></a> » <a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.date_start_ts" title="judobase.schemas.Contest.date_start_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_start_ts</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.parse_first_hajime_at_ts" title="judobase.schemas.Contest.parse_first_hajime_at_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_first_hajime_at_ts</span></code></a> » <a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.first_hajime_at_ts" title="judobase.schemas.Contest.first_hajime_at_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_hajime_at_ts</span></code></a></p></li>
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.parse_updated_at" title="judobase.schemas.Contest.parse_updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_updated_at</span></code></a> » <a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.updated_at" title="judobase.schemas.Contest.updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updated_at</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.parse_date_start_ts" title="judobase.schemas.Contest.parse_date_start_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_date_start_ts</span></code></a> » <a class="reference internal" href="#judobase.schemas.Contest.date_start_ts" title="judobase.schemas.Contest.date_start_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_start_ts</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.parse_first_hajime_at_ts" title="judobase.schemas.Contest.parse_first_hajime_at_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_first_hajime_at_ts</span></code></a> » <a class="reference internal" href="#judobase.schemas.Contest.first_hajime_at_ts" title="judobase.schemas.Contest.first_hajime_at_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_hajime_at_ts</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.parse_updated_at" title="judobase.schemas.Contest.parse_updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_updated_at</span></code></a> » <a class="reference internal" href="#judobase.schemas.Contest.updated_at" title="judobase.schemas.Contest.updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updated_at</span></code></a></p></li>
 </ul>
 </dd>
 </dl>
@@ -905,7 +991,7 @@
 <dl class="field-list simple">
 <dt class="field-odd">Validated by<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.parse_date_start_ts" title="judobase.schemas.Contest.parse_date_start_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_date_start_ts</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.parse_date_start_ts" title="judobase.schemas.Contest.parse_date_start_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_date_start_ts</span></code></a></p></li>
 </ul>
 </dd>
 </dl>
@@ -954,7 +1040,7 @@
 <dl class="field-list simple">
 <dt class="field-odd">Validated by<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.parse_first_hajime_at_ts" title="judobase.schemas.Contest.parse_first_hajime_at_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_first_hajime_at_ts</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.parse_first_hajime_at_ts" title="judobase.schemas.Contest.parse_first_hajime_at_ts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_first_hajime_at_ts</span></code></a></p></li>
 </ul>
 </dd>
 </dl>
@@ -1225,7 +1311,7 @@
 <dl class="field-list simple">
 <dt class="field-odd">Validated by<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.parse_updated_at" title="judobase.schemas.Contest.parse_updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_updated_at</span></code></a></p></li>
+<li><p><a class="reference internal" href="#judobase.schemas.Contest.parse_updated_at" title="judobase.schemas.Contest.parse_updated_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_updated_at</span></code></a></p></li>
 </ul>
 </dd>
 </dl>
@@ -1263,19 +1349,19 @@
 
 <dl class="py method pydantic_validator">
 <dt class="sig sig-object py" id="judobase.schemas.Contest.parse_date_start_ts">
-<em class="property"><span class="pre">validator</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_date_start_ts</span></span><em class="autodoc_pydantic_validator_arrow property">&#160; <span class="pre">»</span>&#160; </em><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.date_start_ts" title="judobase.schemas.Contest.date_start_ts"><em class="xref py py-obj"><span class="pre">date_start_ts</span></em></a><a class="headerlink" href="#judobase.schemas.Contest.parse_date_start_ts" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">validator</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_date_start_ts</span></span><em class="autodoc_pydantic_validator_arrow property">&#160; <span class="pre">»</span>&#160; </em><a class="reference internal" href="#judobase.schemas.Contest.date_start_ts" title="judobase.schemas.Contest.date_start_ts"><em class="xref py py-obj"><span class="pre">date_start_ts</span></em></a><a class="headerlink" href="#judobase.schemas.Contest.parse_date_start_ts" title="Link to this definition"></a></dt>
 <dd><p>Converts the <cite>date_start_ts</cite> field to a datetime object with UTC timezone.</p>
 </dd></dl>
 
 <dl class="py method pydantic_validator">
 <dt class="sig sig-object py" id="judobase.schemas.Contest.parse_first_hajime_at_ts">
-<em class="property"><span class="pre">validator</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_first_hajime_at_ts</span></span><em class="autodoc_pydantic_validator_arrow property">&#160; <span class="pre">»</span>&#160; </em><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.first_hajime_at_ts" title="judobase.schemas.Contest.first_hajime_at_ts"><em class="xref py py-obj"><span class="pre">first_hajime_at_ts</span></em></a><a class="headerlink" href="#judobase.schemas.Contest.parse_first_hajime_at_ts" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">validator</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_first_hajime_at_ts</span></span><em class="autodoc_pydantic_validator_arrow property">&#160; <span class="pre">»</span>&#160; </em><a class="reference internal" href="#judobase.schemas.Contest.first_hajime_at_ts" title="judobase.schemas.Contest.first_hajime_at_ts"><em class="xref py py-obj"><span class="pre">first_hajime_at_ts</span></em></a><a class="headerlink" href="#judobase.schemas.Contest.parse_first_hajime_at_ts" title="Link to this definition"></a></dt>
 <dd><p>Converts the <cite>first_hajime_at_ts</cite> field to a datetime object with UTC timezone.</p>
 </dd></dl>
 
 <dl class="py method pydantic_validator">
 <dt class="sig sig-object py" id="judobase.schemas.Contest.parse_updated_at">
-<em class="property"><span class="pre">validator</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_updated_at</span></span><em class="autodoc_pydantic_validator_arrow property">&#160; <span class="pre">»</span>&#160; </em><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.updated_at" title="judobase.schemas.Contest.updated_at"><em class="xref py py-obj"><span class="pre">updated_at</span></em></a><a class="headerlink" href="#judobase.schemas.Contest.parse_updated_at" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">validator</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_updated_at</span></span><em class="autodoc_pydantic_validator_arrow property">&#160; <span class="pre">»</span>&#160; </em><a class="reference internal" href="#judobase.schemas.Contest.updated_at" title="judobase.schemas.Contest.updated_at"><em class="xref py py-obj"><span class="pre">updated_at</span></em></a><a class="headerlink" href="#judobase.schemas.Contest.parse_updated_at" title="Link to this definition"></a></dt>
 <dd><p>Converts the <cite>updated_at</cite> field to a datetime object with UTC timezone.</p>
 </dd></dl>
 
@@ -1286,7 +1372,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="judobase.schemas.Competition.html" class="btn btn-neutral float-left" title="judobase.schemas.Competition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="judobase.schemas.Country.html" class="btn btn-neutral float-right" title="judobase.schemas.Country" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
