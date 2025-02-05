@@ -7,3 +7,4 @@ Schemas
    judobase.schemas.Competition
    judobase.schemas.Contest
    judobase.schemas.Country
+   judobase.schemas.CountryShort

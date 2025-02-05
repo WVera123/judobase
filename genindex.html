@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index &mdash; judobase v0.1.8 documentation</title>
+  <title>Index &mdash; judobase v0.1.9 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/autodoc_pydantic.css" />
@@ -14,7 +14,7 @@
     <link rel="canonical" href="https://DavidDzgoev.github.io/judobase/genindex.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=d9d49e07"></script>
+      <script src="_static/documentation_options.js?v=7dac1a1e"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -69,6 +69,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Index</li>
       <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/DavidDzgoev/judobase/blob/master/docs/source/genindex" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -119,6 +120,8 @@
       <li><a href="references/api.html#judobase.judobase_api.JudoBase.all_competition">all_competition() (judobase.judobase_api.JudoBase method)</a>
 </li>
       <li><a href="references/api.html#judobase.judobase_api.JudoBase.all_contests">all_contests() (judobase.judobase_api.JudoBase method)</a>
+</li>
+      <li><a href="references/api.html#judobase.judobase_api.JudoBase.all_countries">all_countries() (judobase.judobase_api.JudoBase method)</a>
 </li>
       <li><a href="_autosummary/judobase.schemas.Judoka.html#judobase.schemas.Judoka.archived">archived (judobase.schemas.Judoka attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Judoka.html#judobase.schemas.Judoka.archived">[1]</a>
 </li>
@@ -302,10 +305,12 @@
 </li>
       <li><a href="references/api.html#judobase.base.CountryAPI.get_country_info">get_country_info() (judobase.base.CountryAPI method)</a>
 </li>
-      <li><a href="references/api.html#judobase.base.JudokaAPI.get_judoka_info">get_judoka_info() (judobase.base.JudokaAPI method)</a>
+      <li><a href="references/api.html#judobase.base.CountryAPI.get_country_list">get_country_list() (judobase.base.CountryAPI method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="references/api.html#judobase.base.JudokaAPI.get_judoka_info">get_judoka_info() (judobase.base.JudokaAPI method)</a>
+</li>
       <li><a href="_autosummary/judobase.schemas.Judoka.html#judobase.schemas.Judoka.given_name">given_name (judobase.schemas.Judoka attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Judoka.html#judobase.schemas.Judoka.given_name">[1]</a>
 </li>
       <li><a href="_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.given_name_blue">given_name_blue (judobase.schemas.Contest attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.given_name_blue">[1]</a>
@@ -357,6 +362,8 @@
       <ul>
         <li><a href="_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.id_country">(judobase.schemas.Country attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.id_country">[1]</a>
 </li>
+        <li><a href="user_guide/_autosummary/judobase.schemas.CountryShort.html#judobase.schemas.CountryShort.id_country">(judobase.schemas.CountryShort attribute)</a>
+</li>
         <li><a href="_autosummary/judobase.schemas.Judoka.html#judobase.schemas.Judoka.id_country">(judobase.schemas.Judoka attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Judoka.html#judobase.schemas.Judoka.id_country">[1]</a>
 </li>
       </ul></li>
@@ -385,6 +392,8 @@
       <li><a href="_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_weight">id_weight (judobase.schemas.Contest attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_weight">[1]</a>
 </li>
       <li><a href="_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_winner">id_winner (judobase.schemas.Contest attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.id_winner">[1]</a>
+</li>
+      <li><a href="user_guide/_autosummary/judobase.schemas.CountryShort.html#judobase.schemas.CountryShort.ioc">ioc (judobase.schemas.CountryShort attribute)</a>
 </li>
       <li><a href="_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.ippon_b">ippon_b (judobase.schemas.Contest attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest.ippon_b">[1]</a>
 </li>
@@ -468,11 +477,13 @@
       <ul>
         <li><a href="_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.name">(judobase.schemas.Country attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.name">[1]</a>
 </li>
-      </ul></li>
-      <li><a href="_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.number_of_competitions">number_of_competitions (judobase.schemas.Country attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.number_of_competitions">[1]</a>
+        <li><a href="user_guide/_autosummary/judobase.schemas.CountryShort.html#judobase.schemas.CountryShort.name">(judobase.schemas.CountryShort attribute)</a>
 </li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.number_of_competitions">number_of_competitions (judobase.schemas.Country attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.number_of_competitions">[1]</a>
+</li>
       <li><a href="_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.number_of_total_competitions">number_of_total_competitions (judobase.schemas.Country attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.number_of_total_competitions">[1]</a>
 </li>
       <li><a href="_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.number_of_total_fights">number_of_total_fights (judobase.schemas.Country attribute)</a>, <a href="user_guide/_autosummary/judobase.schemas.Country.html#judobase.schemas.Country.number_of_total_fights">[1]</a>
