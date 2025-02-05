@@ -11,3 +11,7 @@ dist/
 
 # Temporary test files
 test.py
+
+# Docs build files
+docs/build/
+

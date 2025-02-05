@@ -24,7 +24,7 @@ language = 'en'
 html_baseurl = "https://DavidDzgoev.github.io/judobase/"
 html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
-html_theme_options = {
+html_context = {
     "display_github": True,
     "github_user": "DavidDzgoev",
     "github_repo": "judobase",
