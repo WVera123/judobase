@@ -1,7 +1,5 @@
-# flake8: noqa: WPS430, WPS300
-
 from .judobase_api import JudoBase
-from .schemas import Competition, Contest, Judoka, Country
+from .schemas import Competition, Contest, Country, Judoka
 from .version import __version__
 
-__all__ = ["JudoBase", "Competition", "Contest", "Judoka", "Country", "__version__"]
+__all__ = ["Competition", "Contest", "Country", "JudoBase", "Judoka", "__version__"]

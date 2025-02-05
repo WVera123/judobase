@@ -1,15 +1,22 @@
+"""Defines Pydantic models for the data provided by the Judobase API.
+
+classes:
+- Judoka: Represents the data about a judoka.
+- Competition: Represents the data about a competition.
+- Contest: Represents the data about a contest.
+- Country: Represents the data about a country.
+"""
+
 # flake8: noqa: WPS110, WPS114
 
 from datetime import datetime, timezone
 from typing import Any
 
-from pydantic import BaseModel, field_validator, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class Competition(BaseModel):
-    """
-    Represents the data about competition which provide the judobase api
-    """
+    """Represents the data about competition which provide the judobase api."""
 
     id_competition: str = Field(
         ..., title="Competition ID", description="The unique identifier for the competition."
@@ -98,9 +105,9 @@ class Competition(BaseModel):
     def parse_date_from(cls, value):
         """Converts the `date_from` field to a datetime object with UTC timezone."""
         try:
-            return datetime.strptime(value, "%Y/%m/%d")
+            return datetime.strptime(value, "%Y/%m/%d").replace(tzinfo=timezone.utc)
         except ValueError:
-            return datetime.strptime(value, "%Y-%m-%d")
+            return datetime.strptime(value, "%Y-%m-%d").replace(tzinfo=timezone.utc)
 
     @field_validator("date_to", mode="after")
     @classmethod
@@ -108,15 +115,14 @@ class Competition(BaseModel):
         """Converts the `date_to` field to a datetime object with UTC timezone."""
         if isinstance(value, str):
             try:
-                return datetime.strptime(value, "%Y/%m/%d")
+                return datetime.strptime(value, "%Y/%m/%d").replace(tzinfo=timezone.utc)
             except ValueError:
-                return datetime.strptime(value, "%Y-%m-%d")
+                return datetime.strptime(value, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        return None
 
 
 class Contest(BaseModel):
-    """
-    Represents the data about contest which provide the judobase api
-    """
+    """Represents the data about contest which provide the judobase api."""
 
     # General contest data
     id_competition: str = Field(
@@ -353,9 +359,7 @@ class Contest(BaseModel):
 
 
 class Judoka(BaseModel):
-    """
-    Represents the data about a judoka provided by the judobase API.
-    """
+    """Represents the data about a judoka provided by the judobase API."""
 
     family_name: str = Field(
         ..., title="Family Name", description="The family name (surname) of the judoka."
@@ -389,7 +393,7 @@ class Judoka(BaseModel):
         None,
         title="Ftechique",
         description="A field representing a specific technique associated with the judoka. "
-                    "(Verify field name if necessary.)",
+        "(Verify field name if necessary.)",
     )
     side: str = Field(
         ..., title="Side", description="The side (e.g., left or right) that the judoka uses."
@@ -451,9 +455,7 @@ class Judoka(BaseModel):
 
 
 class Country(BaseModel):
-    """
-    Represents the data about a country provided by the Judobase API.
-    """
+    """Represents the data about a country provided by the Judobase API."""
 
     name: str = Field(..., title="Country Name", description="The full name of the country.")
     id_country: str = Field(
@@ -497,12 +499,14 @@ class Country(BaseModel):
     male_competitiors: str = Field(
         ...,
         title="Male Competitors",
-        description="Number of male competitors from the country. (Note: Field name may contain a typo.)",
+        description="Number of male competitors from the country. "
+        "(Note: Field name may contain a typo.)",
     )
     female_competitiors: str = Field(
         ...,
         title="Female Competitors",
-        description="Number of female competitors from the country. (Note: Field name may contain a typo.)",
+        description="Number of female competitors from the country. "
+        "(Note: Field name may contain a typo.)",
     )
     total_competitors: int = Field(
         ...,

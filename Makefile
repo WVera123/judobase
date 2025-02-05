@@ -10,3 +10,5 @@ lint:
 
 format:
 	ruff format $(SRC)
+	ruff check --fix $(SRC)
+
