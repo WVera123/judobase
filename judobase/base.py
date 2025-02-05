@@ -1,7 +1,18 @@
+"""Base classes for API interaction with session management.
+
+classes:
+- `_Base`: Base class for API interaction with session management.
+- `JudokaAPI`: Base methods for fetching data about athletes.
+- `CompetitionAPI`: Base methods for fetching data about competitions.
+- `ContestAPI`: Base methods for fetching data about contests.
+- `CountryAPI`: Base methods for fetching data about countries.
+"""
+
 # flake8: noqa: WPS226
 
 from aiohttp import ClientSession
-from judobase.schemas import Competition, Contest, Judoka, Country
+
+from judobase.schemas import Competition, Contest, Country, Judoka
 
 BASE_URL = "https://data.ijf.org/api/"
 HTTP_STATUS_OK = 200
