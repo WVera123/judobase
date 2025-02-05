@@ -31,6 +31,7 @@ html_context = {
     "github_version": "master",
     "conf_py_path": "/docs/source/",
 }
+html_logo = "_static/ijf-logo.png"
 
 autodoc_pydantic_model_show_json = True
 autodoc_pydantic_settings_show_json = False
