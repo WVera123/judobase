@@ -41,6 +41,11 @@ version = {attr = "judobase.version.__version__"}
 [tool.ruff]
 line-length = 100
 
+[tool.flake8]
+max-line-length = 100
+extend-ignore = "WPS410"
+
+
 [project.optional-dependencies]
 tests = [
     "pytest>=8.3.4"

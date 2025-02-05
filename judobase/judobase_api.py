@@ -1,3 +1,5 @@
+# flake8: noqa: WPS215
+
 import asyncio
 from datetime import datetime
 

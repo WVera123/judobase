@@ -1,8 +1,11 @@
+# flake8: noqa: WPS226
+
 from aiohttp import ClientSession
 from judobase.schemas import Competition, Contest, Judoka, Country
 
 BASE_URL = "https://data.ijf.org/api/"
 HTTP_STATUS_OK = 200
+
 
 class _Base:
     """Base class for API interaction with session management."""
@@ -70,7 +73,9 @@ class CompetitionAPI(_Base):
 class ContestAPI(_Base):
     """Handles contest-related API requests."""
 
-    async def find_contests(self, id_competition: str = "", id_weight: str = "", id_person: str = "") -> list[Contest]:
+    async def find_contests(
+        self, id_competition: str = "", id_weight: str = "", id_person: str = ""
+    ) -> list[Contest]:
         """Fetches list of contests."""
         request_result = await self._get_json(
             request_params={
