@@ -4,11 +4,11 @@ import asyncio
 from datetime import datetime
 
 from judobase.base import CompetitionAPI, ContestAPI, CountryAPI, CountryShort, JudokaAPI
-from judobase.schemas import Competition, Contest, Country, Judoka
+from judobase.schemas import Competition, Contest, Country, Judoka, WEIGHT_ID_MAPPING
 
 
 class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
-    """Class for interacting with the JudoBase API.
+    """Class for extended interacting with the JudoBase API.
 
     Provides methods to retrieve information about competitions, contests, judokas, and countries.
     """
@@ -32,6 +32,33 @@ class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
         """Retrieves data for all contests using concurrent API calls."""
         comps = await self.all_competition()
         tasks = [self.find_contests(comp.id_competition) for comp in comps]
+        tasks_results = await asyncio.gather(*tasks)
+
+        return [contest for sublist in tasks_results for contest in sublist]
+
+
+    async def contests_by_competition_id(
+        self,
+        competition_id: int | str,
+        weight: str = "",
+        include_events: bool = False
+    ) -> list[Contest]:
+        """Retrieves data for all contests using concurrent API calls.
+
+        Optionally filters by weight category and includes data about contests events like
+        throw, osaekomi or shido.
+        """
+        contests = await self.find_contests(
+            competition_id=competition_id,
+            weight_id=WEIGHT_ID_MAPPING[weight] if weight else ""
+        )
+        tasks = [
+            self.find_contests(
+                contest_code=contest.contest_code_long,
+                include="info,events" if include_events else "info"
+            )
+            for contest in contests
+        ]
         tasks_results = await asyncio.gather(*tasks)
 
         return [contest for sublist in tasks_results for contest in sublist]

@@ -8,6 +8,42 @@ from typing import Any
 from pydantic import BaseModel, Field, field_validator
 
 
+class WeightEnum(str):
+    """Represents the weight categories for judo competitions."""
+
+    M60 = "-60"
+    M66 = "-66"
+    M73 = "-73"
+    M81 = "-81"
+    M90 = "-90"
+    M100 = "-100"
+    M100PLUS = "+100"
+
+    F48 = "-48"
+    F52 = "-52"
+    F57 = "-57"
+    F63 = "-63"
+    F70 = "-70"
+    F78 = "-78"
+    F78PLUS = "+78"
+
+WEIGHT_ID_MAPPING = {
+    WeightEnum.M60: "1",
+    WeightEnum.M66: "2",
+    WeightEnum.M73: "3",
+    WeightEnum.M81: "4",
+    WeightEnum.M90: "5",
+    WeightEnum.M100: "6",
+    WeightEnum.M100PLUS: "7",
+    WeightEnum.F48: "8",
+    WeightEnum.F52: "9",
+    WeightEnum.F57: "10",
+    WeightEnum.F63: "11",
+    WeightEnum.F70: "12",
+    WeightEnum.F78: "13",
+    WeightEnum.F78PLUS: "14",
+}
+
 class Competition(BaseModel):
     """Represents the data about competition which provide the judobase api."""
 
@@ -112,6 +148,109 @@ class Competition(BaseModel):
             except ValueError:
                 return datetime.strptime(value, "%Y-%m-%d").replace(tzinfo=timezone.utc)
         return None
+
+
+class EventTag(BaseModel):
+    """Represents the data about event tags."""
+
+    name: str = Field(
+        ..., title="Event name", description="The name of happened event."
+    )
+    id_tag: str = Field(
+        ..., title="Tag ID", description="The unique identifier for the tag."
+    )
+    id_event: float = Field(
+        ..., title="Event ID", description="The unique identifier for the event."
+    )
+    id_group: float = Field(
+        ..., title="Tag group ID", description="The unique identifier for the tag main group."
+    )
+    group_name: str = Field(
+        ..., title="Tag group name", description="The name of the tag main group."
+    )
+    code_short: str = Field(
+        ..., title="Short Tag code", description="The short code for the tag."
+    )
+    public: int = Field(
+        ..., title="Public Available", description="Indicates if the tag is publicly available."
+    )
+    id_groups: str = Field(
+        ..., title="Tag groups id", description="The unique identifier for the tag groups."
+    )
+
+
+class EventActor(BaseModel):
+    """Represents the data about event actors."""
+
+    actor_type: str = Field(
+        ..., title="Actor Type", description="The actor type."
+    )
+    id_event: str = Field(
+        ..., title="Event ID", description="The unique identifier for the event."
+    )
+    id_actor: str = Field(
+        ..., title="Actor ID", description="The unique identifier for the tag actor."
+    )
+    family_name: str = Field(
+        ..., title="Family Name", description="Family name of the competitor."
+    )
+    given_name: str = Field(
+        ..., title="Given Name", description="Given name of the competitor."
+    )
+    id_person: str = Field(
+        ..., title="Person ID", description="The unique identifier for the competitor."
+    )
+    country_short: str = Field(
+        ..., title="Country Short", description="Short country code for the competitor."
+    )
+
+
+class Event(BaseModel):
+    """Represents the data about contest events by the Judobase API.
+
+    Each event includes data about the time, participants, type of event,
+    and tags that describe specific actions or referee decisions.
+
+    Provided by the ``contest.fnd`` method of Judobase API with ``events`` in ``part`` param.
+    """
+
+    id_event: str = Field(
+        ..., title="Event ID", description="The unique identifier for the event."
+    )
+    contest_code_long: str = Field(
+        ..., title="Contest Code", description="The long contest code representing the event."
+    )
+    time_real: float = Field(
+        ..., title="Real Time", description="The actual time in the match when the event occurred."
+    )
+    time_sc: float = Field(
+        ..., title="Sport Clock Time",
+        description="The official match clock time at the event moment."
+    )
+    tags: list[EventTag] = Field(
+        None, title="Tags", description="A list of tags describing the nature of the event."
+    )
+    actors: list[EventActor] = Field(
+        None, title="Actors", description="A list of participants involved in the event."
+    )
+    video_offset: float | None = Field(
+        None,
+        title="Video Offset",
+        description="The time offset in the match video where the event appears."
+    )
+    rating: int = Field(
+        0, title="Rating", description="A rating assigned to the event (if applicable)."
+    )
+    id_contest_event_type: int = Field(
+        ..., title="Event Type ID",
+        description="The identifier for the type of event that occurred."
+    )
+    public: bool = Field(
+        True, title="Public", description="Indicates if the event is publicly accessible."
+    )
+    official: bool = Field(
+        True, title="Official", description="Indicates if the event is officially recognized."
+    )
 
 
 class Contest(BaseModel):
@@ -331,6 +470,10 @@ class Contest(BaseModel):
     id_fight_team: str | None = Field(
         None, title="Fight Team ID", description="Identifier for the fight team."
     )
+    events: list[Event] | None = Field(
+        None, title="Contests events",
+        description="contest events like score, osaekomi, shido, etc."
+    )
 
     @field_validator("updated_at", mode="after")
     @classmethod
@@ -352,7 +495,7 @@ class Contest(BaseModel):
 
 
 class Judoka(BaseModel):
-    """Represents the data about a judoka provided by the judobase API."""
+    """Represents the data about a judoka."""
 
     family_name: str = Field(
         ..., title="Family Name", description="The family name (surname) of the judoka."
@@ -461,8 +604,9 @@ class CountryShort(BaseModel):
         ..., title="IOC code", description="International Olympic Committee code."
     )
 
+
 class Country(BaseModel):
-    """Represents the data about a country provided by the Judobase API."""
+    """Represents the data about a country."""
 
     name: str = Field(..., title="Country Name", description="The full name of the country.")
     id_country: str = Field(
