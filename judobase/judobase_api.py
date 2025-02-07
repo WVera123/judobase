@@ -4,7 +4,7 @@ import asyncio
 from datetime import datetime
 
 from judobase.base import CompetitionAPI, ContestAPI, CountryAPI, CountryShort, JudokaAPI
-from judobase.schemas import Competition, Contest, Country, Judoka, WEIGHT_ID_MAPPING
+from judobase.schemas import WEIGHT_ID_MAPPING, Competition, Contest, Country, Judoka, WeightEnum
 
 
 class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
@@ -40,7 +40,8 @@ class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
     async def contests_by_competition_id(
         self,
         competition_id: int | str,
-        weight: str = "",
+        weight: WeightEnum = "",
+        *,
         include_events: bool = False
     ) -> list[Contest]:
         """Retrieves data for all contests using concurrent API calls.

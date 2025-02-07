@@ -3,12 +3,13 @@
 # flake8: noqa: WPS110, WPS114
 
 from datetime import datetime, timezone
+from enum import Enum
 from typing import Any
 
 from pydantic import BaseModel, Field, field_validator
 
 
-class WeightEnum(str):
+class WeightEnum(str, Enum):
     """Represents the weight categories for judo competitions."""
 
     M60 = "-60"
