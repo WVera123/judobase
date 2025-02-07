@@ -94,6 +94,9 @@ For a detailed description of all available methods and endpoints, please refer 
 
 Contributions are welcome! Also, if you have any questions or suggestions, please feel free to open an [issue](https://github.com/DavidDzgoev/judobase/issues).
 
+> **Note:** See [CONTRIBUTING.md](.github/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md) for details on how to contribute..
+
+
 ---
 
 ## License
