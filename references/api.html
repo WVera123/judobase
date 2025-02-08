@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API &mdash; judobase v0.1.9 documentation</title>
+  <title>API &mdash; judobase v0.1.10 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/autodoc_pydantic.css" />
@@ -15,13 +15,13 @@
     <link rel="canonical" href="https://DavidDzgoev.github.io/judobase/references/api.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=7dac1a1e"></script>
+      <script src="../_static/documentation_options.js?v=11d05786"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="judobase.schemas.CountryShort" href="../user_guide/_autosummary/judobase.schemas.CountryShort.html" /> 
+    <link rel="prev" title="judobase.schemas.EventActor" href="../user_guide/_autosummary/judobase.schemas.EventActor.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -34,6 +34,7 @@
           
           <a href="../index.html" class="icon icon-home">
             judobase
+              <img src="../_static/ijf-logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -130,7 +131,7 @@ directly.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="judobase.base.CompetitionAPI.get_competition_info">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_competition_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_competition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Competition.html#judobase.schemas.Competition" title="judobase.schemas.Competition"><span class="pre">Competition</span></a></span></span><a class="headerlink" href="#judobase.base.CompetitionAPI.get_competition_info" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_competition_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">competition_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Competition.html#judobase.schemas.Competition" title="judobase.schemas.Competition"><span class="pre">Competition</span></a></span></span><a class="headerlink" href="#judobase.base.CompetitionAPI.get_competition_info" title="Link to this definition"></a></dt>
 <dd><p>Fetches details of a specific competition.</p>
 </dd></dl>
 
@@ -143,8 +144,9 @@ directly.</p>
 <p>Handles contest-related API requests.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="judobase.base.ContestAPI.find_contests">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">find_contests</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_competition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_person</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest" title="judobase.schemas.Contest"><span class="pre">Contest</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#judobase.base.ContestAPI.find_contests" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">find_contests</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">competition_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">person_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'info'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contest_code</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest" title="judobase.schemas.Contest"><span class="pre">Contest</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#judobase.base.ContestAPI.find_contests" title="Link to this definition"></a></dt>
 <dd><p>Fetches list of contests.</p>
+<p>include can contain a comma-separated list of: info, events.</p>
 </dd></dl>
 
 </dd></dl>
@@ -156,7 +158,7 @@ directly.</p>
 <p>Handles judoka-related API requests.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="judobase.base.JudokaAPI.get_judoka_info">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_judoka_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_competitor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Judoka.html#judobase.schemas.Judoka" title="judobase.schemas.Judoka"><span class="pre">Judoka</span></a></span></span><a class="headerlink" href="#judobase.base.JudokaAPI.get_judoka_info" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_judoka_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">competitor_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Judoka.html#judobase.schemas.Judoka" title="judobase.schemas.Judoka"><span class="pre">Judoka</span></a></span></span><a class="headerlink" href="#judobase.base.JudokaAPI.get_judoka_info" title="Link to this definition"></a></dt>
 <dd><p>Fetches judoka information.</p>
 </dd></dl>
 
@@ -169,7 +171,7 @@ directly.</p>
 <p>Handles country-related API requests.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="judobase.base.CountryAPI.get_country_info">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_country_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_country</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Country.html#judobase.schemas.Country" title="judobase.schemas.Country"><span class="pre">Country</span></a></span></span><a class="headerlink" href="#judobase.base.CountryAPI.get_country_info" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_country_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">country_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Country.html#judobase.schemas.Country" title="judobase.schemas.Country"><span class="pre">Country</span></a></span></span><a class="headerlink" href="#judobase.base.CountryAPI.get_country_info" title="Link to this definition"></a></dt>
 <dd><p>Fetches country information.</p>
 </dd></dl>
 
@@ -189,7 +191,7 @@ directly.</p>
 <dt class="sig sig-object py" id="judobase.judobase_api.JudoBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">judobase.judobase_api.</span></span><span class="sig-name descname"><span class="pre">JudoBase</span></span><a class="headerlink" href="#judobase.judobase_api.JudoBase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#judobase.base.CompetitionAPI" title="judobase.base.CompetitionAPI"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompetitionAPI</span></code></a>, <a class="reference internal" href="#judobase.base.ContestAPI" title="judobase.base.ContestAPI"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContestAPI</span></code></a>, <a class="reference internal" href="#judobase.base.JudokaAPI" title="judobase.base.JudokaAPI"><code class="xref py py-class docutils literal notranslate"><span class="pre">JudokaAPI</span></code></a>, <a class="reference internal" href="#judobase.base.CountryAPI" title="judobase.base.CountryAPI"><code class="xref py py-class docutils literal notranslate"><span class="pre">CountryAPI</span></code></a></p>
-<p>Class for interacting with the JudoBase API.</p>
+<p>Class for extended interacting with the JudoBase API.</p>
 <p>Provides methods to retrieve information about competitions, contests, judokas, and countries.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="judobase.judobase_api.JudoBase.all_competition">
@@ -213,6 +215,14 @@ directly.</p>
 <dt class="sig sig-object py" id="judobase.judobase_api.JudoBase.all_contests">
 <em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">all_contests</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest" title="judobase.schemas.Contest"><span class="pre">Contest</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#judobase.judobase_api.JudoBase.all_contests" title="Link to this definition"></a></dt>
 <dd><p>Retrieves data for all contests using concurrent API calls.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="judobase.judobase_api.JudoBase.contests_by_competition_id">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">contests_by_competition_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">competition_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WeightEnum</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_events</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../user_guide/_autosummary/judobase.schemas.Contest.html#judobase.schemas.Contest" title="judobase.schemas.Contest"><span class="pre">Contest</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#judobase.judobase_api.JudoBase.contests_by_competition_id" title="Link to this definition"></a></dt>
+<dd><p>Retrieves data for all contests using concurrent API calls.</p>
+<p>Optionally filters by weight category and includes data about contests events like
+throw, osaekomi or shido.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -243,7 +253,7 @@ directly.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../user_guide/_autosummary/judobase.schemas.CountryShort.html" class="btn btn-neutral float-left" title="judobase.schemas.CountryShort" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../user_guide/_autosummary/judobase.schemas.EventActor.html" class="btn btn-neutral float-left" title="judobase.schemas.EventActor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
