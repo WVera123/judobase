@@ -59,3 +59,6 @@ Also it is available to retrieve data about contest events like score, osaekomi,
 - ``CompetitionAPI``: Base methods for fetching data about competitions.
 - ``ContestAPI``: Base methods for fetching data about contests.
 - ``CountryAPI``: Base methods for fetching data about countries.
+
+
+More examples can be found in the `examples <https://github.com/DavidDzgoev/judobase/tree/master/examples>`_ directory of the project.
