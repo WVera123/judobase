@@ -20,4 +20,4 @@ jobs:
         pip install -r requirements/tests.txt
     - name: Analysing the code with pylint
       run: |
-        make lint
+        make test

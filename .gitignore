@@ -15,3 +15,5 @@ test.py
 # Docs build files
 docs/build/
 
+# Tests coverage
+.coverage
