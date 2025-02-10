@@ -51,12 +51,12 @@ class Competition(BaseModel):
     id_competition: str = Field(
         ..., title="Competition ID", description="The unique identifier for the competition."
     )
-    date_from: str = Field(
+    date_from: str | datetime = Field(
         ...,
         title="Start Date",
         description="The start date of the competition in YYYY/MM/DD format.",
     )
-    date_to: str = Field(
+    date_to: str | datetime = Field(
         ..., title="End Date", description="The end date of the competition in YYYY/MM/DD format."
     )
     name: str = Field(..., title="Competition Name", description="The name of the competition.")
@@ -130,25 +130,39 @@ class Competition(BaseModel):
         """Converts the `updated_at` field to a datetime object with UTC timezone."""
         return value.replace(tzinfo=timezone.utc)
 
+    @staticmethod
+    def parse_date(value):
+        """Helper method to convert a string to a datetime object with UTC timezone."""
+        if isinstance(value, datetime):
+            return value.replace(tzinfo=timezone.utc)
+
+        formats = [
+            "%Y-%m-%dT%H:%M:%SZ",  # ISO 8601 with time and timezone
+            "%Y/%m/%d",            # Date format with slashes
+            "%Y-%m-%d"             # Date format with dashes
+        ]
+
+        for fmt in formats:
+            try:
+                return datetime.strptime(value, fmt).replace(tzinfo=timezone.utc)
+            except ValueError:
+                continue  # Try the next format if this one fails
+
+        # If none of the formats match, raise an error
+        raise ValueError(f"Invalid date format: {value}")
+
     @field_validator("date_from", mode="after")
     @classmethod
     def parse_date_from(cls, value):
-        """Converts the `date_from` field to a datetime object with UTC timezone."""
-        try:
-            return datetime.strptime(value, "%Y/%m/%d").replace(tzinfo=timezone.utc)
-        except ValueError:
-            return datetime.strptime(value, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        """Validator for `date_from` field."""
+        return cls.parse_date(value)
 
     @field_validator("date_to", mode="after")
     @classmethod
     def parse_date_to(cls, value):
-        """Converts the `date_to` field to a datetime object with UTC timezone."""
-        if isinstance(value, str):
-            try:
-                return datetime.strptime(value, "%Y/%m/%d").replace(tzinfo=timezone.utc)
-            except ValueError:
-                return datetime.strptime(value, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-        return None
+        """Validator for `date_to` field."""
+        return cls.parse_date(value)
+
 
 
 class EventTag(BaseModel):
@@ -536,8 +550,8 @@ class Judoka(BaseModel):
         ..., title="Side", description="The side (e.g., left or right) that the judoka uses."
     )
     coach: str = Field(..., title="Coach", description="The coach of the judoka.")
-    best_result: str = Field(
-        ..., title="Best Result", description="The best competition result achieved by the judoka."
+    best_result: str | None = Field(
+        None, title="Best Result", description="The best competition result achieved by the judoka."
     )
     height: str = Field(..., title="Height", description="The height of the judoka.")
     birth_date: datetime = Field(
@@ -643,7 +657,7 @@ class Country(BaseModel):
         title="Exclude from Medals",
         description="Indicator if the country is excluded from medal counts.",
     )
-    president_name: str = Field(
+    president_name: dict = Field(
         ...,
         title="President Name",
         description="The name of the president of the national judo organization.",

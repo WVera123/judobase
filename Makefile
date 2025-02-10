@@ -1,6 +1,6 @@
 # Makefile
 
-.PHONY: lint format
+.PHONY: lint format test
 
 SRC = "judobase/"
 

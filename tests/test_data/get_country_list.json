@@ -1,0 +1,2506 @@
+{
+  "mock_response": [
+    {
+      "id_country": "194",
+      "name": "Afghanistan",
+      "ioc": "AFG"
+    },
+    {
+      "id_country": "299",
+      "name": "African Judo Union",
+      "ioc": "AJU"
+    },
+    {
+      "id_country": "136",
+      "name": "Albania",
+      "ioc": "ALB"
+    },
+    {
+      "id_country": "50",
+      "name": "Algeria",
+      "ioc": "ALG"
+    },
+    {
+      "id_country": "197",
+      "name": "American Samoa",
+      "ioc": "ASA"
+    },
+    {
+      "id_country": "156",
+      "name": "Andorra",
+      "ioc": "AND"
+    },
+    {
+      "id_country": "79",
+      "name": "Angola",
+      "ioc": "ANG"
+    },
+    {
+      "id_country": "196",
+      "name": "Antigua And Barbuda",
+      "ioc": "ANT"
+    },
+    {
+      "id_country": "77",
+      "name": "Argentina",
+      "ioc": "ARG"
+    },
+    {
+      "id_country": "5",
+      "name": "Armenia",
+      "ioc": "ARM"
+    },
+    {
+      "id_country": "117",
+      "name": "Aruba (SUSPENDED)",
+      "ioc": "ARU"
+    },
+    {
+      "id_country": "56",
+      "name": "Australia",
+      "ioc": "AUS"
+    },
+    {
+      "id_country": "2",
+      "name": "Austria",
+      "ioc": "AUT"
+    },
+    {
+      "id_country": "8",
+      "name": "Azerbaijan",
+      "ioc": "AZE"
+    },
+    {
+      "id_country": "166",
+      "name": "Bahamas",
+      "ioc": "BAH"
+    },
+    {
+      "id_country": "205",
+      "name": "Bahrain",
+      "ioc": "BRN"
+    },
+    {
+      "id_country": "199",
+      "name": "Bangladesh",
+      "ioc": "BAN"
+    },
+    {
+      "id_country": "165",
+      "name": "Barbados",
+      "ioc": "BAR"
+    },
+    {
+      "id_country": "16",
+      "name": "Belarus",
+      "ioc": "BLR"
+    },
+    {
+      "id_country": "3",
+      "name": "Belgium",
+      "ioc": "BEL"
+    },
+    {
+      "id_country": "203",
+      "name": "Belize",
+      "ioc": "BIZ"
+    },
+    {
+      "id_country": "200",
+      "name": "Benin",
+      "ioc": "BEN"
+    },
+    {
+      "id_country": "201",
+      "name": "Bermuda",
+      "ioc": "BER"
+    },
+    {
+      "id_country": "202",
+      "name": "Bhutan",
+      "ioc": "BHU"
+    },
+    {
+      "id_country": "204",
+      "name": "Bolivia",
+      "ioc": "BOL"
+    },
+    {
+      "id_country": "47",
+      "name": "Bosnia and Herzegovina",
+      "ioc": "BIH"
+    },
+    {
+      "id_country": "161",
+      "name": "Botswana",
+      "ioc": "BOT"
+    },
+    {
+      "id_country": "49",
+      "name": "Brazil",
+      "ioc": "BRA"
+    },
+    {
+      "id_country": "206",
+      "name": "Brunei Darussalam",
+      "ioc": "BRU"
+    },
+    {
+      "id_country": "29",
+      "name": "Bulgaria",
+      "ioc": "BUL"
+    },
+    {
+      "id_country": "102",
+      "name": "Burkina Faso",
+      "ioc": "BUR"
+    },
+    {
+      "id_country": "180",
+      "name": "Burundi",
+      "ioc": "BDI"
+    },
+    {
+      "id_country": "208",
+      "name": "Cambodia",
+      "ioc": "CAM"
+    },
+    {
+      "id_country": "70",
+      "name": "Cameroon",
+      "ioc": "CMR"
+    },
+    {
+      "id_country": "51",
+      "name": "Canada",
+      "ioc": "CAN"
+    },
+    {
+      "id_country": "214",
+      "name": "Cape Verde",
+      "ioc": "CPV"
+    },
+    {
+      "id_country": "209",
+      "name": "Cayman Islands",
+      "ioc": "CAY"
+    },
+    {
+      "id_country": "207",
+      "name": "Central African Republic",
+      "ioc": "CAF"
+    },
+    {
+      "id_country": "211",
+      "name": "Chad",
+      "ioc": "CHA"
+    },
+    {
+      "id_country": "96",
+      "name": "Chile",
+      "ioc": "CHI"
+    },
+    {
+      "id_country": "74",
+      "name": "Chinese Taipei",
+      "ioc": "TPE"
+    },
+    {
+      "id_country": "97",
+      "name": "Colombia",
+      "ioc": "COL"
+    },
+    {
+      "id_country": "213",
+      "name": "Comoros",
+      "ioc": "COM"
+    },
+    {
+      "id_country": "210",
+      "name": "Congo",
+      "ioc": "CGO"
+    },
+    {
+      "id_country": "212",
+      "name": "Cook Islands",
+      "ioc": "COK"
+    },
+    {
+      "id_country": "116",
+      "name": "Costa Rica",
+      "ioc": "CRC"
+    },
+    {
+      "id_country": "98",
+      "name": "C\u00f4te d'Ivoire",
+      "ioc": "CIV"
+    },
+    {
+      "id_country": "44",
+      "name": "Croatia",
+      "ioc": "CRO"
+    },
+    {
+      "id_country": "48",
+      "name": "Cuba",
+      "ioc": "CUB"
+    },
+    {
+      "id_country": "304",
+      "name": "Curacao",
+      "ioc": "CUW"
+    },
+    {
+      "id_country": "30",
+      "name": "Cyprus",
+      "ioc": "CYP"
+    },
+    {
+      "id_country": "32",
+      "name": "Czechia",
+      "ioc": "CZE"
+    },
+    {
+      "id_country": "315",
+      "name": "Czechoslovakia",
+      "ioc": "TCH"
+    },
+    {
+      "id_country": "75",
+      "name": "Democratic People's Republic of Korea",
+      "ioc": "PRK"
+    },
+    {
+      "id_country": "153",
+      "name": "Democratic Republic of the Congo",
+      "ioc": "COD"
+    },
+    {
+      "id_country": "38",
+      "name": "Denmark",
+      "ioc": "DEN"
+    },
+    {
+      "id_country": "215",
+      "name": "Djibouti",
+      "ioc": "DJI"
+    },
+    {
+      "id_country": "216",
+      "name": "Dominica",
+      "ioc": "DMA"
+    },
+    {
+      "id_country": "95",
+      "name": "Dominican Republic",
+      "ioc": "DOM"
+    },
+    {
+      "id_country": "318",
+      "name": "East Germany",
+      "ioc": "GDR"
+    },
+    {
+      "id_country": "92",
+      "name": "Ecuador",
+      "ioc": "ECU"
+    },
+    {
+      "id_country": "53",
+      "name": "Egypt",
+      "ioc": "EGY"
+    },
+    {
+      "id_country": "112",
+      "name": "El Salvador",
+      "ioc": "ESA"
+    },
+    {
+      "id_country": "185",
+      "name": "Equatorial Guinea",
+      "ioc": "GEQ"
+    },
+    {
+      "id_country": "217",
+      "name": "Eritrea",
+      "ioc": "ERI"
+    },
+    {
+      "id_country": "39",
+      "name": "Estonia",
+      "ioc": "EST"
+    },
+    {
+      "id_country": "280",
+      "name": "Eswatini",
+      "ioc": "SWZ"
+    },
+    {
+      "id_country": "218",
+      "name": "Ethiopia",
+      "ioc": "ETH"
+    },
+    {
+      "id_country": "301",
+      "name": "European Judo Union",
+      "ioc": "EJU"
+    },
+    {
+      "id_country": "298",
+      "name": "Faroe Islands",
+      "ioc": "FRO"
+    },
+    {
+      "id_country": "65",
+      "name": "Fiji",
+      "ioc": "FIJ"
+    },
+    {
+      "id_country": "33",
+      "name": "Finland",
+      "ioc": "FIN"
+    },
+    {
+      "id_country": "4",
+      "name": "France",
+      "ioc": "FRA"
+    },
+    {
+      "id_country": "264",
+      "name": "French Polynesia",
+      "ioc": "PYF"
+    },
+    {
+      "id_country": "292",
+      "name": "Gabon",
+      "ioc": "GAB"
+    },
+    {
+      "id_country": "224",
+      "name": "Gambia",
+      "ioc": "GAM"
+    },
+    {
+      "id_country": "6",
+      "name": "Georgia",
+      "ioc": "GEO"
+    },
+    {
+      "id_country": "193",
+      "name": "Germany",
+      "ioc": "GER"
+    },
+    {
+      "id_country": "151",
+      "name": "Ghana",
+      "ioc": "GHA"
+    },
+    {
+      "id_country": "26",
+      "name": "Great Britain",
+      "ioc": "GBR"
+    },
+    {
+      "id_country": "11",
+      "name": "Greece",
+      "ioc": "GRE"
+    },
+    {
+      "id_country": "229",
+      "name": "Grenada",
+      "ioc": "GRN"
+    },
+    {
+      "id_country": "324",
+      "name": "Guadeloupe ",
+      "ioc": "GLP"
+    },
+    {
+      "id_country": "142",
+      "name": "Guam",
+      "ioc": "GUM"
+    },
+    {
+      "id_country": "110",
+      "name": "Guatemala",
+      "ioc": "GUA"
+    },
+    {
+      "id_country": "231",
+      "name": "Guinea",
+      "ioc": "GUI"
+    },
+    {
+      "id_country": "225",
+      "name": "Guinea-Bissau",
+      "ioc": "GBS"
+    },
+    {
+      "id_country": "293",
+      "name": "Guyana",
+      "ioc": "GUY"
+    },
+    {
+      "id_country": "233",
+      "name": "Haiti",
+      "ioc": "HAI"
+    },
+    {
+      "id_country": "235",
+      "name": "Honduras",
+      "ioc": "HON"
+    },
+    {
+      "id_country": "131",
+      "name": "Hong Kong, China",
+      "ioc": "HKG"
+    },
+    {
+      "id_country": "27",
+      "name": "Hungary",
+      "ioc": "HUN"
+    },
+    {
+      "id_country": "40",
+      "name": "Iceland",
+      "ioc": "ISL"
+    },
+    {
+      "id_country": "336",
+      "name": "IF1",
+      "ioc": "IF1"
+    },
+    {
+      "id_country": "337",
+      "name": "IF2",
+      "ioc": "IF2"
+    },
+    {
+      "id_country": "338",
+      "name": "IF3",
+      "ioc": "IF3"
+    },
+    {
+      "id_country": "296",
+      "name": "IJF",
+      "ioc": "IJF"
+    },
+    {
+      "id_country": "323",
+      "name": "IJF Refugee Team",
+      "ioc": "IRT"
+    },
+    {
+      "id_country": "334",
+      "name": "Independent Athletes Team",
+      "ioc": "EAI"
+    },
+    {
+      "id_country": "326",
+      "name": "Independent European Athletes",
+      "ioc": "IEA"
+    },
+    {
+      "id_country": "321",
+      "name": "Independent Olympic Participants",
+      "ioc": "IOP"
+    },
+    {
+      "id_country": "85",
+      "name": "India",
+      "ioc": "IND"
+    },
+    {
+      "id_country": "332",
+      "name": "Individual Neutral Athletes",
+      "ioc": "AIN"
+    },
+    {
+      "id_country": "192",
+      "name": "Indonesia",
+      "ioc": "INA"
+    },
+    {
+      "id_country": "335",
+      "name": "International Judo Federation",
+      "ioc": "IJF"
+    },
+    {
+      "id_country": "190",
+      "name": "Iraq",
+      "ioc": "IRQ"
+    },
+    {
+      "id_country": "41",
+      "name": "Ireland",
+      "ioc": "IRL"
+    },
+    {
+      "id_country": "59",
+      "name": "Islamic Republic of Iran",
+      "ioc": "IRI"
+    },
+    {
+      "id_country": "24",
+      "name": "Israel",
+      "ioc": "ISR"
+    },
+    {
+      "id_country": "23",
+      "name": "Italy",
+      "ioc": "ITA"
+    },
+    {
+      "id_country": "239",
+      "name": "Jamaica",
+      "ioc": "JAM"
+    },
+    {
+      "id_country": "13",
+      "name": "Japan",
+      "ioc": "JPN"
+    },
+    {
+      "id_country": "172",
+      "name": "Jordan",
+      "ioc": "JOR"
+    },
+    {
+      "id_country": "300",
+      "name": "Judo Union of Asia",
+      "ioc": "JUA"
+    },
+    {
+      "id_country": "14",
+      "name": "Kazakhstan",
+      "ioc": "KAZ"
+    },
+    {
+      "id_country": "178",
+      "name": "Kenya",
+      "ioc": "KEN"
+    },
+    {
+      "id_country": "240",
+      "name": "Kiribati",
+      "ioc": "KIR"
+    },
+    {
+      "id_country": "311",
+      "name": "Korea",
+      "ioc": "COR"
+    },
+    {
+      "id_country": "163",
+      "name": "Kosovo",
+      "ioc": "KOS"
+    },
+    {
+      "id_country": "87",
+      "name": "Kuwait",
+      "ioc": "KUW"
+    },
+    {
+      "id_country": "84",
+      "name": "Kyrgyzstan",
+      "ioc": "KGZ"
+    },
+    {
+      "id_country": "89",
+      "name": "Lao People's Democratic Republic",
+      "ioc": "LAO"
+    },
+    {
+      "id_country": "42",
+      "name": "Latvia",
+      "ioc": "LAT"
+    },
+    {
+      "id_country": "244",
+      "name": "Lebanon",
+      "ioc": "LBN"
+    },
+    {
+      "id_country": "243",
+      "name": "Lesotho",
+      "ioc": "LES"
+    },
+    {
+      "id_country": "241",
+      "name": "Liberia",
+      "ioc": "LBR"
+    },
+    {
+      "id_country": "106",
+      "name": "Libya",
+      "ioc": "LBA"
+    },
+    {
+      "id_country": "31",
+      "name": "Liechtenstein",
+      "ioc": "LIE"
+    },
+    {
+      "id_country": "36",
+      "name": "Lithuania",
+      "ioc": "LTU"
+    },
+    {
+      "id_country": "137",
+      "name": "Luxembourg",
+      "ioc": "LUX"
+    },
+    {
+      "id_country": "295",
+      "name": "Macau, China",
+      "ioc": "MAC"
+    },
+    {
+      "id_country": "177",
+      "name": "Madagascar",
+      "ioc": "MAD"
+    },
+    {
+      "id_country": "245",
+      "name": "Malawi",
+      "ioc": "MAW"
+    },
+    {
+      "id_country": "175",
+      "name": "Malaysia",
+      "ioc": "MAS"
+    },
+    {
+      "id_country": "247",
+      "name": "Maldives",
+      "ioc": "MDV"
+    },
+    {
+      "id_country": "108",
+      "name": "Mali",
+      "ioc": "MLI"
+    },
+    {
+      "id_country": "138",
+      "name": "Malta",
+      "ioc": "MLT"
+    },
+    {
+      "id_country": "250",
+      "name": "Marshall Islands",
+      "ioc": "MHL"
+    },
+    {
+      "id_country": "251",
+      "name": "Mauritania",
+      "ioc": "MTN"
+    },
+    {
+      "id_country": "69",
+      "name": "Mauritius",
+      "ioc": "MRI"
+    },
+    {
+      "id_country": "93",
+      "name": "Mexico",
+      "ioc": "MEX"
+    },
+    {
+      "id_country": "222",
+      "name": "Micronesia",
+      "ioc": "FSM"
+    },
+    {
+      "id_country": "135",
+      "name": "Monaco",
+      "ioc": "MON"
+    },
+    {
+      "id_country": "61",
+      "name": "Mongolia",
+      "ioc": "MGL"
+    },
+    {
+      "id_country": "140",
+      "name": "Montenegro",
+      "ioc": "MNE"
+    },
+    {
+      "id_country": "60",
+      "name": "Morocco",
+      "ioc": "MAR"
+    },
+    {
+      "id_country": "173",
+      "name": "Mozambique",
+      "ioc": "MOZ"
+    },
+    {
+      "id_country": "90",
+      "name": "Myanmar",
+      "ioc": "MYA"
+    },
+    {
+      "id_country": "252",
+      "name": "Namibia",
+      "ioc": "NAM"
+    },
+    {
+      "id_country": "188",
+      "name": "Nauru",
+      "ioc": "NRU"
+    },
+    {
+      "id_country": "183",
+      "name": "Nepal",
+      "ioc": "NEP"
+    },
+    {
+      "id_country": "28",
+      "name": "Netherlands",
+      "ioc": "NED"
+    },
+    {
+      "id_country": "164",
+      "name": "Netherlands Antilles",
+      "ioc": "AHO"
+    },
+    {
+      "id_country": "297",
+      "name": "New Caledonia",
+      "ioc": "NCL"
+    },
+    {
+      "id_country": "63",
+      "name": "New Zealand",
+      "ioc": "NZL"
+    },
+    {
+      "id_country": "253",
+      "name": "Nicaragua",
+      "ioc": "NCA"
+    },
+    {
+      "id_country": "120",
+      "name": "Niger",
+      "ioc": "NIG"
+    },
+    {
+      "id_country": "171",
+      "name": "Nigeria",
+      "ioc": "NGR"
+    },
+    {
+      "id_country": "306",
+      "name": "Niue",
+      "ioc": "NIU"
+    },
+    {
+      "id_country": "305",
+      "name": "Norfolk Island",
+      "ioc": "NFI"
+    },
+    {
+      "id_country": "12",
+      "name": "North Macedonia",
+      "ioc": "MKD"
+    },
+    {
+      "id_country": "316",
+      "name": "North Yemen",
+      "ioc": "YAR"
+    },
+    {
+      "id_country": "307",
+      "name": "Northern Mariana Islands",
+      "ioc": "MNP"
+    },
+    {
+      "id_country": "71",
+      "name": "Norway",
+      "ioc": "NOR"
+    },
+    {
+      "id_country": "302",
+      "name": "Oceania Judo Union",
+      "ioc": "OJU"
+    },
+    {
+      "id_country": "259",
+      "name": "Oman",
+      "ioc": "OMA"
+    },
+    {
+      "id_country": "181",
+      "name": "Pakistan",
+      "ioc": "PAK"
+    },
+    {
+      "id_country": "263",
+      "name": "Palau",
+      "ioc": "PLW"
+    },
+    {
+      "id_country": "262",
+      "name": "Palestine",
+      "ioc": "PLE"
+    },
+    {
+      "id_country": "260",
+      "name": "Panama",
+      "ioc": "PAN"
+    },
+    {
+      "id_country": "303",
+      "name": "Panamerican Judo Confederation",
+      "ioc": "PJC"
+    },
+    {
+      "id_country": "168",
+      "name": "Papua New Guinea",
+      "ioc": "PNG"
+    },
+    {
+      "id_country": "158",
+      "name": "Paraguay",
+      "ioc": "PAR"
+    },
+    {
+      "id_country": "46",
+      "name": "People's Republic of China",
+      "ioc": "CHN"
+    },
+    {
+      "id_country": "113",
+      "name": "Peru",
+      "ioc": "PER"
+    },
+    {
+      "id_country": "86",
+      "name": "Philippines",
+      "ioc": "PHI"
+    },
+    {
+      "id_country": "25",
+      "name": "Poland",
+      "ioc": "POL"
+    },
+    {
+      "id_country": "21",
+      "name": "Portugal",
+      "ioc": "POR"
+    },
+    {
+      "id_country": "111",
+      "name": "Puerto Rico",
+      "ioc": "PUR"
+    },
+    {
+      "id_country": "129",
+      "name": "Qatar",
+      "ioc": "QAT"
+    },
+    {
+      "id_country": "308",
+      "name": "Refugee Olympic Team",
+      "ioc": "ROT"
+    },
+    {
+      "id_country": "328",
+      "name": "Refugee Olympic Team",
+      "ioc": "EOR"
+    },
+    {
+      "id_country": "320",
+      "name": "Republic of China",
+      "ioc": "_RC"
+    },
+    {
+      "id_country": "15",
+      "name": "Republic of Korea",
+      "ioc": "KOR"
+    },
+    {
+      "id_country": "43",
+      "name": "Republic of Moldova",
+      "ioc": "MDA"
+    },
+    {
+      "id_country": "325",
+      "name": "Reunion",
+      "ioc": "REU"
+    },
+    {
+      "id_country": "329",
+      "name": "ROC",
+      "ioc": "ROC"
+    },
+    {
+      "id_country": "266",
+      "name": "Romania",
+      "ioc": "ROU"
+    },
+    {
+      "id_country": "7",
+      "name": "Russian Federation",
+      "ioc": "RUS"
+    },
+    {
+      "id_country": "327",
+      "name": "Russian Judo Federation",
+      "ioc": "RJF"
+    },
+    {
+      "id_country": "330",
+      "name": "Russian Paralympic Committe",
+      "ioc": "RPC"
+    },
+    {
+      "id_country": "267",
+      "name": "Rwanda",
+      "ioc": "RWA"
+    },
+    {
+      "id_country": "271",
+      "name": "Saint Kitts And Nevis",
+      "ioc": "SKN"
+    },
+    {
+      "id_country": "242",
+      "name": "Saint Lucia",
+      "ioc": "LCA"
+    },
+    {
+      "id_country": "289",
+      "name": "Saint Vincent And The Grenadines",
+      "ioc": "VIN"
+    },
+    {
+      "id_country": "167",
+      "name": "Samoa",
+      "ioc": "SAM"
+    },
+    {
+      "id_country": "160",
+      "name": "San Marino",
+      "ioc": "SMR"
+    },
+    {
+      "id_country": "331",
+      "name": "Sao Tome and Principe",
+      "ioc": "STP"
+    },
+    {
+      "id_country": "182",
+      "name": "Saudi Arabia",
+      "ioc": "KSA"
+    },
+    {
+      "id_country": "78",
+      "name": "Senegal",
+      "ioc": "SEN"
+    },
+    {
+      "id_country": "275",
+      "name": "Serbia",
+      "ioc": "SRB"
+    },
+    {
+      "id_country": "312",
+      "name": "Serbia and Montenegro",
+      "ioc": "SCG"
+    },
+    {
+      "id_country": "101",
+      "name": "Seychelles",
+      "ioc": "SEY"
+    },
+    {
+      "id_country": "272",
+      "name": "Sierra Leone",
+      "ioc": "SLE"
+    },
+    {
+      "id_country": "191",
+      "name": "Singapore",
+      "ioc": "SGP"
+    },
+    {
+      "id_country": "310",
+      "name": "Sint Maarten",
+      "ioc": "SXM"
+    },
+    {
+      "id_country": "45",
+      "name": "Slovakia",
+      "ioc": "SVK"
+    },
+    {
+      "id_country": "1",
+      "name": "Slovenia",
+      "ioc": "SLO"
+    },
+    {
+      "id_country": "189",
+      "name": "Solomon Islands",
+      "ioc": "SOL"
+    },
+    {
+      "id_country": "273",
+      "name": "Somalia",
+      "ioc": "SOM"
+    },
+    {
+      "id_country": "82",
+      "name": "South Africa",
+      "ioc": "RSA"
+    },
+    {
+      "id_country": "309",
+      "name": "South Sudan",
+      "ioc": "SSD"
+    },
+    {
+      "id_country": "317",
+      "name": "Soviet Union",
+      "ioc": "URS"
+    },
+    {
+      "id_country": "20",
+      "name": "Spain",
+      "ioc": "ESP"
+    },
+    {
+      "id_country": "276",
+      "name": "Sri Lanka",
+      "ioc": "SRI"
+    },
+    {
+      "id_country": "278",
+      "name": "Sudan",
+      "ioc": "SUD"
+    },
+    {
+      "id_country": "279",
+      "name": "Suriname",
+      "ioc": "SUR"
+    },
+    {
+      "id_country": "35",
+      "name": "Sweden",
+      "ioc": "SWE"
+    },
+    {
+      "id_country": "34",
+      "name": "Switzerland",
+      "ioc": "SUI"
+    },
+    {
+      "id_country": "133",
+      "name": "Syrian Arab Republic",
+      "ioc": "SYR"
+    },
+    {
+      "id_country": "88",
+      "name": "Tajikistan",
+      "ioc": "TJK"
+    },
+    {
+      "id_country": "174",
+      "name": "Thailand",
+      "ioc": "THA"
+    },
+    {
+      "id_country": "283",
+      "name": "Timor-Leste",
+      "ioc": "TLS"
+    },
+    {
+      "id_country": "187",
+      "name": "Togo",
+      "ioc": "TOG"
+    },
+    {
+      "id_country": "333",
+      "name": "Tokelau",
+      "ioc": "TKL"
+    },
+    {
+      "id_country": "281",
+      "name": "Tonga",
+      "ioc": "TGA"
+    },
+    {
+      "id_country": "284",
+      "name": "Trinidad And Tobago",
+      "ioc": "TTO"
+    },
+    {
+      "id_country": "18",
+      "name": "Tunisia",
+      "ioc": "TUN"
+    },
+    {
+      "id_country": "10",
+      "name": "Türkiye",
+      "ioc": "TUR"
+    },
+    {
+      "id_country": "62",
+      "name": "Turkmenistan",
+      "ioc": "TKM"
+    },
+    {
+      "id_country": "285",
+      "name": "Tuvalu",
+      "ioc": "TUV"
+    },
+    {
+      "id_country": "286",
+      "name": "Uganda",
+      "ioc": "UGA"
+    },
+    {
+      "id_country": "9",
+      "name": "Ukraine",
+      "ioc": "UKR"
+    },
+    {
+      "id_country": "322",
+      "name": "Unified Team",
+      "ioc": "EUN"
+    },
+    {
+      "id_country": "155",
+      "name": "United Arab Emirates",
+      "ioc": "UAE"
+    },
+    {
+      "id_country": "152",
+      "name": "United Republic of Tanzania",
+      "ioc": "TAN"
+    },
+    {
+      "id_country": "57",
+      "name": "United States of America",
+      "ioc": "USA"
+    },
+    {
+      "id_country": "114",
+      "name": "Uruguay",
+      "ioc": "URU"
+    },
+    {
+      "id_country": "17",
+      "name": "Uzbekistan",
+      "ioc": "UZB"
+    },
+    {
+      "id_country": "287",
+      "name": "Vanuatu",
+      "ioc": "VAN"
+    },
+    {
+      "id_country": "109",
+      "name": "Venezuela",
+      "ioc": "VEN"
+    },
+    {
+      "id_country": "100",
+      "name": "Vietnam",
+      "ioc": "VIE"
+    },
+    {
+      "id_country": "237",
+      "name": "Virgin Islands, British",
+      "ioc": "IVB"
+    },
+    {
+      "id_country": "236",
+      "name": "Virgin Islands, US",
+      "ioc": "ISV"
+    },
+    {
+      "id_country": "319",
+      "name": "West Germany",
+      "ioc": "FRG"
+    },
+    {
+      "id_country": "162",
+      "name": "Yemen",
+      "ioc": "YEM"
+    },
+    {
+      "id_country": "313",
+      "name": "Yugoslavia",
+      "ioc": "YUG"
+    },
+    {
+      "id_country": "314",
+      "name": "Zaire",
+      "ioc": "ZAI"
+    },
+    {
+      "id_country": "291",
+      "name": "Zambia",
+      "ioc": "ZAM"
+    },
+    {
+      "id_country": "154",
+      "name": "Zimbabwe",
+      "ioc": "ZIM"
+    }
+  ],
+  "expected": [
+    {
+      "name": "Afghanistan",
+      "id_country": "194",
+      "ioc": "AFG"
+    },
+    {
+      "name": "African Judo Union",
+      "id_country": "299",
+      "ioc": "AJU"
+    },
+    {
+      "name": "Albania",
+      "id_country": "136",
+      "ioc": "ALB"
+    },
+    {
+      "name": "Algeria",
+      "id_country": "50",
+      "ioc": "ALG"
+    },
+    {
+      "name": "American Samoa",
+      "id_country": "197",
+      "ioc": "ASA"
+    },
+    {
+      "name": "Andorra",
+      "id_country": "156",
+      "ioc": "AND"
+    },
+    {
+      "name": "Angola",
+      "id_country": "79",
+      "ioc": "ANG"
+    },
+    {
+      "name": "Antigua And Barbuda",
+      "id_country": "196",
+      "ioc": "ANT"
+    },
+    {
+      "name": "Argentina",
+      "id_country": "77",
+      "ioc": "ARG"
+    },
+    {
+      "name": "Armenia",
+      "id_country": "5",
+      "ioc": "ARM"
+    },
+    {
+      "name": "Aruba (SUSPENDED)",
+      "id_country": "117",
+      "ioc": "ARU"
+    },
+    {
+      "name": "Australia",
+      "id_country": "56",
+      "ioc": "AUS"
+    },
+    {
+      "name": "Austria",
+      "id_country": "2",
+      "ioc": "AUT"
+    },
+    {
+      "name": "Azerbaijan",
+      "id_country": "8",
+      "ioc": "AZE"
+    },
+    {
+      "name": "Bahamas",
+      "id_country": "166",
+      "ioc": "BAH"
+    },
+    {
+      "name": "Bahrain",
+      "id_country": "205",
+      "ioc": "BRN"
+    },
+    {
+      "name": "Bangladesh",
+      "id_country": "199",
+      "ioc": "BAN"
+    },
+    {
+      "name": "Barbados",
+      "id_country": "165",
+      "ioc": "BAR"
+    },
+    {
+      "name": "Belarus",
+      "id_country": "16",
+      "ioc": "BLR"
+    },
+    {
+      "name": "Belgium",
+      "id_country": "3",
+      "ioc": "BEL"
+    },
+    {
+      "name": "Belize",
+      "id_country": "203",
+      "ioc": "BIZ"
+    },
+    {
+      "name": "Benin",
+      "id_country": "200",
+      "ioc": "BEN"
+    },
+    {
+      "name": "Bermuda",
+      "id_country": "201",
+      "ioc": "BER"
+    },
+    {
+      "name": "Bhutan",
+      "id_country": "202",
+      "ioc": "BHU"
+    },
+    {
+      "name": "Bolivia",
+      "id_country": "204",
+      "ioc": "BOL"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "id_country": "47",
+      "ioc": "BIH"
+    },
+    {
+      "name": "Botswana",
+      "id_country": "161",
+      "ioc": "BOT"
+    },
+    {
+      "name": "Brazil",
+      "id_country": "49",
+      "ioc": "BRA"
+    },
+    {
+      "name": "Brunei Darussalam",
+      "id_country": "206",
+      "ioc": "BRU"
+    },
+    {
+      "name": "Bulgaria",
+      "id_country": "29",
+      "ioc": "BUL"
+    },
+    {
+      "name": "Burkina Faso",
+      "id_country": "102",
+      "ioc": "BUR"
+    },
+    {
+      "name": "Burundi",
+      "id_country": "180",
+      "ioc": "BDI"
+    },
+    {
+      "name": "Cambodia",
+      "id_country": "208",
+      "ioc": "CAM"
+    },
+    {
+      "name": "Cameroon",
+      "id_country": "70",
+      "ioc": "CMR"
+    },
+    {
+      "name": "Canada",
+      "id_country": "51",
+      "ioc": "CAN"
+    },
+    {
+      "name": "Cape Verde",
+      "id_country": "214",
+      "ioc": "CPV"
+    },
+    {
+      "name": "Cayman Islands",
+      "id_country": "209",
+      "ioc": "CAY"
+    },
+    {
+      "name": "Central African Republic",
+      "id_country": "207",
+      "ioc": "CAF"
+    },
+    {
+      "name": "Chad",
+      "id_country": "211",
+      "ioc": "CHA"
+    },
+    {
+      "name": "Chile",
+      "id_country": "96",
+      "ioc": "CHI"
+    },
+    {
+      "name": "Chinese Taipei",
+      "id_country": "74",
+      "ioc": "TPE"
+    },
+    {
+      "name": "Colombia",
+      "id_country": "97",
+      "ioc": "COL"
+    },
+    {
+      "name": "Comoros",
+      "id_country": "213",
+      "ioc": "COM"
+    },
+    {
+      "name": "Congo",
+      "id_country": "210",
+      "ioc": "CGO"
+    },
+    {
+      "name": "Cook Islands",
+      "id_country": "212",
+      "ioc": "COK"
+    },
+    {
+      "name": "Costa Rica",
+      "id_country": "116",
+      "ioc": "CRC"
+    },
+    {
+      "name": "Côte d'Ivoire",
+      "id_country": "98",
+      "ioc": "CIV"
+    },
+    {
+      "name": "Croatia",
+      "id_country": "44",
+      "ioc": "CRO"
+    },
+    {
+      "name": "Cuba",
+      "id_country": "48",
+      "ioc": "CUB"
+    },
+    {
+      "name": "Curacao",
+      "id_country": "304",
+      "ioc": "CUW"
+    },
+    {
+      "name": "Cyprus",
+      "id_country": "30",
+      "ioc": "CYP"
+    },
+    {
+      "name": "Czechia",
+      "id_country": "32",
+      "ioc": "CZE"
+    },
+    {
+      "name": "Czechoslovakia",
+      "id_country": "315",
+      "ioc": "TCH"
+    },
+    {
+      "name": "Democratic People's Republic of Korea",
+      "id_country": "75",
+      "ioc": "PRK"
+    },
+    {
+      "name": "Democratic Republic of the Congo",
+      "id_country": "153",
+      "ioc": "COD"
+    },
+    {
+      "name": "Denmark",
+      "id_country": "38",
+      "ioc": "DEN"
+    },
+    {
+      "name": "Djibouti",
+      "id_country": "215",
+      "ioc": "DJI"
+    },
+    {
+      "name": "Dominica",
+      "id_country": "216",
+      "ioc": "DMA"
+    },
+    {
+      "name": "Dominican Republic",
+      "id_country": "95",
+      "ioc": "DOM"
+    },
+    {
+      "name": "East Germany",
+      "id_country": "318",
+      "ioc": "GDR"
+    },
+    {
+      "name": "Ecuador",
+      "id_country": "92",
+      "ioc": "ECU"
+    },
+    {
+      "name": "Egypt",
+      "id_country": "53",
+      "ioc": "EGY"
+    },
+    {
+      "name": "El Salvador",
+      "id_country": "112",
+      "ioc": "ESA"
+    },
+    {
+      "name": "Equatorial Guinea",
+      "id_country": "185",
+      "ioc": "GEQ"
+    },
+    {
+      "name": "Eritrea",
+      "id_country": "217",
+      "ioc": "ERI"
+    },
+    {
+      "name": "Estonia",
+      "id_country": "39",
+      "ioc": "EST"
+    },
+    {
+      "name": "Eswatini",
+      "id_country": "280",
+      "ioc": "SWZ"
+    },
+    {
+      "name": "Ethiopia",
+      "id_country": "218",
+      "ioc": "ETH"
+    },
+    {
+      "name": "European Judo Union",
+      "id_country": "301",
+      "ioc": "EJU"
+    },
+    {
+      "name": "Faroe Islands",
+      "id_country": "298",
+      "ioc": "FRO"
+    },
+    {
+      "name": "Fiji",
+      "id_country": "65",
+      "ioc": "FIJ"
+    },
+    {
+      "name": "Finland",
+      "id_country": "33",
+      "ioc": "FIN"
+    },
+    {
+      "name": "France",
+      "id_country": "4",
+      "ioc": "FRA"
+    },
+    {
+      "name": "French Polynesia",
+      "id_country": "264",
+      "ioc": "PYF"
+    },
+    {
+      "name": "Gabon",
+      "id_country": "292",
+      "ioc": "GAB"
+    },
+    {
+      "name": "Gambia",
+      "id_country": "224",
+      "ioc": "GAM"
+    },
+    {
+      "name": "Georgia",
+      "id_country": "6",
+      "ioc": "GEO"
+    },
+    {
+      "name": "Germany",
+      "id_country": "193",
+      "ioc": "GER"
+    },
+    {
+      "name": "Ghana",
+      "id_country": "151",
+      "ioc": "GHA"
+    },
+    {
+      "name": "Great Britain",
+      "id_country": "26",
+      "ioc": "GBR"
+    },
+    {
+      "name": "Greece",
+      "id_country": "11",
+      "ioc": "GRE"
+    },
+    {
+      "name": "Grenada",
+      "id_country": "229",
+      "ioc": "GRN"
+    },
+    {
+      "name": "Guadeloupe ",
+      "id_country": "324",
+      "ioc": "GLP"
+    },
+    {
+      "name": "Guam",
+      "id_country": "142",
+      "ioc": "GUM"
+    },
+    {
+      "name": "Guatemala",
+      "id_country": "110",
+      "ioc": "GUA"
+    },
+    {
+      "name": "Guinea",
+      "id_country": "231",
+      "ioc": "GUI"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "id_country": "225",
+      "ioc": "GBS"
+    },
+    {
+      "name": "Guyana",
+      "id_country": "293",
+      "ioc": "GUY"
+    },
+    {
+      "name": "Haiti",
+      "id_country": "233",
+      "ioc": "HAI"
+    },
+    {
+      "name": "Honduras",
+      "id_country": "235",
+      "ioc": "HON"
+    },
+    {
+      "name": "Hong Kong, China",
+      "id_country": "131",
+      "ioc": "HKG"
+    },
+    {
+      "name": "Hungary",
+      "id_country": "27",
+      "ioc": "HUN"
+    },
+    {
+      "name": "Iceland",
+      "id_country": "40",
+      "ioc": "ISL"
+    },
+    {
+      "name": "IF1",
+      "id_country": "336",
+      "ioc": "IF1"
+    },
+    {
+      "name": "IF2",
+      "id_country": "337",
+      "ioc": "IF2"
+    },
+    {
+      "name": "IF3",
+      "id_country": "338",
+      "ioc": "IF3"
+    },
+    {
+      "name": "IJF",
+      "id_country": "296",
+      "ioc": "IJF"
+    },
+    {
+      "name": "IJF Refugee Team",
+      "id_country": "323",
+      "ioc": "IRT"
+    },
+    {
+      "name": "Independent Athletes Team",
+      "id_country": "334",
+      "ioc": "EAI"
+    },
+    {
+      "name": "Independent European Athletes",
+      "id_country": "326",
+      "ioc": "IEA"
+    },
+    {
+      "name": "Independent Olympic Participants",
+      "id_country": "321",
+      "ioc": "IOP"
+    },
+    {
+      "name": "India",
+      "id_country": "85",
+      "ioc": "IND"
+    },
+    {
+      "name": "Individual Neutral Athletes",
+      "id_country": "332",
+      "ioc": "AIN"
+    },
+    {
+      "name": "Indonesia",
+      "id_country": "192",
+      "ioc": "INA"
+    },
+    {
+      "name": "International Judo Federation",
+      "id_country": "335",
+      "ioc": "IJF"
+    },
+    {
+      "name": "Iraq",
+      "id_country": "190",
+      "ioc": "IRQ"
+    },
+    {
+      "name": "Ireland",
+      "id_country": "41",
+      "ioc": "IRL"
+    },
+    {
+      "name": "Islamic Republic of Iran",
+      "id_country": "59",
+      "ioc": "IRI"
+    },
+    {
+      "name": "Israel",
+      "id_country": "24",
+      "ioc": "ISR"
+    },
+    {
+      "name": "Italy",
+      "id_country": "23",
+      "ioc": "ITA"
+    },
+    {
+      "name": "Jamaica",
+      "id_country": "239",
+      "ioc": "JAM"
+    },
+    {
+      "name": "Japan",
+      "id_country": "13",
+      "ioc": "JPN"
+    },
+    {
+      "name": "Jordan",
+      "id_country": "172",
+      "ioc": "JOR"
+    },
+    {
+      "name": "Judo Union of Asia",
+      "id_country": "300",
+      "ioc": "JUA"
+    },
+    {
+      "name": "Kazakhstan",
+      "id_country": "14",
+      "ioc": "KAZ"
+    },
+    {
+      "name": "Kenya",
+      "id_country": "178",
+      "ioc": "KEN"
+    },
+    {
+      "name": "Kiribati",
+      "id_country": "240",
+      "ioc": "KIR"
+    },
+    {
+      "name": "Korea",
+      "id_country": "311",
+      "ioc": "COR"
+    },
+    {
+      "name": "Kosovo",
+      "id_country": "163",
+      "ioc": "KOS"
+    },
+    {
+      "name": "Kuwait",
+      "id_country": "87",
+      "ioc": "KUW"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "id_country": "84",
+      "ioc": "KGZ"
+    },
+    {
+      "name": "Lao People's Democratic Republic",
+      "id_country": "89",
+      "ioc": "LAO"
+    },
+    {
+      "name": "Latvia",
+      "id_country": "42",
+      "ioc": "LAT"
+    },
+    {
+      "name": "Lebanon",
+      "id_country": "244",
+      "ioc": "LBN"
+    },
+    {
+      "name": "Lesotho",
+      "id_country": "243",
+      "ioc": "LES"
+    },
+    {
+      "name": "Liberia",
+      "id_country": "241",
+      "ioc": "LBR"
+    },
+    {
+      "name": "Libya",
+      "id_country": "106",
+      "ioc": "LBA"
+    },
+    {
+      "name": "Liechtenstein",
+      "id_country": "31",
+      "ioc": "LIE"
+    },
+    {
+      "name": "Lithuania",
+      "id_country": "36",
+      "ioc": "LTU"
+    },
+    {
+      "name": "Luxembourg",
+      "id_country": "137",
+      "ioc": "LUX"
+    },
+    {
+      "name": "Macau, China",
+      "id_country": "295",
+      "ioc": "MAC"
+    },
+    {
+      "name": "Madagascar",
+      "id_country": "177",
+      "ioc": "MAD"
+    },
+    {
+      "name": "Malawi",
+      "id_country": "245",
+      "ioc": "MAW"
+    },
+    {
+      "name": "Malaysia",
+      "id_country": "175",
+      "ioc": "MAS"
+    },
+    {
+      "name": "Maldives",
+      "id_country": "247",
+      "ioc": "MDV"
+    },
+    {
+      "name": "Mali",
+      "id_country": "108",
+      "ioc": "MLI"
+    },
+    {
+      "name": "Malta",
+      "id_country": "138",
+      "ioc": "MLT"
+    },
+    {
+      "name": "Marshall Islands",
+      "id_country": "250",
+      "ioc": "MHL"
+    },
+    {
+      "name": "Mauritania",
+      "id_country": "251",
+      "ioc": "MTN"
+    },
+    {
+      "name": "Mauritius",
+      "id_country": "69",
+      "ioc": "MRI"
+    },
+    {
+      "name": "Mexico",
+      "id_country": "93",
+      "ioc": "MEX"
+    },
+    {
+      "name": "Micronesia",
+      "id_country": "222",
+      "ioc": "FSM"
+    },
+    {
+      "name": "Monaco",
+      "id_country": "135",
+      "ioc": "MON"
+    },
+    {
+      "name": "Mongolia",
+      "id_country": "61",
+      "ioc": "MGL"
+    },
+    {
+      "name": "Montenegro",
+      "id_country": "140",
+      "ioc": "MNE"
+    },
+    {
+      "name": "Morocco",
+      "id_country": "60",
+      "ioc": "MAR"
+    },
+    {
+      "name": "Mozambique",
+      "id_country": "173",
+      "ioc": "MOZ"
+    },
+    {
+      "name": "Myanmar",
+      "id_country": "90",
+      "ioc": "MYA"
+    },
+    {
+      "name": "Namibia",
+      "id_country": "252",
+      "ioc": "NAM"
+    },
+    {
+      "name": "Nauru",
+      "id_country": "188",
+      "ioc": "NRU"
+    },
+    {
+      "name": "Nepal",
+      "id_country": "183",
+      "ioc": "NEP"
+    },
+    {
+      "name": "Netherlands",
+      "id_country": "28",
+      "ioc": "NED"
+    },
+    {
+      "name": "Netherlands Antilles",
+      "id_country": "164",
+      "ioc": "AHO"
+    },
+    {
+      "name": "New Caledonia",
+      "id_country": "297",
+      "ioc": "NCL"
+    },
+    {
+      "name": "New Zealand",
+      "id_country": "63",
+      "ioc": "NZL"
+    },
+    {
+      "name": "Nicaragua",
+      "id_country": "253",
+      "ioc": "NCA"
+    },
+    {
+      "name": "Niger",
+      "id_country": "120",
+      "ioc": "NIG"
+    },
+    {
+      "name": "Nigeria",
+      "id_country": "171",
+      "ioc": "NGR"
+    },
+    {
+      "name": "Niue",
+      "id_country": "306",
+      "ioc": "NIU"
+    },
+    {
+      "name": "Norfolk Island",
+      "id_country": "305",
+      "ioc": "NFI"
+    },
+    {
+      "name": "North Macedonia",
+      "id_country": "12",
+      "ioc": "MKD"
+    },
+    {
+      "name": "North Yemen",
+      "id_country": "316",
+      "ioc": "YAR"
+    },
+    {
+      "name": "Northern Mariana Islands",
+      "id_country": "307",
+      "ioc": "MNP"
+    },
+    {
+      "name": "Norway",
+      "id_country": "71",
+      "ioc": "NOR"
+    },
+    {
+      "name": "Oceania Judo Union",
+      "id_country": "302",
+      "ioc": "OJU"
+    },
+    {
+      "name": "Oman",
+      "id_country": "259",
+      "ioc": "OMA"
+    },
+    {
+      "name": "Pakistan",
+      "id_country": "181",
+      "ioc": "PAK"
+    },
+    {
+      "name": "Palau",
+      "id_country": "263",
+      "ioc": "PLW"
+    },
+    {
+      "name": "Palestine",
+      "id_country": "262",
+      "ioc": "PLE"
+    },
+    {
+      "name": "Panama",
+      "id_country": "260",
+      "ioc": "PAN"
+    },
+    {
+      "name": "Panamerican Judo Confederation",
+      "id_country": "303",
+      "ioc": "PJC"
+    },
+    {
+      "name": "Papua New Guinea",
+      "id_country": "168",
+      "ioc": "PNG"
+    },
+    {
+      "name": "Paraguay",
+      "id_country": "158",
+      "ioc": "PAR"
+    },
+    {
+      "name": "People's Republic of China",
+      "id_country": "46",
+      "ioc": "CHN"
+    },
+    {
+      "name": "Peru",
+      "id_country": "113",
+      "ioc": "PER"
+    },
+    {
+      "name": "Philippines",
+      "id_country": "86",
+      "ioc": "PHI"
+    },
+    {
+      "name": "Poland",
+      "id_country": "25",
+      "ioc": "POL"
+    },
+    {
+      "name": "Portugal",
+      "id_country": "21",
+      "ioc": "POR"
+    },
+    {
+      "name": "Puerto Rico",
+      "id_country": "111",
+      "ioc": "PUR"
+    },
+    {
+      "name": "Qatar",
+      "id_country": "129",
+      "ioc": "QAT"
+    },
+    {
+      "name": "Refugee Olympic Team",
+      "id_country": "308",
+      "ioc": "ROT"
+    },
+    {
+      "name": "Refugee Olympic Team",
+      "id_country": "328",
+      "ioc": "EOR"
+    },
+    {
+      "name": "Republic of China",
+      "id_country": "320",
+      "ioc": "_RC"
+    },
+    {
+      "name": "Republic of Korea",
+      "id_country": "15",
+      "ioc": "KOR"
+    },
+    {
+      "name": "Republic of Moldova",
+      "id_country": "43",
+      "ioc": "MDA"
+    },
+    {
+      "name": "Reunion",
+      "id_country": "325",
+      "ioc": "REU"
+    },
+    {
+      "name": "ROC",
+      "id_country": "329",
+      "ioc": "ROC"
+    },
+    {
+      "name": "Romania",
+      "id_country": "266",
+      "ioc": "ROU"
+    },
+    {
+      "name": "Russian Federation",
+      "id_country": "7",
+      "ioc": "RUS"
+    },
+    {
+      "name": "Russian Judo Federation",
+      "id_country": "327",
+      "ioc": "RJF"
+    },
+    {
+      "name": "Russian Paralympic Committe",
+      "id_country": "330",
+      "ioc": "RPC"
+    },
+    {
+      "name": "Rwanda",
+      "id_country": "267",
+      "ioc": "RWA"
+    },
+    {
+      "name": "Saint Kitts And Nevis",
+      "id_country": "271",
+      "ioc": "SKN"
+    },
+    {
+      "name": "Saint Lucia",
+      "id_country": "242",
+      "ioc": "LCA"
+    },
+    {
+      "name": "Saint Vincent And The Grenadines",
+      "id_country": "289",
+      "ioc": "VIN"
+    },
+    {
+      "name": "Samoa",
+      "id_country": "167",
+      "ioc": "SAM"
+    },
+    {
+      "name": "San Marino",
+      "id_country": "160",
+      "ioc": "SMR"
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "id_country": "331",
+      "ioc": "STP"
+    },
+    {
+      "name": "Saudi Arabia",
+      "id_country": "182",
+      "ioc": "KSA"
+    },
+    {
+      "name": "Senegal",
+      "id_country": "78",
+      "ioc": "SEN"
+    },
+    {
+      "name": "Serbia",
+      "id_country": "275",
+      "ioc": "SRB"
+    },
+    {
+      "name": "Serbia and Montenegro",
+      "id_country": "312",
+      "ioc": "SCG"
+    },
+    {
+      "name": "Seychelles",
+      "id_country": "101",
+      "ioc": "SEY"
+    },
+    {
+      "name": "Sierra Leone",
+      "id_country": "272",
+      "ioc": "SLE"
+    },
+    {
+      "name": "Singapore",
+      "id_country": "191",
+      "ioc": "SGP"
+    },
+    {
+      "name": "Sint Maarten",
+      "id_country": "310",
+      "ioc": "SXM"
+    },
+    {
+      "name": "Slovakia",
+      "id_country": "45",
+      "ioc": "SVK"
+    },
+    {
+      "name": "Slovenia",
+      "id_country": "1",
+      "ioc": "SLO"
+    },
+    {
+      "name": "Solomon Islands",
+      "id_country": "189",
+      "ioc": "SOL"
+    },
+    {
+      "name": "Somalia",
+      "id_country": "273",
+      "ioc": "SOM"
+    },
+    {
+      "name": "South Africa",
+      "id_country": "82",
+      "ioc": "RSA"
+    },
+    {
+      "name": "South Sudan",
+      "id_country": "309",
+      "ioc": "SSD"
+    },
+    {
+      "name": "Soviet Union",
+      "id_country": "317",
+      "ioc": "URS"
+    },
+    {
+      "name": "Spain",
+      "id_country": "20",
+      "ioc": "ESP"
+    },
+    {
+      "name": "Sri Lanka",
+      "id_country": "276",
+      "ioc": "SRI"
+    },
+    {
+      "name": "Sudan",
+      "id_country": "278",
+      "ioc": "SUD"
+    },
+    {
+      "name": "Suriname",
+      "id_country": "279",
+      "ioc": "SUR"
+    },
+    {
+      "name": "Sweden",
+      "id_country": "35",
+      "ioc": "SWE"
+    },
+    {
+      "name": "Switzerland",
+      "id_country": "34",
+      "ioc": "SUI"
+    },
+    {
+      "name": "Syrian Arab Republic",
+      "id_country": "133",
+      "ioc": "SYR"
+    },
+    {
+      "name": "Tajikistan",
+      "id_country": "88",
+      "ioc": "TJK"
+    },
+    {
+      "name": "Thailand",
+      "id_country": "174",
+      "ioc": "THA"
+    },
+    {
+      "name": "Timor-Leste",
+      "id_country": "283",
+      "ioc": "TLS"
+    },
+    {
+      "name": "Togo",
+      "id_country": "187",
+      "ioc": "TOG"
+    },
+    {
+      "name": "Tokelau",
+      "id_country": "333",
+      "ioc": "TKL"
+    },
+    {
+      "name": "Tonga",
+      "id_country": "281",
+      "ioc": "TGA"
+    },
+    {
+      "name": "Trinidad And Tobago",
+      "id_country": "284",
+      "ioc": "TTO"
+    },
+    {
+      "name": "Tunisia",
+      "id_country": "18",
+      "ioc": "TUN"
+    },
+    {
+      "name": "Türkiye",
+      "id_country": "10",
+      "ioc": "TUR"
+    },
+    {
+      "name": "Turkmenistan",
+      "id_country": "62",
+      "ioc": "TKM"
+    },
+    {
+      "name": "Tuvalu",
+      "id_country": "285",
+      "ioc": "TUV"
+    },
+    {
+      "name": "Uganda",
+      "id_country": "286",
+      "ioc": "UGA"
+    },
+    {
+      "name": "Ukraine",
+      "id_country": "9",
+      "ioc": "UKR"
+    },
+    {
+      "name": "Unified Team",
+      "id_country": "322",
+      "ioc": "EUN"
+    },
+    {
+      "name": "United Arab Emirates",
+      "id_country": "155",
+      "ioc": "UAE"
+    },
+    {
+      "name": "United Republic of Tanzania",
+      "id_country": "152",
+      "ioc": "TAN"
+    },
+    {
+      "name": "United States of America",
+      "id_country": "57",
+      "ioc": "USA"
+    },
+    {
+      "name": "Uruguay",
+      "id_country": "114",
+      "ioc": "URU"
+    },
+    {
+      "name": "Uzbekistan",
+      "id_country": "17",
+      "ioc": "UZB"
+    },
+    {
+      "name": "Vanuatu",
+      "id_country": "287",
+      "ioc": "VAN"
+    },
+    {
+      "name": "Venezuela",
+      "id_country": "109",
+      "ioc": "VEN"
+    },
+    {
+      "name": "Vietnam",
+      "id_country": "100",
+      "ioc": "VIE"
+    },
+    {
+      "name": "Virgin Islands, British",
+      "id_country": "237",
+      "ioc": "IVB"
+    },
+    {
+      "name": "Virgin Islands, US",
+      "id_country": "236",
+      "ioc": "ISV"
+    },
+    {
+      "name": "West Germany",
+      "id_country": "319",
+      "ioc": "FRG"
+    },
+    {
+      "name": "Yemen",
+      "id_country": "162",
+      "ioc": "YEM"
+    },
+    {
+      "name": "Yugoslavia",
+      "id_country": "313",
+      "ioc": "YUG"
+    },
+    {
+      "name": "Zaire",
+      "id_country": "314",
+      "ioc": "ZAI"
+    },
+    {
+      "name": "Zambia",
+      "id_country": "291",
+      "ioc": "ZAM"
+    },
+    {
+      "name": "Zimbabwe",
+      "id_country": "154",
+      "ioc": "ZIM"
+    }
+  ]
+}

@@ -1,0 +1,1607 @@
+{
+  "mock_response": {
+    "id_competition": "2653",
+    "date_from": "2024-07-27",
+    "date_to": "2024-08-02",
+    "name": "Olympic Games Paris 2024",
+    "external_id": "oly_2024",
+    "competition_code": "oly_2024",
+    "name_short": "Olympic Games 2024",
+    "id_country": "4",
+    "is_teams": "0",
+    "id_live_theme": "1",
+    "code_live_theme": "ijf_official",
+    "num_of_days": "7",
+    "city": "Paris",
+    "is_club": "0",
+    "country_short": "FRA",
+    "country": "France",
+    "updated_at_ts": "1733305817",
+    "ippon_org_pdf_link": null,
+    "timezone": "Europe\/Paris",
+    "small_numbers_rr": "ijf_rr",
+    "repasage_type": null,
+    "teams_type": null,
+    "mixed_team_contests_type": null,
+    "rank_type": "Competition",
+    "open_public_registration": "0",
+    "id_pricing_group": null,
+    "has_yuko": "0",
+    "has_koka": "0",
+    "max_wazaari": "1",
+    "max_shido": "2",
+    "max_yuko": null,
+    "max_koka": null,
+    "total_competitors_gender": {
+      "m": "192",
+      "f": "186"
+    },
+    "total_competitors": 378,
+    "continents": {
+      "1": {
+        "name": "Africa",
+        "competitors": 43,
+        "countries": {
+          "18": {
+            "name": "Tunisia",
+            "competitors": "2"
+          },
+          "50": {
+            "name": "Algeria",
+            "competitors": "3"
+          },
+          "53": {
+            "name": "Egypt",
+            "competitors": "2"
+          },
+          "60": {
+            "name": "Morocco",
+            "competitors": "3"
+          },
+          "69": {
+            "name": "Mauritius",
+            "competitors": "1"
+          },
+          "70": {
+            "name": "Cameroon",
+            "competitors": "1"
+          },
+          "78": {
+            "name": "Senegal",
+            "competitors": "1"
+          },
+          "79": {
+            "name": "Angola",
+            "competitors": "1"
+          },
+          "82": {
+            "name": "South Africa",
+            "competitors": "1"
+          },
+          "98": {
+            "name": "C\u00f4te d'Ivoire",
+            "competitors": "1"
+          },
+          "102": {
+            "name": "Burkina Faso",
+            "competitors": "1"
+          },
+          "120": {
+            "name": "Niger",
+            "competitors": "1"
+          },
+          "152": {
+            "name": "United Republic of Tanzania",
+            "competitors": "1"
+          },
+          "153": {
+            "name": "Democratic Republic of the Congo",
+            "competitors": "1"
+          },
+          "173": {
+            "name": "Mozambique",
+            "competitors": "1"
+          },
+          "177": {
+            "name": "Madagascar",
+            "competitors": "1"
+          },
+          "178": {
+            "name": "Kenya",
+            "competitors": "1"
+          },
+          "180": {
+            "name": "Burundi",
+            "competitors": "1"
+          },
+          "200": {
+            "name": "Benin",
+            "competitors": "1"
+          },
+          "207": {
+            "name": "Central African Republic",
+            "competitors": "1"
+          },
+          "211": {
+            "name": "Chad",
+            "competitors": "1"
+          },
+          "214": {
+            "name": "Cape Verde",
+            "competitors": "1"
+          },
+          "215": {
+            "name": "Djibouti",
+            "competitors": "1"
+          },
+          "224": {
+            "name": "Gambia",
+            "competitors": "1"
+          },
+          "225": {
+            "name": "Guinea-Bissau",
+            "competitors": "1"
+          },
+          "231": {
+            "name": "Guinea",
+            "competitors": "2"
+          },
+          "272": {
+            "name": "Sierra Leone",
+            "competitors": "1"
+          },
+          "291": {
+            "name": "Zambia",
+            "competitors": "1"
+          },
+          "292": {
+            "name": "Gabon",
+            "competitors": "1"
+          },
+          "328": {
+            "name": "Refugee Olympic Team",
+            "competitors": "6"
+          },
+          "331": {
+            "name": "Sao Tome and Principe",
+            "competitors": "1"
+          }
+        }
+      },
+      "2": {
+        "name": "Asia",
+        "competitors": 95,
+        "countries": {
+          "13": {
+            "name": "Japan",
+            "competitors": "14"
+          },
+          "14": {
+            "name": "Kazakhstan",
+            "competitors": "8"
+          },
+          "15": {
+            "name": "Republic of Korea",
+            "competitors": "11"
+          },
+          "17": {
+            "name": "Uzbekistan",
+            "competitors": "12"
+          },
+          "46": {
+            "name": "People's Republic of China",
+            "competitors": "6"
+          },
+          "61": {
+            "name": "Mongolia",
+            "competitors": "10"
+          },
+          "62": {
+            "name": "Turkmenistan",
+            "competitors": "2"
+          },
+          "74": {
+            "name": "Chinese Taipei",
+            "competitors": "3"
+          },
+          "75": {
+            "name": "Democratic People's Republic of Korea",
+            "competitors": "1"
+          },
+          "84": {
+            "name": "Kyrgyzstan",
+            "competitors": "2"
+          },
+          "85": {
+            "name": "India",
+            "competitors": "1"
+          },
+          "86": {
+            "name": "Philippines",
+            "competitors": "1"
+          },
+          "88": {
+            "name": "Tajikistan",
+            "competitors": "6"
+          },
+          "100": {
+            "name": "Vietnam",
+            "competitors": "1"
+          },
+          "131": {
+            "name": "Hong Kong, China",
+            "competitors": "1"
+          },
+          "133": {
+            "name": "Syrian Arab Republic",
+            "competitors": "1"
+          },
+          "155": {
+            "name": "United Arab Emirates",
+            "competitors": "6"
+          },
+          "162": {
+            "name": "Yemen",
+            "competitors": "1"
+          },
+          "174": {
+            "name": "Thailand",
+            "competitors": "1"
+          },
+          "183": {
+            "name": "Nepal",
+            "competitors": "1"
+          },
+          "190": {
+            "name": "Iraq",
+            "competitors": "1"
+          },
+          "192": {
+            "name": "Indonesia",
+            "competitors": "1"
+          },
+          "194": {
+            "name": "Afghanistan",
+            "competitors": "1"
+          },
+          "205": {
+            "name": "Bahrain",
+            "competitors": "1"
+          },
+          "244": {
+            "name": "Lebanon",
+            "competitors": "1"
+          },
+          "262": {
+            "name": "Palestine",
+            "competitors": "1"
+          }
+        }
+      },
+      "3": {
+        "name": "Europe",
+        "competitors": 180,
+        "countries": {
+          "1": {
+            "name": "Slovenia",
+            "competitors": "6"
+          },
+          "2": {
+            "name": "Austria",
+            "competitors": "6"
+          },
+          "3": {
+            "name": "Belgium",
+            "competitors": "4"
+          },
+          "4": {
+            "name": "France",
+            "competitors": "14"
+          },
+          "6": {
+            "name": "Georgia",
+            "competitors": "10"
+          },
+          "8": {
+            "name": "Azerbaijan",
+            "competitors": "9"
+          },
+          "9": {
+            "name": "Ukraine",
+            "competitors": "5"
+          },
+          "10": {
+            "name": "T\u00fcrkiye",
+            "competitors": "8"
+          },
+          "11": {
+            "name": "Greece",
+            "competitors": "2"
+          },
+          "12": {
+            "name": "North Macedonia",
+            "competitors": "1"
+          },
+          "20": {
+            "name": "Spain",
+            "competitors": "9"
+          },
+          "21": {
+            "name": "Portugal",
+            "competitors": "7"
+          },
+          "23": {
+            "name": "Italy",
+            "competitors": "13"
+          },
+          "24": {
+            "name": "Israel",
+            "competitors": "12"
+          },
+          "25": {
+            "name": "Poland",
+            "competitors": "4"
+          },
+          "26": {
+            "name": "Great Britain",
+            "competitors": "5"
+          },
+          "27": {
+            "name": "Hungary",
+            "competitors": "7"
+          },
+          "28": {
+            "name": "Netherlands",
+            "competitors": "10"
+          },
+          "29": {
+            "name": "Bulgaria",
+            "competitors": "2"
+          },
+          "30": {
+            "name": "Cyprus",
+            "competitors": "1"
+          },
+          "32": {
+            "name": "Czechia",
+            "competitors": "3"
+          },
+          "33": {
+            "name": "Finland",
+            "competitors": "2"
+          },
+          "34": {
+            "name": "Switzerland",
+            "competitors": "3"
+          },
+          "35": {
+            "name": "Sweden",
+            "competitors": "2"
+          },
+          "38": {
+            "name": "Denmark",
+            "competitors": "1"
+          },
+          "39": {
+            "name": "Estonia",
+            "competitors": "1"
+          },
+          "43": {
+            "name": "Republic of Moldova",
+            "competitors": "3"
+          },
+          "44": {
+            "name": "Croatia",
+            "competitors": "3"
+          },
+          "45": {
+            "name": "Slovakia",
+            "competitors": "1"
+          },
+          "47": {
+            "name": "Bosnia and Herzegovina",
+            "competitors": "2"
+          },
+          "135": {
+            "name": "Monaco",
+            "competitors": "1"
+          },
+          "138": {
+            "name": "Malta",
+            "competitors": "1"
+          },
+          "163": {
+            "name": "Kosovo",
+            "competitors": "5"
+          },
+          "193": {
+            "name": "Germany",
+            "competitors": "10"
+          },
+          "266": {
+            "name": "Romania",
+            "competitors": "1"
+          },
+          "275": {
+            "name": "Serbia",
+            "competitors": "6"
+          }
+        }
+      },
+      "4": {
+        "name": "Oceania",
+        "competitors": 10,
+        "countries": {
+          "56": {
+            "name": "Australia",
+            "competitors": "3"
+          },
+          "63": {
+            "name": "New Zealand",
+            "competitors": "2"
+          },
+          "65": {
+            "name": "Fiji",
+            "competitors": "1"
+          },
+          "142": {
+            "name": "Guam",
+            "competitors": "1"
+          },
+          "167": {
+            "name": "Samoa",
+            "competitors": "1"
+          },
+          "240": {
+            "name": "Kiribati",
+            "competitors": "1"
+          },
+          "287": {
+            "name": "Vanuatu",
+            "competitors": "1"
+          }
+        }
+      },
+      "5": {
+        "name": "Panamerica",
+        "competitors": 50,
+        "countries": {
+          "48": {
+            "name": "Cuba",
+            "competitors": "4"
+          },
+          "49": {
+            "name": "Brazil",
+            "competitors": "13"
+          },
+          "51": {
+            "name": "Canada",
+            "competitors": "7"
+          },
+          "57": {
+            "name": "United States of America",
+            "competitors": "4"
+          },
+          "77": {
+            "name": "Argentina",
+            "competitors": "1"
+          },
+          "92": {
+            "name": "Ecuador",
+            "competitors": "1"
+          },
+          "93": {
+            "name": "Mexico",
+            "competitors": "2"
+          },
+          "95": {
+            "name": "Dominican Republic",
+            "competitors": "2"
+          },
+          "96": {
+            "name": "Chile",
+            "competitors": "2"
+          },
+          "97": {
+            "name": "Colombia",
+            "competitors": "1"
+          },
+          "109": {
+            "name": "Venezuela",
+            "competitors": "1"
+          },
+          "110": {
+            "name": "Guatemala",
+            "competitors": "1"
+          },
+          "111": {
+            "name": "Puerto Rico",
+            "competitors": "2"
+          },
+          "112": {
+            "name": "El Salvador",
+            "competitors": "1"
+          },
+          "113": {
+            "name": "Peru",
+            "competitors": "1"
+          },
+          "114": {
+            "name": "Uruguay",
+            "competitors": "1"
+          },
+          "116": {
+            "name": "Costa Rica",
+            "competitors": "1"
+          },
+          "158": {
+            "name": "Paraguay",
+            "competitors": "1"
+          },
+          "233": {
+            "name": "Haiti",
+            "competitors": "1"
+          },
+          "239": {
+            "name": "Jamaica",
+            "competitors": "1"
+          },
+          "253": {
+            "name": "Nicaragua",
+            "competitors": "1"
+          },
+          "260": {
+            "name": "Panama",
+            "competitors": "1"
+          }
+        }
+      }
+    },
+    "total_countries": 122,
+    "total_continents": 122,
+    "fights": "420",
+    "total_award": 0,
+    "number_of_countries_medals": "26",
+    "medals": {
+      "totals": {
+        "gold": 0,
+        "silver": 0,
+        "bronze": 0,
+        "total": 0,
+        "gold_male": 0,
+        "silver_male": 0,
+        "bronze_male": 0,
+        "total_male": 0,
+        "gold_female": 0,
+        "silver_female": 0,
+        "bronze_female": 0,
+        "total_female": 0,
+        "7_th": 1,
+        "7_th_male": 1,
+        "5_th": 1,
+        "5_th_female": 1,
+        "7_th_female": 1,
+        "5_th_male": 1
+      },
+      "d": "",
+      "by_countries": {
+        "13": {
+          "name": "Japan",
+          "continent": "Asia",
+          "gold": 3,
+          "silver": 1,
+          "bronze": 3,
+          "5_th": 2,
+          "7_th": 3,
+          "total": 12,
+          "gold_male": 2,
+          "silver_male": 1,
+          "bronze_male": 2,
+          "5_th_male": 1,
+          "7_th_male": 1,
+          "total_male": 7,
+          "gold_female": 1,
+          "silver_female": 0,
+          "bronze_female": 1,
+          "5_th_female": 1,
+          "7_th_female": 2,
+          "total_female": 5,
+          "score": 301030203,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "8": {
+          "name": "Azerbaijan",
+          "continent": "Europe",
+          "gold": 2,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 0,
+          "7_th": 1,
+          "total": 3,
+          "gold_male": 2,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 1,
+          "total_male": 3,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 0,
+          "score": 200000001,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "4": {
+          "name": "France",
+          "continent": "Europe",
+          "gold": 1,
+          "silver": 2,
+          "bronze": 6,
+          "5_th": 1,
+          "7_th": 1,
+          "total": 11,
+          "gold_male": 1,
+          "silver_male": 2,
+          "bronze_male": 1,
+          "5_th_male": 1,
+          "7_th_male": 0,
+          "total_male": 5,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 5,
+          "5_th_female": 0,
+          "7_th_female": 1,
+          "total_female": 6,
+          "score": 102060101,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "6": {
+          "name": "Georgia",
+          "continent": "Europe",
+          "gold": 1,
+          "silver": 2,
+          "bronze": 0,
+          "5_th": 2,
+          "7_th": 1,
+          "total": 6,
+          "gold_male": 1,
+          "silver_male": 2,
+          "bronze_male": 0,
+          "5_th_male": 1,
+          "7_th_male": 1,
+          "total_male": 5,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 1,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 102000201,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "49": {
+          "name": "Brazil",
+          "continent": "Panamerica",
+          "gold": 1,
+          "silver": 1,
+          "bronze": 1,
+          "5_th": 2,
+          "7_th": 0,
+          "total": 5,
+          "gold_male": 0,
+          "silver_male": 1,
+          "bronze_male": 0,
+          "5_th_male": 1,
+          "7_th_male": 0,
+          "total_male": 2,
+          "gold_female": 1,
+          "silver_female": 0,
+          "bronze_female": 1,
+          "5_th_female": 1,
+          "7_th_female": 0,
+          "total_female": 3,
+          "score": 101010200,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "17": {
+          "name": "Uzbekistan",
+          "continent": "Asia",
+          "gold": 1,
+          "silver": 0,
+          "bronze": 2,
+          "5_th": 0,
+          "7_th": 1,
+          "total": 4,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 2,
+          "5_th_male": 0,
+          "7_th_male": 1,
+          "total_male": 3,
+          "gold_female": 1,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 100020001,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "14": {
+          "name": "Kazakhstan",
+          "continent": "Asia",
+          "gold": 1,
+          "silver": 0,
+          "bronze": 1,
+          "5_th": 1,
+          "7_th": 0,
+          "total": 3,
+          "gold_male": 1,
+          "silver_male": 0,
+          "bronze_male": 1,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 2,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 1,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 100010100,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "23": {
+          "name": "Italy",
+          "continent": "Europe",
+          "gold": 1,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 3,
+          "7_th": 1,
+          "total": 5,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 2,
+          "7_th_male": 0,
+          "total_male": 2,
+          "gold_female": 1,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 1,
+          "7_th_female": 1,
+          "total_female": 3,
+          "score": 100000301,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "44": {
+          "name": "Croatia",
+          "continent": "Europe",
+          "gold": 1,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 1,
+          "7_th": 0,
+          "total": 2,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 1,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 1,
+          "7_th_female": 0,
+          "total_female": 2,
+          "score": 100000100,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "51": {
+          "name": "Canada",
+          "continent": "Panamerica",
+          "gold": 1,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 0,
+          "7_th": 3,
+          "total": 4,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 2,
+          "total_male": 2,
+          "gold_female": 1,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 1,
+          "total_female": 2,
+          "score": 100000003,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "1": {
+          "name": "Slovenia",
+          "continent": "Europe",
+          "gold": 1,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 0,
+          "7_th": 0,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 1,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 100000000,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "15": {
+          "name": "Republic of Korea",
+          "continent": "Asia",
+          "gold": 0,
+          "silver": 2,
+          "bronze": 2,
+          "5_th": 0,
+          "7_th": 3,
+          "total": 7,
+          "gold_male": 0,
+          "silver_male": 1,
+          "bronze_male": 1,
+          "5_th_male": 0,
+          "7_th_male": 2,
+          "total_male": 4,
+          "gold_female": 0,
+          "silver_female": 1,
+          "bronze_female": 1,
+          "5_th_female": 0,
+          "7_th_female": 1,
+          "total_female": 3,
+          "score": 2020003,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "24": {
+          "name": "Israel",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 2,
+          "bronze": 1,
+          "5_th": 0,
+          "7_th": 1,
+          "total": 4,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 1,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 2,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 1,
+          "total_female": 3,
+          "score": 2010001,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "163": {
+          "name": "Kosovo",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 1,
+          "bronze": 1,
+          "5_th": 1,
+          "7_th": 0,
+          "total": 3,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 1,
+          "7_th_male": 0,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 1,
+          "bronze_female": 1,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 2,
+          "score": 1010100,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "193": {
+          "name": "Germany",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 1,
+          "bronze": 0,
+          "5_th": 1,
+          "7_th": 1,
+          "total": 3,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 0,
+          "silver_female": 1,
+          "bronze_female": 0,
+          "5_th_female": 1,
+          "7_th_female": 1,
+          "total_female": 3,
+          "score": 1000101,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "61": {
+          "name": "Mongolia",
+          "continent": "Asia",
+          "gold": 0,
+          "silver": 1,
+          "bronze": 0,
+          "5_th": 0,
+          "7_th": 3,
+          "total": 4,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 2,
+          "total_male": 2,
+          "gold_female": 0,
+          "silver_female": 1,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 1,
+          "total_female": 2,
+          "score": 1000003,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "93": {
+          "name": "Mexico",
+          "continent": "Panamerica",
+          "gold": 0,
+          "silver": 1,
+          "bronze": 0,
+          "5_th": 0,
+          "7_th": 0,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 0,
+          "silver_female": 1,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 1000000,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "88": {
+          "name": "Tajikistan",
+          "continent": "Asia",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 2,
+          "5_th": 0,
+          "7_th": 1,
+          "total": 3,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 2,
+          "5_th_male": 0,
+          "7_th_male": 1,
+          "total_male": 3,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 0,
+          "score": 20001,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "43": {
+          "name": "Republic of Moldova",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 2,
+          "5_th": 0,
+          "7_th": 0,
+          "total": 2,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 2,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 2,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 0,
+          "score": 20000,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "20": {
+          "name": "Spain",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 1,
+          "5_th": 4,
+          "7_th": 0,
+          "total": 5,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 1,
+          "5_th_male": 2,
+          "7_th_male": 0,
+          "total_male": 3,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 2,
+          "7_th_female": 0,
+          "total_female": 2,
+          "score": 10400,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "3": {
+          "name": "Belgium",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 1,
+          "5_th": 1,
+          "7_th": 0,
+          "total": 2,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 1,
+          "7_th_male": 0,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 1,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 10100,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "2": {
+          "name": "Austria",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 1,
+          "5_th": 1,
+          "7_th": 0,
+          "total": 2,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 1,
+          "5_th_female": 1,
+          "7_th_female": 0,
+          "total_female": 2,
+          "score": 10100,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "21": {
+          "name": "Portugal",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 1,
+          "5_th": 0,
+          "7_th": 0,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 1,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 10000,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "35": {
+          "name": "Sweden",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 1,
+          "5_th": 0,
+          "7_th": 0,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 1,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 10000,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "46": {
+          "name": "People's Republic of China",
+          "continent": "Asia",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 1,
+          "5_th": 0,
+          "7_th": 0,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 1,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 10000,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "11": {
+          "name": "Greece",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 1,
+          "5_th": 0,
+          "7_th": 0,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 1,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 0,
+          "score": 10000,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "275": {
+          "name": "Serbia",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 2,
+          "7_th": 1,
+          "total": 3,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 1,
+          "7_th_male": 0,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 1,
+          "7_th_female": 1,
+          "total_female": 2,
+          "score": 201,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "10": {
+          "name": "T\u00fcrkiye",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 2,
+          "7_th": 0,
+          "total": 2,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 1,
+          "7_th_male": 0,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 1,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 200,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "28": {
+          "name": "Netherlands",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 1,
+          "7_th": 2,
+          "total": 3,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 1,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 1,
+          "7_th_female": 1,
+          "total_female": 2,
+          "score": 102,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "48": {
+          "name": "Cuba",
+          "continent": "Panamerica",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 1,
+          "7_th": 0,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 1,
+          "7_th_male": 0,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 0,
+          "score": 100,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "34": {
+          "name": "Switzerland",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 1,
+          "7_th": 0,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 1,
+          "7_th_male": 0,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 0,
+          "score": 100,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "27": {
+          "name": "Hungary",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 1,
+          "7_th": 0,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 1,
+          "7_th_female": 0,
+          "total_female": 1,
+          "score": 100,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "47": {
+          "name": "Bosnia and Herzegovina",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 0,
+          "7_th": 1,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 1,
+          "total_female": 1,
+          "score": 1,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "158": {
+          "name": "Paraguay",
+          "continent": "Panamerica",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 0,
+          "7_th": 1,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 1,
+          "total_female": 1,
+          "score": 1,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "9": {
+          "name": "Ukraine",
+          "continent": "Europe",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 0,
+          "7_th": 1,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 0,
+          "total_male": 0,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 1,
+          "total_female": 1,
+          "score": 1,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "155": {
+          "name": "United Arab Emirates",
+          "continent": "Asia",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 0,
+          "7_th": 1,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 1,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 0,
+          "score": 1,
+          "categories": {
+            "todo": "todo"
+          }
+        },
+        "74": {
+          "name": "Chinese Taipei",
+          "continent": "Asia",
+          "gold": 0,
+          "silver": 0,
+          "bronze": 0,
+          "5_th": 0,
+          "7_th": 1,
+          "total": 1,
+          "gold_male": 0,
+          "silver_male": 0,
+          "bronze_male": 0,
+          "5_th_male": 0,
+          "7_th_male": 1,
+          "total_male": 1,
+          "gold_female": 0,
+          "silver_female": 0,
+          "bronze_female": 0,
+          "5_th_female": 0,
+          "7_th_female": 0,
+          "total_female": 0,
+          "score": 1,
+          "categories": {
+            "todo": "todo"
+          }
+        }
+      },
+      "best_countries": {
+        "id_country": [
+          13
+        ],
+        "medals": {
+          "gold": 3,
+          "silver": 1,
+          "bronze": 3
+        }
+      }
+    },
+    "fight_time": {
+      "male": {
+        "total_duration": "13:12:49",
+        "total_duration_sec": "47569",
+        "avg_duration": "00:03:47.6028",
+        "avg_duration_sec": "227.6029",
+        "shortest_fight": "00:00:10",
+        "shortest_fight_sec": "10"
+      },
+      "female": {
+        "total_duration": "11:38:25",
+        "total_duration_sec": "41905",
+        "avg_duration": "00:03:23.4223",
+        "avg_duration_sec": "203.4223",
+        "shortest_fight": "00:00:05",
+        "shortest_fight_sec": "5"
+      },
+      "total": {
+        "total_duration": "24:51:14",
+        "total_duration_sec": "89474",
+        "avg_duration": "00:03:35.6000",
+        "avg_duration_sec": "215.6000",
+        "shortest_fight": "00:00:05",
+        "shortest_fight_sec": "5"
+      }
+    }
+  },
+  "expected": {
+    "id_competition": "2653",
+    "date_from": "2024-07-27T00:00:00Z",
+    "date_to": "2024-08-02T00:00:00Z",
+    "name": "Olympic Games Paris 2024",
+    "city": "Paris",
+    "has_logo": false,
+    "competition_code": "oly_2024",
+    "updated_at_ts": "2024-12-04T09:50:17Z",
+    "timezone": "Europe/Paris",
+    "id_live_theme": 1,
+    "code_live_theme": "ijf_official",
+    "country_short": "FRA",
+    "country": "France",
+    "id_country": 4,
+    "is_teams": 0,
+    "external_id": "oly_2024"
+  }
+}

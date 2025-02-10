@@ -1,0 +1,96 @@
+{
+  "mock_response": {
+    "name": "Russian Federation",
+    "id_country": "7",
+    "country_short": "RUS",
+    "org_name": "Russian Judo Federation",
+    "org_www": "https:\/\/78884ca60822a34fb0e6-082b8fd5551e97bc65e327988b444396.ssl.cf3.rackcdn.com\/flags\/320x240\/rus.png",
+    "head_address": "Luzhnetskaya emb,8",
+    "head_city": "Moscow",
+    "contact_phone": "+7 9167957141",
+    "contact_email": "tchistotina@judo.ru",
+    "exclude_from_medals": "0",
+    "president_name": {
+      "president_name": "KUSHKOV  Sergei"
+    },
+    "male_competitiors": "1472",
+    "female_competitiors": "709",
+    "total_competitors": 2181,
+    "number_of_competitions": "627",
+    "number_of_total_competitions": "1829",
+    "number_of_total_wins": 15171,
+    "number_of_total_fights": 26419,
+    "best_male_competitor": {
+      "id_person": "360",
+      "max_points": "1020",
+      "competitor_name": "NIFONTOV  Ivan",
+      "weight": "-81"
+    },
+    "best_female_competitor": {
+      "id_person": "366",
+      "max_points": "724",
+      "competitor_name": "KUZIUTINA  Natalia",
+      "weight": "-52"
+    },
+    "total_ranking_points": "27401",
+    "ranking": {
+      "place": 2,
+      "points": "27401"
+    },
+    "ranking_male": {
+      "place": 1,
+      "points": "21319"
+    },
+    "ranking_female": {
+      "place": 9,
+      "points": "6082"
+    }
+  },
+  "expected": {
+    "name": "Russian Federation",
+    "id_country": "7",
+    "country_short": "RUS",
+    "org_name": "Russian Judo Federation",
+    "org_www": "https://78884ca60822a34fb0e6-082b8fd5551e97bc65e327988b444396.ssl.cf3.rackcdn.com/flags/320x240/rus.png",
+    "head_address": "Luzhnetskaya emb,8",
+    "head_city": "Moscow",
+    "contact_phone": "+7 9167957141",
+    "contact_email": "tchistotina@judo.ru",
+    "exclude_from_medals": "0",
+    "president_name": {
+      "president_name": "KUSHKOV  Sergei"
+    },
+    "male_competitiors": "1472",
+    "female_competitiors": "709",
+    "total_competitors": 2181,
+    "number_of_competitions": "627",
+    "number_of_total_competitions": "1829",
+    "number_of_total_wins": 15171,
+    "number_of_total_fights": 26419,
+    "best_male_competitor": {
+      "id_person": "360",
+      "max_points": "1020",
+      "competitor_name": "NIFONTOV  Ivan",
+      "weight": "-81"
+    },
+    "best_female_competitor": {
+      "id_person": "366",
+      "max_points": "724",
+      "competitor_name": "KUZIUTINA  Natalia",
+      "weight": "-52"
+    },
+    "total_ranking_points": "27401",
+    "ranking": {
+      "place": 2,
+      "points": "27401"
+    },
+    "ranking_male": {
+      "place": 1,
+      "points": "21319"
+    },
+    "ranking_female": {
+      "place": 9,
+      "points": "6082"
+    }
+  }
+}
