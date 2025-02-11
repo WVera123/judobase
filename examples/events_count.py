@@ -28,7 +28,7 @@ async def main():
                         throw_stats[throw_name][name] += 1
 
         print(throw_stats["Seoi-nage"]["total"])  # Output: 5
-        print(throw_stats["Seoi-nage"]["Right"])  # Output: 2
+        print(throw_stats["Seoi-nage"]["Right"])  # Output: 3
         print(
             sorted(
                 throw_stats.items(), key=lambda x: x[1]["total"], reverse=True
