@@ -17,3 +17,4 @@ docs/build/
 
 # Tests coverage
 .coverage
+coverage.xml

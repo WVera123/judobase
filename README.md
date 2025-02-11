@@ -5,6 +5,7 @@
 [![Downloads](https://img.shields.io/pypi/dm/judobase)](https://pypistats.org/packages/judobase)
 [![License](https://img.shields.io/pypi/l/judobase)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-stable-brightgreen)](https://daviddzgoev.github.io/judobase/)
+[![Codecov](https://img.shields.io/codecov/c/gh/DavidDzgoev/judobase)](https://app.codecov.io/gh/DavidDzgoev/judobase)
 [![Contributors](https://img.shields.io/github/contributors/DavidDzgoev/judobase)](https://github.com/DavidDzgoev/judobase/graphs/contributors)
 [![Ruff](https://img.shields.io/badge/linting-ruff-orange)](https://github.com/astral-sh/ruff)
 
