@@ -26,7 +26,7 @@ class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
 
     async def competition_by_id(self, competition_id: int | str) -> Competition:
         """Retrieves data for a specific competition by its ID."""
-        return await self.get_competition_info(competition_id)
+        return await self.get_competition_info(str(competition_id))
 
     async def all_contests(self) -> list[Contest]:
         """Retrieves data for all contests using concurrent API calls."""
@@ -50,19 +50,21 @@ class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
         throw, osaekomi or shido.
         """
         contests = await self.find_contests(
-            competition_id=competition_id,
+            competition_id=str(competition_id),
             weight_id=WEIGHT_ID_MAPPING[weight] if weight else ""
         )
-        tasks = [
-            self.find_contests(
-                contest_code=contest.contest_code_long,
-                include="info,events" if include_events else "info"
-            )
-            for contest in contests
-        ]
-        tasks_results = await asyncio.gather(*tasks)
+        if include_events:
+            tasks = [
+                self.find_contests(
+                    contest_code=contest.contest_code_long,
+                    include="info,events"
+                )
+                for contest in contests
+            ]
+            tasks_results = await asyncio.gather(*tasks)
+            contests = [contest for sublist in tasks_results for contest in sublist]
 
-        return [contest for sublist in tasks_results for contest in sublist]
+        return contests
 
     async def judoka_by_id(self, judoka_id: int | str) -> Judoka:
         """Retrieves data for a specific judoka by their ID."""
@@ -70,7 +72,7 @@ class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
 
     async def country_by_id(self, country_id: int | str) -> Country:
         """Retrieves data for a specific country by its ID."""
-        return await self.get_country_info(country_id)
+        return await self.get_country_info(str(country_id))
 
     async def all_countries(self) -> list[CountryShort]:
         """Retrieves short data for all the countries."""

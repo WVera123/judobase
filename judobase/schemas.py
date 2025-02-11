@@ -606,7 +606,7 @@ class Judoka(BaseModel):
 
 
 class CountryShort(BaseModel):
-    """Represents the short data about a country.
+    """Represents the condensed data about a country.
 
     Provided by the ``country.get_list`` method of Judobase API.
     """
