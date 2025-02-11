@@ -42,7 +42,6 @@ Thank you for considering contributing to **Judobase**! We appreciate your time 
 - Keep code **clean, readable, and well-commented**.
 
 ### 2️⃣ Writing Tests
-> **Note:** No tests yet, but they will be added soon.
 
 - Ensure all new features or fixes include tests.
 - Run tests before submitting a PR:
