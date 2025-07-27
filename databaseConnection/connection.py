@@ -1,32 +1,34 @@
-import mysql.connector
+import aiomysql
+import asyncio
 
-# Database configuration
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'admin',
     'password': 'Hamster2005!',
-    'database': 'JudoBase'
+    'db': 'JudoBase',
 }
 
-# Get a new connection
-def get_connection():
-    return mysql.connector.connect(**DB_CONFIG)
 
-# Execute SELECT queries and return results
-def fetch_all(query, params=None):
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute(query, params or ())
-    results = cursor.fetchall()
-    cursor.close()
-    conn.close()
-    return results
+async def get_connection():
+    return await aiomysql.connect(**DB_CONFIG)
 
-# Execute INSERT/UPDATE/DELETE queries
-def execute_query(query, params=None):
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute(query, params or ())
-    conn.commit()
-    cursor.close()
+
+async def execute_query(query, params=None, many=False):
+    conn = await get_connection()
+    async with conn.cursor() as cursor:
+        if many:
+            for row in params or []:
+                await cursor.execute(query, row)
+        else:
+            await cursor.execute(query, params or ())
+        await conn.commit()
     conn.close()
+
+
+async def fetch_all(query, params=None):
+    conn = await get_connection()
+    async with conn.cursor() as cursor:
+        await cursor.execute(query, params or ())
+        result = await cursor.fetchall()
+    conn.close()
+    return result

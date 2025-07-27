@@ -77,12 +77,12 @@ class ContestAPI(_Base):
     """Handles contest-related API requests."""
 
     async def find_contests(
-        self,
-        competition_id: str = "",
-        weight_id: str = "",
-        person_id: str = "",
-        include: str = "info",
-        contest_code: str=""
+            self,
+            competition_id: str = "",
+            weight_id: str = "",
+            person_id: str = "",
+            include: str = "info",
+            contest_code: str = ""
     ) -> list[Contest]:
         """Fetches list of contests.
 
@@ -116,6 +116,14 @@ class JudokaAPI(_Base):
                 }
             )
         )
+
+    async def get_judoka_list(self) -> list[Judoka]:
+        """Fetches all judokas information."""
+        return [
+            Judoka(**judoka) for judoka in await self._get_json(
+                request_params={"params[action]": "competitor.get_list"}
+            )
+        ]
 
 
 class CountryAPI(_Base):

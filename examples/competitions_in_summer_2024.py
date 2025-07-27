@@ -12,4 +12,5 @@ async def main():
         )
         print(len(competitions))  # Output: 14
 
+
 asyncio.run(main())
