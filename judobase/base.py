@@ -117,14 +117,6 @@ class JudokaAPI(_Base):
             )
         )
 
-    async def get_judoka_list(self) -> list[Judoka]:
-        """Fetches all countries short information."""
-        return [
-            Judoka(**competitor) for competitor in await self._get_json(
-                request_params={"params[action]": "competitor.get_list"}
-            )
-        ]
-
 
 class CountryAPI(_Base):
     """Handles country-related API requests."""

@@ -189,7 +189,6 @@ async def insert_judokas():
         await execute_query(insert_query, data, many=True)
 
 
-
 async def insert_contests_into_db():
     async with JudoBase() as api:
         # Step 1: Fetch all contests
@@ -310,9 +309,9 @@ async def insert_contests_into_db():
 
 
 async def main():
-    # await insert_competitions()
+    await insert_competitions()
     await insert_judokas()
-    # await insert_contests_into_db()
+    await insert_contests_into_db()
 
 
 asyncio.run(main())
