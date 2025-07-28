@@ -521,23 +521,23 @@ class Judoka(BaseModel):
     given_name: str = Field(
         ..., title="Given Name", description="The given name (first name) of the judoka."
     )
-    family_name_local: str = Field(
+    family_name_local: str | None = Field(
         ..., title="Local Family Name", description="The local representation of the family name."
     )
     middle_name_local: str | None = Field(
         None, title="Local Middle Name", description="The local representation of the middle name."
     )
-    given_name_local: str = Field(
+    given_name_local: str | None = Field(
         ..., title="Local Given Name", description="The local representation of the given name."
     )
     short_name: str | None = Field(
         None, title="Short Name", description="A short or abbreviated name for the judoka."
     )
-    gender: str = Field(..., title="Gender", description="The gender of the judoka.")
-    folder: str = Field(
+    gender: str | None = Field(..., title="Gender", description="The gender of the judoka.")
+    folder: str | None = Field(
         ..., title="Folder", description="The folder where the judoka's data or images are stored."
     )
-    picture_filename: str = Field(
+    picture_filename: str | None = Field(
         ..., title="Picture Filename", description="The filename of the judoka's picture."
     )
     ftechique: str | None = Field(
@@ -546,22 +546,22 @@ class Judoka(BaseModel):
         description="A field representing a specific technique associated with the judoka. "
         "(Verify field name if necessary.)",
     )
-    side: str = Field(
+    side: str | None = Field(
         ..., title="Side", description="The side (e.g., left or right) that the judoka uses."
     )
-    coach: str = Field(..., title="Coach", description="The coach of the judoka.")
+    coach: str | None = Field(..., title="Coach", description="The coach of the judoka.")
     best_result: str | None = Field(
         None, title="Best Result", description="The best competition result achieved by the judoka."
     )
-    height: str = Field(..., title="Height", description="The height of the judoka.")
+    height: str | None = Field(..., title="Height", description="The height of the judoka.")
     birth_date: datetime = Field(
         ..., title="Birth Date", description="The birth date of the judoka."
     )
-    country: str = Field(..., title="Country", description="The country the judoka represents.")
-    id_country: str = Field(
+    country: str | None = Field(..., title="Country", description="The country the judoka represents.")
+    id_country: str | None = Field(
         ..., title="Country ID", description="The identifier for the judoka's country."
     )
-    country_short: str = Field(
+    country_short: str | None = Field(
         ..., title="Country Short Code", description="The short code for the judoka's country."
     )
     file_flag: str | None = Field(
@@ -574,27 +574,27 @@ class Judoka(BaseModel):
     youtube_links: str | None = Field(
         None, title="YouTube Links", description="Links to YouTube videos related to the judoka."
     )
-    status: str | None = Field(
+    status: int | None = Field(
         None, title="Status", description="The current status of the judoka."
     )
-    archived: str | None = Field(
+    archived: int | None = Field(
         None, title="Archived", description="Indicates whether the judoka's record is archived."
     )
-    categories: list[str] = Field(
+    categories: list[str] | None = Field(
         ...,
         title="Categories",
         description="List of competition categories the judoka participates in.",
     )
-    dob_year: str | None = Field(
+    dob_year: int | None = Field(
         None, title="Year of Birth", description="The year the judoka was born."
     )
-    age: str | None = Field(None, title="Age", description="The age of the judoka.")
-    death_age: str | None = Field(
+    age: int | None = Field(None, title="Age", description="The age of the judoka.")
+    death_age: int | None = Field(
         None,
         title="Death Age",
         description="The age at which the judoka passed away, if applicable.",
     )
-    personal_picture: str = Field(
+    personal_picture: str | None = Field(
         ..., title="Personal Picture", description="URL or path to the judoka's personal picture."
     )
 

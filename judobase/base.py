@@ -118,9 +118,9 @@ class JudokaAPI(_Base):
         )
 
     async def get_judoka_list(self) -> list[Judoka]:
-        """Fetches all judokas information."""
+        """Fetches all countries short information."""
         return [
-            Judoka(**judoka) for judoka in await self._get_json(
+            Judoka(**competitor) for competitor in await self._get_json(
                 request_params={"params[action]": "competitor.get_list"}
             )
         ]

@@ -18,7 +18,7 @@ class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
         return await self.get_competition_list()
 
     async def competitions_in_range(
-            self, start_date: datetime, end_date: datetime
+        self, start_date: datetime, end_date: datetime
     ) -> list[Competition]:
         """Retrieves data for competitions within a specified date range."""
         all_comps = await self.all_competition()
@@ -36,12 +36,13 @@ class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
 
         return [contest for sublist in tasks_results for contest in sublist]
 
+
     async def contests_by_competition_id(
-            self,
-            competition_id: int | str,
-            weight: WeightEnum = "",
-            *,
-            include_events: bool = False
+        self,
+        competition_id: int | str,
+        weight: WeightEnum = "",
+        *,
+        include_events: bool = False
     ) -> list[Contest]:
         """Retrieves data for all contests using concurrent API calls.
 
@@ -77,6 +78,3 @@ class JudoBase(CompetitionAPI, ContestAPI, JudokaAPI, CountryAPI):
         """Retrieves short data for all the countries."""
         return await self.get_country_list()
 
-    async def all_judokas(self) -> list[Judoka]:
-        """Retrieves data for all judokas."""
-        return await self.get_judoka_list()
