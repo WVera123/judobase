@@ -35,7 +35,7 @@ class _Base:
         """Helper method to send a GET request and return JSON."""
         response = await self._session.get(
             f"{BASE_URL}get_json",
-            timeout=10,
+            timeout=30,
             params=request_params,
         )
         if response.status != HTTP_STATUS_OK:

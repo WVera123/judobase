@@ -85,110 +85,6 @@ async def insert_competitions():
         await execute_query(insert_query, data, many=True)
 
 
-async def fetch_all_contests_from_db():
-    query = """
-    SELECT id_person_blue, id_person_white
-    FROM Contest
-    """
-    return await fetch_all(query)
-
-
-async def insert_judokas():
-    # Step 1: Fetch all contests from the database
-    contests = await fetch_all_contests_from_db()
-
-    # Step 2: Extract unique judoka IDs
-    judoka_ids = set()
-    for contest in contests:
-        judoka_ids.add(contest[0])
-        judoka_ids.add(contest[1])
-
-    # Step 3: Fetch detailed info for each Judoka
-    async with JudoBase() as api:
-        data = []
-        for judoka_id in judoka_ids:
-            judoka_details = await api.get_judoka_info(judoka_id)
-            data.append((
-                judoka_id,  # Use judoka_id as the id in the database
-                judoka_details.age,
-                judoka_details.archived or 0,
-                judoka_details.belt or '',
-                judoka_details.best_result or '',
-                judoka_details.birth_date.strftime('%Y-%m-%d') if judoka_details.birth_date else None,
-                ','.join(judoka_details.categories) if judoka_details.categories else None,
-                judoka_details.club or '',
-                judoka_details.coach or None,
-                judoka_details.country or '',
-                judoka_details.country_short or '',
-                judoka_details.death_age or None,
-                judoka_details.dob_year or None,
-                judoka_details.family_name or '',
-                judoka_details.family_name_local or '',
-                judoka_details.file_flag,
-                judoka_details.folder or '',
-                judoka_details.ftechique or '',
-                judoka_details.gender or '',
-                judoka_details.given_name or '',
-                judoka_details.given_name_local or '',
-                judoka_details.height or None,
-                judoka_details.id_country or None,
-                judoka_details.middle_name or '',
-                judoka_details.middle_name_local or '',
-                judoka_details.personal_picture or '',
-                judoka_details.picture_filename or '',
-                judoka_details.short_name or '',
-                judoka_details.side or None,
-                judoka_details.status or 0,
-                judoka_details.youtube_links or '',
-            ))
-
-        # Step 4: Insert into the database
-        insert_query = """
-        INSERT INTO Judoka (
-            id, age, archived, belt, best_result, birth_date, categories, club, coach, country,
-            country_short, death_age, dob_year, family_name, family_name_local, file_flag, folder,
-            ftechique, gender, given_name, given_name_local, height, id_country, middle_name,
-            middle_name_local, personal_picture, picture_filename, short_name, side, status, youtube_links
-        ) VALUES (
-            %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-            %s, %s, %s, %s, %s, %s, %s, %s
-        ) AS new
-        ON DUPLICATE KEY UPDATE
-            age = new.age,
-            archived = new.archived,
-            belt = new.belt,
-            best_result = new.best_result,
-            birth_date = new.birth_date,
-            categories = new.categories,
-            club = new.club,
-            coach = new.coach,
-            country = new.country,
-            country_short = new.country_short,
-            death_age = new.death_age,
-            dob_year = new.dob_year,
-            family_name = new.family_name,
-            family_name_local = new.family_name_local,
-            file_flag = new.file_flag,
-            folder = new.folder,
-            ftechique = new.ftechique,
-            gender = new.gender,
-            given_name = new.given_name,
-            given_name_local = new.given_name_local,
-            height = new.height,
-            id_country = new.id_country,
-            middle_name = new.middle_name,
-            middle_name_local = new.middle_name_local,
-            personal_picture = new.personal_picture,
-            picture_filename = new.picture_filename,
-            short_name = new.short_name,
-            side = new.side,
-            status = new.status,
-            youtube_links = new.youtube_links
-        """
-
-        await execute_query(insert_query, data, many=True)
-
-
 async def insert_contests_into_db():
     async with JudoBase() as api:
         # Step 1: Fetch all contests
@@ -308,10 +204,114 @@ async def insert_contests_into_db():
         await execute_query(insert_query, data, many=True)
 
 
+async def fetch_all_contests_from_db():
+    query = """
+    SELECT id_person_blue, id_person_white
+    FROM Contest
+    """
+    return await fetch_all(query)
+
+
+async def insert_judokas():
+    # Step 1: Fetch all contests from the database
+    contests = await fetch_all_contests_from_db()
+
+    # Step 2: Extract unique judoka IDs
+    judoka_ids = set()
+    for contest in contests:
+        judoka_ids.add(contest[0])
+        judoka_ids.add(contest[1])
+
+    # Step 3: Fetch detailed info for each Judoka
+    async with JudoBase() as api:
+        data = []
+        for judoka_id in judoka_ids:
+            judoka_details = await api.get_judoka_info(judoka_id)
+            data.append((
+                judoka_id,  # Use judoka_id as the id in the database
+                judoka_details.age,
+                judoka_details.archived or 0,
+                judoka_details.belt or '',
+                judoka_details.best_result or '',
+                judoka_details.birth_date.strftime('%Y-%m-%d') if judoka_details.birth_date else None,
+                ','.join(judoka_details.categories) if judoka_details.categories else None,
+                judoka_details.club or '',
+                judoka_details.coach or None,
+                judoka_details.country or '',
+                judoka_details.country_short or '',
+                judoka_details.death_age or None,
+                judoka_details.dob_year or None,
+                judoka_details.family_name or '',
+                judoka_details.family_name_local or '',
+                judoka_details.file_flag,
+                judoka_details.folder or '',
+                judoka_details.ftechique or '',
+                judoka_details.gender or '',
+                judoka_details.given_name or '',
+                judoka_details.given_name_local or '',
+                judoka_details.height or None,
+                judoka_details.id_country or None,
+                judoka_details.middle_name or '',
+                judoka_details.middle_name_local or '',
+                judoka_details.personal_picture or '',
+                judoka_details.picture_filename or '',
+                judoka_details.short_name or '',
+                judoka_details.side or None,
+                judoka_details.status or 0,
+                judoka_details.youtube_links or '',
+            ))
+
+        # Step 4: Insert into the database
+        insert_query = """
+        INSERT INTO Judoka (
+            id, age, archived, belt, best_result, birth_date, categories, club, coach, country,
+            country_short, death_age, dob_year, family_name, family_name_local, file_flag, folder,
+            ftechique, gender, given_name, given_name_local, height, id_country, middle_name,
+            middle_name_local, personal_picture, picture_filename, short_name, side, status, youtube_links
+        ) VALUES (
+            %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
+            %s, %s, %s, %s, %s, %s, %s, %s
+        ) AS new
+        ON DUPLICATE KEY UPDATE
+            age = new.age,
+            archived = new.archived,
+            belt = new.belt,
+            best_result = new.best_result,
+            birth_date = new.birth_date,
+            categories = new.categories,
+            club = new.club,
+            coach = new.coach,
+            country = new.country,
+            country_short = new.country_short,
+            death_age = new.death_age,
+            dob_year = new.dob_year,
+            family_name = new.family_name,
+            family_name_local = new.family_name_local,
+            file_flag = new.file_flag,
+            folder = new.folder,
+            ftechique = new.ftechique,
+            gender = new.gender,
+            given_name = new.given_name,
+            given_name_local = new.given_name_local,
+            height = new.height,
+            id_country = new.id_country,
+            middle_name = new.middle_name,
+            middle_name_local = new.middle_name_local,
+            personal_picture = new.personal_picture,
+            picture_filename = new.picture_filename,
+            short_name = new.short_name,
+            side = new.side,
+            status = new.status,
+            youtube_links = new.youtube_links
+        """
+
+        await execute_query(insert_query, data, many=True)
+
+
 async def main():
     await insert_competitions()
-    await insert_judokas()
     await insert_contests_into_db()
+    await insert_judokas()
 
 
 asyncio.run(main())
