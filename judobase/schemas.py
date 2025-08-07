@@ -4,7 +4,7 @@
 
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Any
+from typing import Any, Union, Optional
 
 from pydantic import BaseModel, Field, field_validator
 
@@ -638,18 +638,18 @@ class Country(BaseModel):
         title="Organization Website",
         description="The website URL of the national organization.",
     )
-    head_address: str = Field(
+    head_address: Optional[str] = Field(
         ..., title="Head Address", description="The address of the organization's headquarters."
     )
-    head_city: str = Field(
+    head_city: Optional[str] = Field(
         ...,
         title="Head City",
         description="The city where the organization's headquarters are located.",
     )
-    contact_phone: str = Field(
+    contact_phone: Optional[str] = Field(
         ..., title="Contact Phone", description="The contact phone number for the organization."
     )
-    contact_email: str = Field(
+    contact_email: Optional[str] = Field(
         ..., title="Contact Email", description="The contact email address for the organization."
     )
     exclude_from_medals: str = Field(
@@ -657,18 +657,18 @@ class Country(BaseModel):
         title="Exclude from Medals",
         description="Indicator if the country is excluded from medal counts.",
     )
-    president_name: dict = Field(
-        ...,
+    president_name: Union[dict[str, Any], list, str, None] = Field(
+        default=None,
         title="President Name",
         description="The name of the president of the national judo organization.",
     )
-    male_competitiors: str = Field(
+    male_competitiors: int = Field(
         ...,
         title="Male Competitors",
         description="Number of male competitors from the country. "
         "(Note: Field name may contain a typo.)",
     )
-    female_competitiors: str = Field(
+    female_competitiors: int = Field(
         ...,
         title="Female Competitors",
         description="Number of female competitors from the country. "
@@ -679,12 +679,12 @@ class Country(BaseModel):
         title="Total Competitors",
         description="The total number of competitors representing the country.",
     )
-    number_of_competitions: str = Field(
+    number_of_competitions: int = Field(
         ...,
         title="Number of Competitions",
         description="The number of competitions in which the country participated.",
     )
-    number_of_total_competitions: str = Field(
+    number_of_total_competitions: int = Field(
         ...,
         title="Total Competitions",
         description="The total number of competitions involving the country.",
@@ -709,7 +709,7 @@ class Country(BaseModel):
         title="Best Female Competitor",
         description="Details of the best performing female competitor from the country.",
     )
-    total_ranking_points: str | None = Field(
+    total_ranking_points: int | None = Field(
         None,
         title="Total Ranking Points",
         description="The total ranking points accumulated by the country.",

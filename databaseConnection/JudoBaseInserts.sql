@@ -2,7 +2,9 @@ USE JudoBase;
 SELECT * FROM Weight;
 SELECT * FROM Judoka;
 SELECT * FROM Competition;
-SELECT * FROM Contest WHERE id_weight NOT between 1 and 14;
+SELECT * FROM Contest WHERE events != NULL;
+SELECT * FROM CountryShort;
+SELECT * FROM Country;
 UPDATE Contest SET id_weight = 11 WHERE id_weight = 262;
 
 CREATE TABLE Judoka (
@@ -168,16 +170,19 @@ male_competitors INT,
 female_competitors INT,
 total_competitors INT,
 number_of_competitions INT,
+number_of_total_competitions INT,
 number_of_total_wins INT,
 number_of_total_fights INT,
-best_male_competitors_id INT,
+best_male_competitor_id INT,
 best_female_competitor_id INT,
 total_ranking_points INT,
-ranking_place INT,
+ranking_points_male INT,
+ranking_points_female INT,
+total_ranking_place INT,
 ranking_place_male INT,
-ranking_place_female INT
-
-)
+ranking_place_female INT,
+CONSTRAINT PK_Country PRIMARY KEY (id_country)
+);
 
 ALTER TABLE Contest
 ADD CONSTRAINT FK_ContestCompetition 
@@ -207,6 +212,11 @@ FOREIGN KEY (id_country) REFERENCES CountryShort(id)
 ON UPDATE CASCADE;
 
 ALTER TABLE Competition
+ADD CONSTRAINT FK_CompetitionCountryShort
+FOREIGN KEY (id_country) REFERENCES CountryShort(id)
+ON UPDATE CASCADE;
+
+ALTER TABLE Country
 ADD CONSTRAINT FK_CompetitionCountryShort
 FOREIGN KEY (id_country) REFERENCES CountryShort(id)
 ON UPDATE CASCADE;
