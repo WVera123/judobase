@@ -22,8 +22,6 @@ async def insert_competitions():
                 getattr(comp_details, 'code_live_theme'),
                 getattr(comp, 'comp_year'),
                 getattr(comp, 'continent_short', ),
-                comp_details.country or "",
-                getattr(comp_details, 'country_short', ""),
                 comp_details.date_from.strftime('%Y-%m-%d %H:%M:%S') if comp_details.date_from else None,
                 comp_details.date_to.strftime('%Y-%m-%d %H:%M:%S') if comp_details.date_to else None,
                 getattr(comp_details, 'external_id', ""),
@@ -46,13 +44,13 @@ async def insert_competitions():
 
         insert_query = """
         INSERT INTO Competition (
-            id_competition, ages, city, code_live_theme, comp_year, continent_short, country, country_short,
+            id_competition, ages, city, code_live_theme, comp_year, continent_short,
             date_from, date_to, external_id, has_logo, has_results, id_country, id_draw_type, id_live_theme,
             is_teams, name, prime_event, rank_name, status, street, street_no, timezone, updated_at, updated_at_ts
         ) VALUES (
             %s, %s, %s, %s, %s, %s, %s, %s,
             %s, %s, %s, %s, %s, %s, %s, %s,
-            %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+            %s, %s, %s, %s, %s, %s, %s, %s
         ) AS new
         ON DUPLICATE KEY UPDATE
             ages = new.ages,
@@ -60,8 +58,6 @@ async def insert_competitions():
             code_live_theme = new.code_live_theme,
             comp_year = new.comp_year,
             continent_short = new.continent_short,
-            country = new.country,
-            country_short = new.country_short,
             date_from = new.date_from,
             date_to = new.date_to,
             external_id = new.external_id,
@@ -93,12 +89,13 @@ async def insert_contests_into_db():
         # Step 2: Prepare data for insertion
         data = []
         for contest in contests:
+            weight_id = 11 if contest.id_weight == 262 else contest.id_weight
             data.append((
-                contest.id_fight,
+                contest.id_fight, 
                 contest.id_competition,
                 contest.id_person_blue,
                 contest.id_person_white,
-                contest.id_weight,
+                weight_id,
                 contest.age,
                 contest.bye,
                 contest.contest_code_long,
@@ -237,8 +234,6 @@ async def insert_judokas():
                 ','.join(judoka_details.categories) if judoka_details.categories else None,
                 judoka_details.club or '',
                 judoka_details.coach or None,
-                judoka_details.country or '',
-                judoka_details.country_short or '',
                 judoka_details.death_age or None,
                 judoka_details.dob_year or None,
                 judoka_details.family_name or '',
@@ -264,13 +259,13 @@ async def insert_judokas():
         # Step 4: Insert into the database
         insert_query = """
         INSERT INTO Judoka (
-            id, age, archived, belt, best_result, birth_date, categories, club, coach, country,
-            country_short, death_age, dob_year, family_name, family_name_local, file_flag, folder,
+            id, age, archived, belt, best_result, birth_date, categories, club, coach,
+            death_age, dob_year, family_name, family_name_local, file_flag, folder,
             ftechique, gender, given_name, given_name_local, height, id_country, middle_name,
             middle_name_local, personal_picture, picture_filename, short_name, side, status, youtube_links
         ) VALUES (
             %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-            %s, %s, %s, %s, %s, %s, %s, %s
+            %s, %s, %s, %s, %s, %s
         ) AS new
         ON DUPLICATE KEY UPDATE
             age = new.age,
@@ -281,8 +276,6 @@ async def insert_judokas():
             categories = new.categories,
             club = new.club,
             coach = new.coach,
-            country = new.country,
-            country_short = new.country_short,
             death_age = new.death_age,
             dob_year = new.dob_year,
             family_name = new.family_name,

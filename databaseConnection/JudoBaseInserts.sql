@@ -7,6 +7,46 @@ SELECT * FROM CountryShort;
 SELECT * FROM Country;
 UPDATE Contest SET id_weight = 11 WHERE id_weight = 262;
 
+CREATE TABLE CountryShort(
+id INT NOT  NULL,
+name VARCHAR(255),
+ioc VARCHAR(255),
+CONSTRAINT PK_CountryShort PRIMARY KEY (id)
+);
+
+CREATE TABLE Country(
+id_country INT NOT NULL,
+org_name VARCHAR(255),
+org_www VARCHAR(255),
+head_address VARCHAR(255),
+head_city VARCHAR(255),
+contact_phone VARCHAR(255),
+contact_email VARCHAR(255),
+exclude_from_medals INT,
+president_name VARCHAR(255),
+male_competitors INT,
+female_competitors INT,
+total_competitors INT,
+number_of_competitions INT,
+number_of_total_competitions INT,
+number_of_total_wins INT,
+number_of_total_fights INT,
+best_male_competitor_id INT,
+best_female_competitor_id INT,
+total_ranking_points INT,
+ranking_points_male INT,
+ranking_points_female INT,
+total_ranking_place INT,
+ranking_place_male INT,
+ranking_place_female INT,
+CONSTRAINT PK_Country PRIMARY KEY (id_country)
+);
+
+ALTER TABLE Country
+ADD CONSTRAINT FK_CountryCountryShort
+FOREIGN KEY (id_country) REFERENCES CountryShort(id)
+ON UPDATE CASCADE;
+
 CREATE TABLE Judoka (
 id INT NOT NULL,
 id_country INT,
@@ -41,6 +81,12 @@ youtube_links VARCHAR (255),
 CONSTRAINT PK_Judoka PRIMARY KEY (id)
 );
 
+ALTER TABLE Judoka
+ADD CONSTRAINT FK_JudokaCountryShort
+FOREIGN KEY (id_country) REFERENCES CountryShort(id)
+ON UPDATE CASCADE;
+
+
 CREATE TABLE Competition (
 id_competition INT NOT NULL,
 id_country INT NOT NULL,
@@ -49,7 +95,6 @@ city VARCHAR(255) NOT NULL,
 code_live_theme VARCHAR(255) NOT NULL,
 comp_year YEAR,
 continent_short VARCHAR(4),
-country VARCHAR(255) NOT NULL,
 date_from DATETIME NOT NULL,
 date_to DATETIME NOT NULL,
 external_id VARCHAR(255),
@@ -70,6 +115,40 @@ updated_at_ts DATETIME NOT NULL,
 
 CONSTRAINT PK_Competition PRIMARY KEY (id_competition)
 );
+
+ALTER TABLE Competition
+ADD CONSTRAINT FK_CompetitionCountryShort
+FOREIGN KEY (id_country) REFERENCES CountryShort(id)
+ON UPDATE CASCADE;
+
+CREATE TABLE Weight (
+id INT NOT NULL,
+weight VARCHAR(255),
+
+CONSTRAINT PK_Weight PRIMARY KEY (id)
+);
+
+DELIMITER //
+DROP TRIGGER IF EXISTS before_contest_insert//
+CREATE TRIGGER before_contest_insert
+BEFORE INSERT ON Contest
+FOR EACH ROW
+BEGIN
+    IF NEW.id_weight = 262 THEN
+        SET NEW.id_weight = 11;
+    END IF;
+END//
+
+DROP TRIGGER IF EXISTS before_contest_update//
+CREATE TRIGGER before_contest_update
+BEFORE UPDATE ON Contest
+FOR EACH ROW
+BEGIN
+    IF NEW.id_weight = 262 THEN
+        SET NEW.id_weight = 11;
+    END IF;
+END//
+DELIMITER ;
 
 CREATE TABLE Contest (
 id_fight INT NOT NULL,
@@ -121,12 +200,15 @@ yuko_w INT,
 CONSTRAINT PK_Contest PRIMARY KEY (id_fight)
 );
 
-CREATE TABLE Weight (
-id INT NOT NULL,
-weight VARCHAR(255),
+ALTER TABLE Contest
+ADD CONSTRAINT FK_ContestWeight
+FOREIGN KEY (id_weight) REFERENCES Weight(id)
+ON UPDATE CASCADE;
 
-CONSTRAINT PK_Weight PRIMARY KEY (id)
-);
+ALTER TABLE Contest
+ADD CONSTRAINT FK_ContestCompetition 
+FOREIGN KEY (id_competition) REFERENCES Competition(id_competition)
+ON UPDATE CASCADE;
 
 INSERT INTO Weight
 VALUES
@@ -148,75 +230,3 @@ VALUES
 (14, '78'),
 (227, 'Open male'),
 (228, 'Open female');
-
-CREATE TABLE CountryShort(
-id INT NOT  NULL,
-name VARCHAR(255),
-ioc VARCHAR(255),
-CONSTRAINT PK_CountryShort PRIMARY KEY (id)
-);
-
-CREATE TABLE Country(
-id_country INT NOT NULL,
-org_name VARCHAR(255),
-org_www VARCHAR(255),
-head_address VARCHAR(255),
-head_city VARCHAR(255),
-contact_phone VARCHAR(255),
-contact_email VARCHAR(255),
-exclude_from_medals INT,
-president_name VARCHAR(255),
-male_competitors INT,
-female_competitors INT,
-total_competitors INT,
-number_of_competitions INT,
-number_of_total_competitions INT,
-number_of_total_wins INT,
-number_of_total_fights INT,
-best_male_competitor_id INT,
-best_female_competitor_id INT,
-total_ranking_points INT,
-ranking_points_male INT,
-ranking_points_female INT,
-total_ranking_place INT,
-ranking_place_male INT,
-ranking_place_female INT,
-CONSTRAINT PK_Country PRIMARY KEY (id_country)
-);
-
-ALTER TABLE Contest
-ADD CONSTRAINT FK_ContestCompetition 
-FOREIGN KEY (id_competition) REFERENCES Competition(id_competition)
-ON UPDATE CASCADE;
-
-ALTER TABLE Contest
-ADD CONSTRAINT FK_ContestPersonBlue
-FOREIGN KEY (id_person_blue) REFERENCES Judoka(id)
-ON UPDATE CASCADE;
-
-ALTER TABLE Contest
-ADD CONSTRAINT FK_ContestPersonWhite
-FOREIGN KEY (id_person_white) REFERENCES Judoka(id)
-ON UPDATE CASCADE;
-
--- ALTER TABLE Contest DROP CONSTRAINT FK_ContestWeight;
-
-ALTER TABLE Contest
-ADD CONSTRAINT FK_ContestWeight
-FOREIGN KEY (id_weight) REFERENCES Weight(id)
-ON UPDATE CASCADE;
-
-ALTER TABLE Judoka
-ADD CONSTRAINT FK_JudokaCountryShort
-FOREIGN KEY (id_country) REFERENCES CountryShort(id)
-ON UPDATE CASCADE;
-
-ALTER TABLE Competition
-ADD CONSTRAINT FK_CompetitionCountryShort
-FOREIGN KEY (id_country) REFERENCES CountryShort(id)
-ON UPDATE CASCADE;
-
-ALTER TABLE Country
-ADD CONSTRAINT FK_CompetitionCountryShort
-FOREIGN KEY (id_country) REFERENCES CountryShort(id)
-ON UPDATE CASCADE;
